@@ -1,9 +1,11 @@
 let wikiList = document.querySelector(".wiki-list"),
   li = document.createElement("li"),
   clone,
+  //TODO -- make this dynamic
   allEntries = [
     "11B-X-1371",
     "ai",
+    "advertising",
     "ambien",
     "apeirophobia",
     "arnold-schwarzenegger",
