@@ -1,0 +1,116 @@
+/* The Modal (background) */
+/* Modal Content */
+:root {
+  --wiki-background: white;
+  --wiki-border: 1px solid black;
+  --wiki-box-shadow: 4px 4px black;
+}
+
+.wiki {
+  display: grid;
+  visibility: hidden;
+  position: fixed;
+  width: 60%;
+  max-width: 700px;
+  max-height: 90%;
+  z-index: 2000;
+  top: 25%;
+  left: 25%;
+  /* transform: translate(-50%, -50%); */
+  background-color: var(--wiki-background);
+  margin: 0;
+  border: var(--wiki-border);
+  box-shadow: var(--wiki-box-shadow);
+  /* resize: both; */
+  overflow-y: scroll;
+}
+.handle {
+  position: fixed;
+  width: inherit;
+  max-width: inherit;
+  border-bottom: var(--wiki-border);
+  height: 21px;
+  background-image: linear-gradient(
+    52deg,
+    #000000 12.5%,
+    #ffffff00 12.5%,
+    #ffffff 50%,
+    #000000 50%,
+    #000000 62.5%,
+    #ffffff00 62.5%,
+    #ffffff 100%
+  );
+  background-color: gray;
+  background-size: 5.08px 6.5px;
+  cursor: pointer;
+}
+.entry {
+  padding: 15px 20px 5px 20px;
+}
+/* The Close Button */
+.close {
+  color: black;
+  float: right;
+  font-size: 14px;
+  padding-left: 4px;
+  padding-right: 4px;
+  background-color: var(--wiki-background);
+  border-left: var(--wiki-border);
+}
+
+.close:hover,
+.close:focus {
+  color: white;
+  background-color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.wikiImg {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 75%;
+  max-height: 400px;
+}
+
+.prev {
+  font-family: monospace;
+  width: fit-content;
+  background: black;
+  color: white;
+  cursor: pointer;
+  visibility: hidden;
+  padding: 4px;
+  margin: -1px;
+  border: var(--wiki-border);
+  border-bottom: none;
+}
+
+.prev:hover {
+  color: black;
+  /* text-shadow: 0.5px 0.7px hotpink; */
+  background-color: var(--wiki-background);
+}
+
+/* .wiki::-webkit-scrollbar {
+  width: 12px;
+}
+
+.wiki::-webkit-scrollbar-thumb {
+  background-color: #e4e4e4;
+  outline: 1px dotted #000000;
+  outline-offset: -3px;
+  border: 1px solid black;
+}
+
+.wiki::-webkit-scrollbar-track {
+  background: repeating-linear-gradient(
+    52deg,
+    #000000,
+    #000000 1px,
+    #c0c0c0 1px,
+    #c0c0c0 3px
+  );
+  border-left: 1px solid black;
+} */

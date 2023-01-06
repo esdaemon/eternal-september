@@ -1,0 +1,51 @@
+/* google docs margins */
+.halfpoint {
+  padding-left: 23.5px;
+}
+
+.pointfive {
+  padding-left: 47px;
+}
+
+.one {
+  margin-left: 93px;
+}
+
+.onepointfive {
+  margin-left: 140px;
+}
+
+.notquitetwo {
+  margin-left: 165px;
+}
+
+.two {
+  margin-left: 187px;
+}
+
+.twopointfive {
+  margin-left: 233px;
+}
+
+.three {
+  margin-left: 280px;
+}
+
+.threepointfive {
+  margin-left: 327px;
+}
+
+.four {
+  margin-left: 373px;
+}
+
+.fourpointfive {
+  margin-left: 420px;
+}
+.six {
+  margin-left: 560px;
+}
+
+.minusfive {
+  margin-left: -47px;
+}

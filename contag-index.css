@@ -1,0 +1,11 @@
+.index-main {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 5%;
+  width: 100%;
+  margin: auto;
+}
+
+img {
+  max-width: 50vw;
+}

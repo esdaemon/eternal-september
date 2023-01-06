@@ -1,0 +1,24 @@
+body,
+html {
+  background: white;
+}
+
+.courier {
+  font-family: "Courier";
+  font-size: 12pt;
+}
+
+img {
+  display: inline-block;
+  margin: auto 0;
+}
+
+a,
+a:visited,
+[data-wiki] {
+  color: black;
+}
+
+[data-wiki]:hover {
+  color: hotpink;
+}

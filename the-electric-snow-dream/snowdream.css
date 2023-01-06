@@ -1,0 +1,126 @@
+@import url("https://fonts.googleapis.com/css2?family=Audiowide&family=VT323&display=swap");
+
+/* @keyframes alive-gradient {
+  0% {
+    background-color: #ea9999;
+    color: #434343;
+  }
+  10% {
+    background-color: #e06666;
+    color: #666666;
+  }
+  20% {
+    background-color: #cc0000;
+    color: #999999;
+  }
+  30% {
+    background-color: #990000;
+    color: #b7b7b7;
+  }
+  40% {
+    background-color: #660000;
+    color: #cccccc;
+  }
+  50% {
+    background-color: #434343;
+    color: #d9d9d9;
+  }
+  55% {
+    background-color: black;
+    color: #efefef;
+  }
+} */
+/* @keyframes alive-gradient {
+  0% {
+    background-color: blue;
+    color: hotpink;
+  }
+
+  50% {
+    background-color: lime;
+    color: red;
+  }
+
+  100% {
+    background-color: blue;
+    color: hotpink;
+  }
+} */
+
+body {
+  margin: auto;
+  align-items: center;
+  text-align: center;
+  background-color: black;
+  color: white;
+}
+main {
+  display: grid;
+  justify-content: center;
+  align-content: center;
+}
+section {
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  margin: auto 2%;
+  grid-template-columns: 1fr 1fr;
+  gap: 1%;
+}
+p {
+  font-family: "VT323", monospace;
+}
+h1 {
+  font-family: "Audiowide";
+  color: black;
+  background-color: white;
+}
+
+h1:hover,
+summary:hover {
+  box-shadow: 2px 2px hotpink;
+}
+h2 {
+  font-family: "Audiowide";
+  color: white;
+  padding: 10px;
+  margin: 0;
+}
+h2:hover {
+  text-shadow: 2px 2px hotpink;
+}
+
+/* .alive-in-the h2 {
+  animation-name: alive-gradient;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-delay: calc(var(--animation-order) * 400ms);
+} */
+
+a {
+  color: inherit;
+}
+
+a:visited {
+  color: inherit;
+}
+
+.snow-dream-img {
+  width: 100%;
+  max-width: 600px;
+  margin-top: 200px;
+}
+
+summary {
+  font-family: "Audiowide";
+  color: black;
+  background-color: white;
+  font-size: 1.5em;
+  margin-top: 19.92px;
+  cursor: pointer;
+}
+
+summary:focus {
+  outline: none;
+}
