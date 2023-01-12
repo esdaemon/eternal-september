@@ -67,6 +67,7 @@ export default function initWiki() {
     let errorTxt = await errorResponse.text();
 
     // show "error" wiki if lynk is wrong
+    //TODO -- what does this do
     txt.includes("Cannot GET /wiki/")
       ? (entry.innerHTML = errorTxt)
       : (entry.innerHTML = txt);
