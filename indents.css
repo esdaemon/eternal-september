@@ -7,8 +7,16 @@
   padding-left: 47px;
 }
 
+.pointsevenfive {
+  padding-left: 70.5px;
+}
+
 .one {
   margin-left: 93px;
+}
+
+.onepointtwofive {
+  margin-left: 116.5px;
 }
 
 .onepointfive {
@@ -25,6 +33,10 @@
 
 .twopointfive {
   margin-left: 233px;
+}
+
+.twopointsevenfive {
+  margin-left: 256.5px;
 }
 
 .three {
@@ -48,4 +60,8 @@
 
 .minusfive {
   margin-left: -47px;
+}
+
+.minustwofive {
+  margin-left: -233px;
 }
