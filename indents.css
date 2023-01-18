@@ -7,8 +7,16 @@
   padding-left: 47px;
 }
 
+.pointsevenfive {
+  padding-left: 70.5px;
+}
+
 .one {
   margin-left: 93px;
+}
+
+.onepointtwofive {
+  margin-left: 116.5px;
 }
 
 .onepointfive {
@@ -23,8 +31,16 @@
   margin-left: 187px;
 }
 
+.twopointtwofive {
+  margin-left: 209.5px;
+}
+
 .twopointfive {
   margin-left: 233px;
+}
+
+.twopointsevenfive {
+  margin-left: 256.5px;
 }
 
 .three {
@@ -42,10 +58,23 @@
 .fourpointfive {
   margin-left: 420px;
 }
+
+.five {
+  margin-left: 466px;
+}
+
 .six {
   margin-left: 560px;
 }
 
 .minusfive {
   margin-left: -47px;
+}
+
+.minustwofive {
+  margin-left: -233px;
+}
+
+.minusonefive {
+  margin-left: -140px;
 }

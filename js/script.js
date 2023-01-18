@@ -3,6 +3,7 @@ import windowResized from "./drawAcross.js";
 import initWiki from "./initWiki.js";
 import wikiTester from "./wikiTester.js";
 import ramper from "./ramper.js";
+import bar from "./bar.js";
 // modal variables
 
 window.onLoad = setup();
@@ -21,4 +22,6 @@ function setup() {
   }
 
   document.querySelectorAll(".ramper") ? ramper() : null;
+
+  document.querySelectorAll(".bar") ? bar() : null;
 }
