@@ -1,5 +1,6 @@
 // TODO fix wiki not appearing where it should when page is long
-// make wiki not visble if user scrolls it out of view
+// make wiki not visible if user scrolls it out of view
+// generate more fun error wiki programmatically
 
 export default function initWiki() {
   //insert modal
@@ -65,7 +66,11 @@ export default function initWiki() {
 
     let errorResponse = await fetch("/wiki/error.html");
     let errorTxt = await errorResponse.text();
-
+    // let errorTxt = function generateErrorWiki() {
+    //   // TODO: make this return redacted wiki
+    //   let errorHtml = ''
+    //   return errorHtml;
+    // }
     // show "error" wiki if lynk is wrong
     txt.includes("Cannot GET /wiki/")
       ? (entry.innerHTML = errorTxt)
