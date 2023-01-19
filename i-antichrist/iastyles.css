@@ -11,6 +11,10 @@ body {
   margin: 30px;
 }
 
+.yellowlight {
+  background-color: #fff2cc;
+}
+
 a,
 [data-wiki] {
   color: black;
