@@ -2,6 +2,8 @@
 // make wiki not visible if user scrolls it out of view
 // generate more fun error wiki programmatically
 
+import { generateErrorWiki } from "./errorWiki.js";
+
 export default function initWiki() {
   //insert modal
   // add << to "prev" button
@@ -64,13 +66,8 @@ export default function initWiki() {
     let response = await fetch(`/wiki/${entryID}.html`);
     let txt = await response.text();
 
-    let errorResponse = await fetch("/wiki/error.html");
-    let errorTxt = await errorResponse.text();
-    // let errorTxt = function generateErrorWiki() {
-    //   // TODO: make this return redacted wiki
-    //   let errorHtml = ''
-    //   return errorHtml;
-    // }
+    let errorTxt = generateErrorWiki();
+
     // show "error" wiki if lynk is wrong
     txt.includes("Cannot GET /wiki/")
       ? (entry.innerHTML = errorTxt)
