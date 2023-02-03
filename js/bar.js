@@ -7,14 +7,14 @@ export default function bar() {
     let style = element.dataset.style;
 
     let result = "";
-    let multispace = "&nbsp;".repeat(space)
     //.REPEAT() FUNCTION MAY NOT WORK ON INTERNET EXPLORER
 
     for (let i = 0; i < n; i++) {
-      result = result + multispace + `<span style="${style}">${char}</span>`;
+      let multispace = (i===0 ? '' : "&nbsp;".repeat(space))
+      result = result + multispace + `${char}`;
     }
     element.innerHTML = result;
   });
 }
 
-// example html: &emsp;<span class="bar" data-char="X" data-space="6" data-n="9" data-style="font-size:12px; font-family: 'Source Code Pro'"></span>
+// example html: <span style="font-size:13.5px; font-family: 'Source Code Pro'" class="bar pointfive" data-char="X" data-space="5" data-n="9"></span><br>
