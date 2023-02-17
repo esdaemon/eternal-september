@@ -6,92 +6,50 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>HYPERBOLIC TIME CHAMBER</title>
-  <link rel="stylesheet" type="text/css" href="../contag-index.css" />
+  <!-- <link rel="stylesheet" type="text/css" href="../contag-index.css" /> -->
+  <link rel="stylesheet" type="text/css" href="htc-style.css" />
   <style>
-    html {
-      background-image: url("htc-background.jpeg");
-      background-position: center;
-      background-size: cover;
+    img {
+      max-width: 50vw;
     }
 
-    body {
-      margin: 40px;
+    .doors {
+      position: relative;
+      display: block;
+      margin: 0 auto;
+    }
+
+    .door1 {
+      position: relative;
+      top: 0;
+      left: 0;
+    }
+
+    .door2 {
+      opacity: 0;
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 1;
+    }
+
+    .doors:hover .door2 {
+      opacity: 100;
+      transition: all 1s;
     }
   </style>
 
 </head>
 
 <body>
-  <h1>HYPERBOLIC TIME CHAMBER</h1>
-  <div class="index-main">
-    <img src="./htc-index.gif" alt="">
-    <div class="contag-index-li">
-      <ul>
-        <li><a href="#strange-turquoise-rotation">Strange Turquoise Rotation</a></li>
-        <li><a href="#jesus-of-nazareth">Jesus of Nazareth</a></li>
-        <li><a href="">Solitaire</a></li>
-        <li><a href="">Porsche Starship</a></li>
-        <li><a href="">Pokemon Incident</a></li>
-        <li><a href="">Hygera in Lygar</a></li>
-      </ul>
-    </div>
-  </div>
+  <h1 class="HTC-index-title">HYPERBOLIC TIME CHAMBER</h1>
+  <main>
+    <a class="doors" href="home.html">
+      <img src="./htc-images/DoorClosed.jpg" alt="" class="door1">
+      <img src="./htc-images/DoorOpen.jpg" alt="" class="door2">
+    </a>
+  </main>
 
-
-  <h2 id="strange-turquoise-rotation">Strange Turquoise Rotation</h2>
-  <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repudiandae commodi ipsum aliquam delectus exercitationem
-    ratione eius! Pariatur voluptatem magni illo id, corporis fugit ad quibusdam repellat, at, iste aliquid aliquam
-    cumque earum debitis exercitationem. Nemo consequuntur ex reiciendis, facilis debitis molestias excepturi? Accusamus
-    eveniet debitis dolore voluptates similique, ipsam enim?</p>
-  <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repudiandae commodi ipsum aliquam delectus exercitationem
-    ratione eius! Pariatur voluptatem magni illo id, corporis fugit ad quibusdam repellat, at, iste aliquid aliquam
-    cumque earum debitis exercitationem. Nemo consequuntur ex reiciendis, facilis debitis molestias excepturi? Accusamus
-    eveniet debitis dolore voluptates similique, ipsam enim?</p>
-  <h2 id="jesus-of-nazareth">Jesus of Nazareth</h2>
-  <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repudiandae commodi ipsum aliquam delectus exercitationem
-    ratione eius! Pariatur voluptatem magni illo id, corporis fugit ad quibusdam repellat, at, iste aliquid aliquam
-    cumque earum debitis exercitationem. Nemo consequuntur ex reiciendis, facilis debitis molestias excepturi? Accusamus
-    eveniet debitis dolore voluptates similique, ipsam enim?</p>
-  <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repudiandae commodi ipsum aliquam delectus exercitationem
-    ratione eius! Pariatur voluptatem magni illo id, corporis fugit ad quibusdam repellat, at, iste aliquid aliquam
-    cumque earum debitis exercitationem. Nemo consequuntur ex reiciendis, facilis debitis molestias excepturi? Accusamus
-    eveniet debitis dolore voluptates similique, ipsam enim?</p>
-  <h2>Solitaire</h2>
-  <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repudiandae commodi ipsum aliquam delectus exercitationem
-    ratione eius! Pariatur voluptatem magni illo id, corporis fugit ad quibusdam repellat, at, iste aliquid aliquam
-    cumque earum debitis exercitationem. Nemo consequuntur ex reiciendis, facilis debitis molestias excepturi? Accusamus
-    eveniet debitis dolore voluptates similique, ipsam enim?</p>
-  <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repudiandae commodi ipsum aliquam delectus exercitationem
-    ratione eius! Pariatur voluptatem magni illo id, corporis fugit ad quibusdam repellat, at, iste aliquid aliquam
-    cumque earum debitis exercitationem. Nemo consequuntur ex reiciendis, facilis debitis molestias excepturi? Accusamus
-    eveniet debitis dolore voluptates similique, ipsam enim?</p>
-  <h2>Porsche Starship</h2>
-  <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repudiandae commodi ipsum aliquam delectus exercitationem
-    ratione eius! Pariatur voluptatem magni illo id, corporis fugit ad quibusdam repellat, at, iste aliquid aliquam
-    cumque earum debitis exercitationem. Nemo consequuntur ex reiciendis, facilis debitis molestias excepturi? Accusamus
-    eveniet debitis dolore voluptates similique, ipsam enim?</p>
-  <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repudiandae commodi ipsum aliquam delectus exercitationem
-    ratione eius! Pariatur voluptatem magni illo id, corporis fugit ad quibusdam repellat, at, iste aliquid aliquam
-    cumque earum debitis exercitationem. Nemo consequuntur ex reiciendis, facilis debitis molestias excepturi? Accusamus
-    eveniet debitis dolore voluptates similique, ipsam enim?</p>
-  <h2>Pokemon Incident</h2>
-  <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repudiandae commodi ipsum aliquam delectus exercitationem
-    ratione eius! Pariatur voluptatem magni illo id, corporis fugit ad quibusdam repellat, at, iste aliquid aliquam
-    cumque earum debitis exercitationem. Nemo consequuntur ex reiciendis, facilis debitis molestias excepturi? Accusamus
-    eveniet debitis dolore voluptates similique, ipsam enim?</p>
-  <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repudiandae commodi ipsum aliquam delectus exercitationem
-    ratione eius! Pariatur voluptatem magni illo id, corporis fugit ad quibusdam repellat, at, iste aliquid aliquam
-    cumque earum debitis exercitationem. Nemo consequuntur ex reiciendis, facilis debitis molestias excepturi? Accusamus
-    eveniet debitis dolore voluptates similique, ipsam enim?</p>
-  <h2>Hygera in Lygar</h2>
-  <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repudiandae commodi ipsum aliquam delectus exercitationem
-    ratione eius! Pariatur voluptatem magni illo id, corporis fugit ad quibusdam repellat, at, iste aliquid aliquam
-    cumque earum debitis exercitationem. Nemo consequuntur ex reiciendis, facilis debitis molestias excepturi? Accusamus
-    eveniet debitis dolore voluptates similique, ipsam enim?</p>
-  <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repudiandae commodi ipsum aliquam delectus exercitationem
-    ratione eius! Pariatur voluptatem magni illo id, corporis fugit ad quibusdam repellat, at, iste aliquid aliquam
-    cumque earum debitis exercitationem. Nemo consequuntur ex reiciendis, facilis debitis molestias excepturi? Accusamus
-    eveniet debitis dolore voluptates similique, ipsam enim?</p>
 </body>
 
 </html>

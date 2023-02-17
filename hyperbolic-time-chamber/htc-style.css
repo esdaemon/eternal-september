@@ -1,0 +1,59 @@
+@font-face {
+  font-family: Migha;
+  src: url("../static/fonts/MighaLightsemiexpandedcntr-MVryw.otf")
+    format("opentype");
+}
+
+:root {
+  --htc: #48c6e1;
+}
+
+html {
+  background-color: black;
+}
+
+body {
+  font-family: Migha, sans;
+  margin: 40px;
+}
+
+main {
+  display: grid;
+  align-items: center;
+  align-content: center;
+}
+
+.HTC-title,
+.HTC-index-title {
+  color: var(--htc);
+}
+.HTC-title {
+  margin-bottom: 80px;
+}
+
+video {
+  max-width: 80vw;
+  min-width: 70vw;
+  box-shadow: 6px 6px white;
+  display: block;
+  margin: 0 auto;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
+}
+
+button {
+  font-family: Migha, sans;
+  color: var(--htc);
+  background-color: black;
+  border: 1px solid white;
+  box-shadow: 2px 2px white;
+  font-size: 20px;
+  padding: 6px 6px;
+}
+button:hover {
+  cursor: pointer;
+}

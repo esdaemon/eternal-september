@@ -61,7 +61,7 @@ export function generateErrorWiki() {
     "?",
   ];
   let redacteds = [
-    "███████ ██████ ███████████████ █████████████ ███████████ ███████████.",
+    "███████ ██████ ███████████████ █████████████ ███████████.",
     "███████████████████ ████████████████ ██████████████████ ████████████████.",
     "████████ █████████████████ ████████ █████ ████████:",
     "█████████████████ ████████ ███████ ██████ ███████████████ ███████ ███████████ ███████████.",
@@ -85,9 +85,19 @@ export function generateErrorWiki() {
     return arr.join(" ").toString();
   }
 
-  let errorHtml = `<p>█████ <strong>REDACTED</strong> ████<br></p><p>${getRedacted()}<br /><span class="glitch">${getGlitch(
+  function randomAlign() {
+    let rndm = Math.random();
+    console.log(rndm);
+    if (rndm > 0.8) {
+      return "right";
+    } else if (rndm > 0.4) {
+      return "center";
+    } else return "left";
+  }
+
+  let errorHtml = `<p>█████ <strong>REDACTEḐ̶̧̪͉̬͍̄͒͂̅͜</strong> ████<br></p><p>${getRedacted()}<br /><p style="text-align: ${randomAlign()};" class="glitch">${getGlitch(
     20
-  )}</span><br /> ${getRedacted()}</p><p> ${getRedacted()}</p><p style="text-align: right;" class="glitch">${
+  )}</p><br /> ${getRedacted()}</p><p> ${getRedacted()}</p><p style="text-align: ${randomAlign()};" class="glitch">${
     Math.random() > 0.5 ? "" : getGlitch(10)
   }</p><p> ${Math.random() > 0.5 ? "" : getRedacted()}</p>`;
   return errorHtml;

@@ -63,15 +63,17 @@ export default function initWiki() {
   async function wikiOpen(entryID, mousey, mousex) {
     //TODO -- add conditional that does something clever before trying to fetch if there is no entry in /entry
 
-    let response = await fetch(`/wiki/${entryID}.html`);
-    let txt = await response.text();
-
     let errorTxt = generateErrorWiki();
-
     // show "error" wiki if lynk is wrong
-    txt.includes("Cannot GET /wiki/")
-      ? (entry.innerHTML = errorTxt)
-      : (entry.innerHTML = txt);
+    if (entryID === "error") {
+      entry.innerHTML = errorTxt;
+    } else {
+      let response = await fetch(`/wiki/${entryID}.html`);
+      let txt = await response.text();
+      txt.includes("Cannot GET /wiki/")
+        ? (entry.innerHTML = errorTxt)
+        : (entry.innerHTML = txt);
+    }
 
     // adjust location based on click xy to avoid content leaving window
     if (wiki.style.visibility !== "visible") {
