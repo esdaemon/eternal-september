@@ -42,7 +42,7 @@
     body {
       /* background-color: rgb(193, 193, 193); */
       animation: fade 25s 1;
-      background-color: black;
+      background-color: white;
       opacity: 0;
       pointer-events: none;
       height: 100%;
@@ -53,9 +53,10 @@
 
 
     img {
-      width: 100%;
-      height: 100%; 
+      /* width: 100%;
+      height: 100%; */
       margin: auto;
+      filter: invert();
     }
 
     .es {
@@ -64,11 +65,15 @@
 
     a,
     a:visited {
-      color: white;
+      color: black;
     }
 
     a:hover {
       color: blue;
+    }
+
+    div {
+      margin-top: 33vh;
     }
   </style>
 </head>
@@ -76,13 +81,10 @@
 
 <body>
   <div>
+    <a href="./home-zones.html">
       <!-- <img class="es" src="./images/es.png" alt=""> -->
       <!-- <div><img src="./images/pent.gif" alt="pentagram gif"></div> -->
-
-
-      <!-- TODO: make this the pent gif from vol 1 -->
-    <a href="./index-zones.html">
-      <!-- <pre>
+      <pre>
         ███████╗████████╗███████╗██████╗ ███╗   ██╗ █████╗ ██╗       
         ██╔════╝╚══██╔══╝██╔════╝██╔══██╗████╗  ██║██╔══██╗██║       
         █████╗     ██║   █████╗  ██████╔╝██╔██╗ ██║███████║██║       
@@ -95,8 +97,7 @@
   ███████╗█████╗  ██████╔╝   ██║   █████╗  ██╔████╔██║██████╔╝█████╗  ██████╔╝  
   ╚════██║██╔══╝  ██╔═══╝    ██║   ██╔══╝  ██║╚██╔╝██║██╔══██╗██╔══╝  ██╔══██╗  
   ███████║███████╗██║        ██║   ███████╗██║ ╚═╝ ██║██████╔╝███████╗██║  ██║  
-  ╚══════╝╚══════╝╚═╝        ╚═╝   ╚══════╝╚═╝     ╚═╝╚═════╝ ╚══════╝╚═╝  ╚═╝  </pre> -->
-  <img src="https://ptrks.s3.amazonaws.com/eternal-september/pent-simp-1.gif" alt="">
+  ╚══════╝╚══════╝╚═╝        ╚═╝   ╚══════╝╚═╝     ╚═╝╚═════╝ ╚══════╝╚═╝  ╚═╝  </pre>
     </a>
   </div>
   <audio src="./audio/MetaSimTheme.mp3" autoplay></audio>
