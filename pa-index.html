@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <title>PHANTOM ARCHIVES</title>
+  <style>
+    @import url("https://use.typekit.net/hkv0hsz.css");
+    @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap');
+
+    body {
+      background-color: rgb(0, 0, 0);
+      background-image: url("./images/pa-index-floor.png");
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-attachment: fixed;
+      color: #ffffff;
+      height: 100%;
+      justify-content: center;
+      align-items: center;
+    }
+
+    img {
+      max-width: 20vw;
+      position: absolute;
+    }
+
+    #left-arrow {
+      position:absolute;
+      top: 60vh;
+      left: 20vw;
+      font-size: 15vw;
+    }
+
+    #right-arrow {
+      position:absolute;
+      top: 60vh;
+      left: 60vw;
+      font-size: 15vw;
+    }
+
+    #chess-button {
+      position:absolute;
+      top: 67vh;
+      left: 34.75vw;
+      font-size: 4vw;
+      padding: 5px;
+      background-color: #E6618A;
+      border: 2px groove #000000;
+      border-radius: 5px;
+    }
+
+    .nb-position {
+      display: none;
+    }
+
+    .ood-position {
+      display: none;
+    }
+
+    .esd-position {
+      display: none;
+    }
+
+    .dr-position {
+      display: none;
+    }
+
+    .active {
+      display: block;
+    }
+  </style>
+  <script type="text/javascript" src="./js/paChessWheel.js">
+  </script>
+</head>
+<!--
+  active position: top: 47vh; left: 40vw;
+  right position: top: 40vh; left: 75vw;
+  back position: top: 22vh; left: 38vw;
+  left position: top: 33vh; left: 5vw;
+-->
+
+<body>
+  <div class="nb-position chess active ">
+    <img src="./images/nb-icon.png" style="top: 47vh; left: 40vw;"/>
+    <img src="./images/ood-icon.png" style="top: 40vh; left: 75vw;"/>
+    <img src="./images/dr-icon.png" style="top: 22vh; left: 38vw;"/>
+    <img src="./images/esd-icon.png" style="top: 33vh; left: 5vw;"/>
+  </div>
+  <div class="ood-position chess ">
+    <img src="./images/ood-icon.png" style="top: 47vh; left: 40vw;"/>
+    <img src="./images/dr-icon.png" style="top: 40vh; left: 75vw;"/>
+    <img src="./images/esd-icon.png" style="top: 22vh; left: 38vw;"/>
+    <img src="./images/nb-icon.png" style="top: 33vh; left: 5vw;"/>
+  </div>
+  <div class="dr-position chess ">
+    <img src="./images/dr-icon.png" style="top: 47vh; left: 40vw;"/>
+    <img src="./images/esd-icon.png" style="top: 40vh; left: 75vw;"/>
+    <img src="./images/nb-icon.png" style="top: 22vh; left: 38vw;"/>
+    <img src="./images/ood-icon.png" style="top: 33vh; left: 5vw;"/>
+  </div>
+  <div class="esd-position chess ">
+    <img src="./images/esd-icon.png" style="top: 47vh; left: 40vw;"/>
+    <img src="./images/nb-icon.png" style="top: 40vh; left: 75vw;"/>
+    <img src="./images/ood-icon.png" style="top: 22vh; left: 38vw;"/>
+    <img src="./images/dr-icon.png" style="top: 33vh; left: 5vw;"/>
+  </div>
+  <!--TODO: SET FONT TO UNKNOWN RND-->
+  <span class="arrows" id="left-arrow">←</span>
+  <span id="chess-button">Digital Riptide</span>
+  <span class="arrows" id="right-arrow">→</span>
+</body>
+
+</html>
