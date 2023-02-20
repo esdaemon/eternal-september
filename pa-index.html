@@ -10,19 +10,20 @@
 
     body {
       background-color: rgb(0, 0, 0);
-      background-image: url("./images/pa-index-floor.png");
+      /* background-image: url("./images/pa-index-floor.png");
       background-size: contain;
       background-repeat: no-repeat;
       background-position: center;
-      background-attachment: fixed;
+      background-attachment: fixed; */
       color: #ffffff;
       height: 100%;
       justify-content: center;
       align-items: center;
+      text-align: center;
     }
 
     img {
-      max-width: 20vw;
+      max-width: 125px;
       position: absolute;
     }
 
@@ -70,6 +71,12 @@
     .active {
       display: block;
     }
+
+    .chessboard {
+      max-width: 1000px;
+      top: 100px;
+      left: 0px;
+    }
   </style>
   <script type="text/javascript" src="./js/paChessWheel.js">
   </script>
@@ -82,30 +89,36 @@
 -->
 
 <body>
+    <img src="./images/pa-index-floor.png" class="chessboard "/>
+
   <div class="nb-position chess active ">
-    <img src="./images/nb-icon.png" style="top: 47vh; left: 40vw;"/>
-    <img src="./images/ood-icon.png" style="top: 40vh; left: 75vw;"/>
-    <img src="./images/dr-icon.png" style="top: 22vh; left: 38vw;"/>
-    <img src="./images/esd-icon.png" style="top: 33vh; left: 5vw;"/>
+    <a href="./neon-babylon/index.html"><img src="./images/nb-icon.png" style="top: 450px; left: 375px;"/><a >
+    <a href="./octagon-of-dex/index.html"><img src="./images/ood-icon.png" style="top: 40%; left: 75%;"/><a >
+    <a href="digital-riptide/index.html"><img src="./images/dr-icon.png" style="top: 15%; left: 42%;"/><a >
+    <a href="the-electric-snow-dream/index.html"><img src="./images/esd-icon.png" style="top: 33%; left: 5%;"/><a >
   </div>
+
   <div class="ood-position chess ">
-    <img src="./images/ood-icon.png" style="top: 47vh; left: 40vw;"/>
-    <img src="./images/dr-icon.png" style="top: 40vh; left: 75vw;"/>
-    <img src="./images/esd-icon.png" style="top: 22vh; left: 38vw;"/>
-    <img src="./images/nb-icon.png" style="top: 33vh; left: 5vw;"/>
+    <a href="./octagon-of-dex/index.html"><img src="./images/ood-icon.png" style="top: 450px; left: 375px;"/><a >
+    <a href="digital-riptide/index.html"><img src="./images/dr-icon.png" style="top: 40%; left: 75%;"/><a >
+    <a href="the-electric-snow-dream/index.html"><img src="./images/esd-icon.png" style="top: 22%; left: 38%;"/><a >
+    <a href="./neon-babylon/index.html"><img src="./images/nb-icon.png" style="top: 33%; left: 5%;"/><a >
   </div>
+
   <div class="dr-position chess ">
-    <img src="./images/dr-icon.png" style="top: 47vh; left: 40vw;"/>
-    <img src="./images/esd-icon.png" style="top: 40vh; left: 75vw;"/>
-    <img src="./images/nb-icon.png" style="top: 22vh; left: 38vw;"/>
-    <img src="./images/ood-icon.png" style="top: 33vh; left: 5vw;"/>
+    <a href="digital-riptide/index.html"><img src="./images/dr-icon.png" style="top: 450px; left: 375px;"/>
+    <a href="the-electric-snow-dream/index.html"><img src="./images/esd-icon.png" style="top: 40%; left: 75%;"/><a >
+    <a href="./neon-babylon/index.html"><img src="./images/nb-icon.png" style="top: 22%; left: 38%;"/><a >
+    <a href="./octagon-of-dex/index.html"><img src="./images/ood-icon.png" style="top: 43%; left: 5%;"/><a >
   </div>
+
   <div class="esd-position chess ">
-    <img src="./images/esd-icon.png" style="top: 47vh; left: 40vw;"/>
-    <img src="./images/nb-icon.png" style="top: 40vh; left: 75vw;"/>
-    <img src="./images/ood-icon.png" style="top: 22vh; left: 38vw;"/>
-    <img src="./images/dr-icon.png" style="top: 33vh; left: 5vw;"/>
+    <a href="the-electric-snow-dream/index.html"><img src="./images/esd-icon.png" style="top: 450px; left: 375px;"/><a >
+    <a href="./neon-babylon/index.html"><img src="./images/nb-icon.png" style="top: 40vh; left: 75vw;"/><a >
+    <a href="./octagon-of-dex/index.html"><img src="./images/ood-icon.png" style="top: 22vh; left: 38vw;"/><a >
+    <a href="digital-riptide/index.html"><img src="./images/dr-icon.png" style="top: 33vh; left: 5vw;"/><a >
   </div>
+
   <!--TODO: SET FONT TO UNKNOWN RND-->
   <span class="arrows" id="left-arrow">←</span>
   <span id="chess-button">Digital Riptide</span>
