@@ -25,14 +25,13 @@
     opacity: 0;
   }
 }
-.HTC-index-title,
+
 .HTC-title,
 .buttons button {
   animation: fade 10s 1;
   opacity: 0;
 }
 
-.HTC-index-title:hover,
 .HTC-title:hover,
 .buttons button:hover,
 .visible {
