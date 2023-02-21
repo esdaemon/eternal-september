@@ -34,9 +34,10 @@ main {
 video {
   max-width: 80vw;
   min-width: 70vw;
-  box-shadow: 6px 6px white;
+  box-shadow: 5px 6px var(--htc);
   display: block;
   margin: 0 auto;
+  border: 1px solid white;
 }
 
 .buttons {
