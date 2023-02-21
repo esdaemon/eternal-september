@@ -87,7 +87,6 @@ export function generateErrorWiki() {
 
   function randomAlign() {
     let rndm = Math.random();
-    console.log(rndm);
     if (rndm > 0.8) {
       return "right";
     } else if (rndm > 0.4) {
