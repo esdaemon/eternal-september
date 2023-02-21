@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Key Detection</title>
+</head>
+<body>
+<script>
+
+const keySequence = [
+    'ArrowUp',
+    'ArrowUp',
+];
+let userInput = new Array( keySequence.length );
+
+document.body.insertAdjacentHTML(
+    "beforeend",
+    `<div class="wiki">
+      <div class="handle"><span class="close">𝕏</span></div>
+      <div class="not-handle">
+        <div class="entry"></div>
+        <button class="prev">&lt;&lt;previous entry</button>
+      </div>
+    </div>`
+  );
+
+  const wiki = document.querySelector(".wiki");
+  const wikiClose = document.querySelector(".close");
+  const handle = document.querySelector(".handle");
+  const entry = document.querySelector(".entry");
+  const prev = document.querySelector(".prev");
+
+  const wikiLinks = document.querySelectorAll("[data-wiki]");
+
+  let entryArray = [];
+
+  // add event listener to previous entry button
+  prev.addEventListener("click", () => {
+    entryArray.pop();
+    wikiOpen(entryArray[entryArray.length - 1]);
+    if (entryArray.length < 2) {
+      prev.style.visibility = "hidden";
+    }
+  });
+
+  // increment entry
+  function incEntry(entryID) {
+    if (entryID == entryArray[entryArray.length - 1]) {
+      return;
+    }
+    entryArray = [...entryArray, entryID];
+    if (entryArray.length > 1) {
+      prev.style.visibility = "visible";
+    }
+  }
+
+async function wikiOpen(entryID) {
+
+    let response = await fetch(`/wiki/${entryID}.html`);
+    let txt = await response.text();
+
+    let errorResponse = await fetch("/wiki/error.html");
+    let errorTxt = await errorResponse.text();
+
+    // show "error" wiki if lynk is wrong
+    txt.includes("Cannot GET /wiki/")
+      ? (entry.innerHTML = errorTxt)
+      : (entry.innerHTML = txt);
+
+      let innerWikiLinks = entry.querySelectorAll("[data-wiki]");
+    innerWikiLinks.forEach((link) =>
+      link.addEventListener("click", (e) => lynkClick(e))
+    );
+    wiki.style.visibility = "visible";
+}
+
+window.addEventListener( 'keydown', ( { key } ) => {
+    
+    
+    userInput = [ ...userInput.slice( 1 ), key ];
+
+    if ( keySequence.every( ( v, k ) => v === userInput[ k ] ) ) {
+        let entryname = window.prompt("enter wiki filename");
+        wikiOpen(entryname);
+    }
+
+} );
+
+
+</script>
+</body>
+</html>
