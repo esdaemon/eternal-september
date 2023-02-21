@@ -13,3 +13,9 @@ M̸͕̌͛É̶͙͐T̴̨͌͜Ḁ̸̆S̸̖̃́I̴̫̊M̸̤̍̓U̶͚͊̈L̴̮̹̈́̿A
 𝔼𝕋𝔼ℝℕ𝔸𝕃 𝕊𝔼ℙ𝕋𝔼𝕄𝔹𝔼ℝ
 
 𝟙𝟚𝟛𝟜𝟝𝟞𝟟𝟠𝟡𝟘
+
+rules:
+
+- no big files in the repo plz -- we'll host them elsewhere
+- [squoosh](https://squoosh.app/) images (or do something fancy with imagemagick if you want)
+- fun ascii stuff can be found here: [ascii generator](http://patorjk.com/software/taag/)

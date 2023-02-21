@@ -1,5 +1,8 @@
 // TODO fix wiki not appearing where it should when page is long
-// make wiki not visble if user scrolls it out of view
+// make wiki not visible if user scrolls it out of view
+// generate more fun error wiki programmatically
+
+import { generateErrorWiki } from "./errorWiki.js";
 
 export default function initWiki() {
   //insert modal
@@ -60,16 +63,17 @@ export default function initWiki() {
   async function wikiOpen(entryID, mousey, mousex) {
     //TODO -- add conditional that does something clever before trying to fetch if there is no entry in /entry
 
-    let response = await fetch(`/wiki/${entryID}.html`);
-    let txt = await response.text();
-
-    let errorResponse = await fetch("/wiki/error.html");
-    let errorTxt = await errorResponse.text();
-
+    let errorTxt = generateErrorWiki();
     // show "error" wiki if lynk is wrong
-    txt.includes("Cannot GET /wiki/")
-      ? (entry.innerHTML = errorTxt)
-      : (entry.innerHTML = txt);
+    if (entryID === "error") {
+      entry.innerHTML = errorTxt;
+    } else {
+      let response = await fetch(`/wiki/${entryID}.html`);
+      let txt = await response.text();
+      txt.includes("Cannot GET /wiki/")
+        ? (entry.innerHTML = errorTxt)
+        : (entry.innerHTML = txt);
+    }
 
     // adjust location based on click xy to avoid content leaving window
     if (wiki.style.visibility !== "visible") {
