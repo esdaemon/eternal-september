@@ -68,7 +68,7 @@ export default function initWiki() {
     if (entryID === "error") {
       entry.innerHTML = errorTxt;
     } else {
-      let response = await fetch(`/wiki/${entryID}.html`);
+      let response = await fetch(`../wiki/${entryID}.html`);
       let txt = await response.text();
       txt.includes("Cannot GET /wiki/")
         ? (entry.innerHTML = errorTxt)
