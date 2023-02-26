@@ -12,6 +12,7 @@ favicon.ico
 /farewell-villa-straylight
 /hyperbolic-time-chamber
 /i-antichrist
+/js
 /konami-dream
 /neon-babylon
 /octagon-of-dex
@@ -19,3 +20,4 @@ favicon.ico
 /phantom-archives
 /shepherds-of-apocrypha
 /spectral-peaks
+/wiki
