@@ -5,7 +5,15 @@
   width: 100%;
   margin: auto;
 }
-
+body {
+  margin: 4rem;
+}
 img {
   max-width: 50vw;
+  width: 100%;
+}
+
+a,
+a:visited {
+  color: inherit;
 }

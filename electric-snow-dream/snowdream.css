@@ -1,51 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Audiowide&family=VT323&display=swap");
 
-/* @keyframes alive-gradient {
-  0% {
-    background-color: #ea9999;
-    color: #434343;
-  }
-  10% {
-    background-color: #e06666;
-    color: #666666;
-  }
-  20% {
-    background-color: #cc0000;
-    color: #999999;
-  }
-  30% {
-    background-color: #990000;
-    color: #b7b7b7;
-  }
-  40% {
-    background-color: #660000;
-    color: #cccccc;
-  }
-  50% {
-    background-color: #434343;
-    color: #d9d9d9;
-  }
-  55% {
-    background-color: black;
-    color: #efefef;
-  }
-} */
-/* @keyframes alive-gradient {
-  0% {
-    background-color: blue;
-    color: hotpink;
-  }
-
-  50% {
-    background-color: lime;
-    color: red;
-  }
-
-  100% {
-    background-color: blue;
-    color: hotpink;
-  }
-} */
+@font-face {
+  font-family: Betatron;
+  src: url("../static/fonts/Betatron-Regular.otf") format("opentype");
+}
 
 body {
   margin: auto;
@@ -71,17 +29,20 @@ p {
   font-family: "VT323", monospace;
 }
 h1 {
-  font-family: "Audiowide";
+  font-family: "Betatron";
   color: black;
   background-color: white;
 }
+.electric-snow-dream-title {
+  font-size: 4rem;
+}
 
-h1:hover,
+.death-in-carthage:hover,
 summary:hover {
   box-shadow: 2px 2px hotpink;
 }
 h2 {
-  font-family: "Audiowide";
+  font-family: "Betatron";
   color: white;
   padding: 10px;
   margin: 0;
@@ -113,7 +74,7 @@ a:visited {
 }
 
 summary {
-  font-family: "Audiowide";
+  font-family: "Betatron";
   color: black;
   background-color: white;
   font-size: 1.5em;
