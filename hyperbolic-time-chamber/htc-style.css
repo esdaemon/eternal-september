@@ -16,6 +16,9 @@
   5% {
     opacity: 1;
   }
+  40% {
+    opacity: 1;
+  }
 
   99% {
     opacity: 0;
@@ -58,7 +61,7 @@ main {
   color: var(--htc);
 }
 .HTC-title {
-  margin-bottom: 80px;
+  margin-bottom: 2rem;
 }
 
 video {
