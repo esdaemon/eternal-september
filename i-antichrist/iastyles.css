@@ -1,0 +1,94 @@
+@import url(../spstyle.css);
+@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=VT323&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inknut+Antiqua:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300;400&display=swap");
+
+html,
+body {
+  background-color: white;
+  /* font-family: sans-serif; */
+  margin: 30px;
+}
+
+.yellowlight {
+  background-color: #fff2cc;
+}
+
+a,
+[data-wiki] {
+  color: black;
+}
+a:visited,
+[data-wiki] {
+  color: black;
+}
+a:hover,
+[data-wiki]:hover {
+  color: blue;
+}
+
+h2 {
+  font-weight: normal;
+}
+
+img {
+  border: 1px solid black;
+  box-shadow: 4px 4px black;
+}
+
+li {
+  font-family: monospace;
+}
+main {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+code {
+  font-family: "VT323", monospace;
+}
+
+.vt323 {
+  font-family: "VT323", monospace;
+}
+
+p code {
+  font-size: 14pt;
+}
+.pt10 p {
+  font-size: 10pt;
+}
+
+.pt10 div p {
+  font-size: 10pt;
+}
+.press-start {
+  font-family: "Press Start 2P";
+}
+
+.courier {
+  font-family: "Courier New", Courier, monospace;
+}
+
+.inknut {
+  font-family: "Inknut Antiqua", serif;
+}
+
+.down-arrow {
+  font-family: arial;
+  font-size: 25px;
+  margin: -20px 0px -50px 0px;
+}
+
+.sourcecode {
+  font-family: "Source Code Pro", monospace;
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.sourcecodelight {
+  font-family: "Source Code Pro", monospace;
+  font-size: 12px;
+  font-weight: 300;
+}

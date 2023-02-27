@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HYPERBOLIC TIME CHAMBER</title>
+  <!-- <link rel="stylesheet" type="text/css" href="../contag-index.css" /> -->
+  <link rel="stylesheet" type="text/css" href="htc-style.css" />
+  <style>
+    img {
+      max-width: 50vw;
+    }
+
+    .doors {
+      position: relative;
+      display: block;
+      margin: 0 auto;
+    }
+
+    .door1 {
+      position: relative;
+      top: 0;
+      left: 0;
+    }
+
+    .door2 {
+      opacity: 0;
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 1;
+    }
+
+    .doors:hover .door2 {
+      opacity: 100;
+      transition: all 1s;
+    }
+  </style>
+
+</head>
+
+<body>
+  <h1 class="HTC-index-title">HYPERBOLIC TIME CHAMBER</h1>
+  <main>
+    <a class="doors" href="home.html">
+      <img src="./htc-images/DoorClosed.jpg" alt="" class="door1">
+      <img src="./htc-images/DoorOpen.jpg" alt="" class="door2">
+    </a>
+  </main>
+
+</body>
+
+</html>
