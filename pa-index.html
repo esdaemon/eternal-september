@@ -14,6 +14,10 @@
       height: 100%;
     }
 
+    h1 {
+      color: white;
+    }
+
     img {
       max-width: 125px;
       position: absolute;
@@ -45,23 +49,24 @@
     }
 
     .nb-position {
-      display: none;
+      visibility: hidden;
     }
 
     .ood-position {
-      display: none;
+      visibility: hidden;
     }
 
     .esd-position {
-      display: none;
+      visibility: hidden;
     }
 
     .dr-position {
-      display: none;
+      visibility: hidden;
     }
 
     .active {
       display: block;
+      visibility: visible;
     }
 
     .chessboard {
@@ -69,15 +74,25 @@
       top: 100px;
       left: 0px;
     }
+
+    /* .icon1 {
+      position: absolute;
+      top: 50%;
+      left: 65%;
+      background-color: red;
+      width: 500px;
+      height: 50px;
+      display: block;
+      visibility: visible;
+    } */
+
   </style>
-  <script type="text/javascript" src="./js/paChessWheel.js">
-  </script>
 </head>
 
 <body>
-    <img src="./images/pa-index-floor.png" class="chessboard "/>
+  <img src="./images/pa-index-floor.png" class="chessboard "/>
 
-  <div class="nb-position chess active ">
+  <div class="nb-position chess ">
     <a href="./neon-babylon/index.html"><img src="./images/nb-icon.png" style="top: 450px; left: 375px;"/><a >
     <a href="./octagon-of-dex/index.html"><img src="./images/ood-icon.png" style="top: 40%; left: 75%;"/><a >
     <a href="digital-riptide/index.html"><img src="./images/dr-icon.png" style="top: 15%; left: 42%;"/><a >
@@ -109,6 +124,35 @@
   <span class="arrows" id="left-arrow">←</span>
   <span id="chess-button">Digital Riptide</span>
   <span class="arrows" id="right-arrow">→</span>
+
+  <script type="text/javascript">
+    function chessWheel() {
+      chessWheel.preventDefault();
+
+      // get a chessList of all the chess div boxes
+      const chessList = document.querySelectorAll('chess');
+
+      for (let i = 0; i < chessList.length; i++) {
+
+        // if div is active, that class name will be removed
+        if (chessList[i].classList.contains('active')) {
+          chessList[i].classList.remove('active');
+
+          // check whether you're at the end of chessList 
+          const nextIndex = i < chessList.length - 1 ? i + 1 : 0;
+
+          // and add the class that makes next (or first) div visible
+          chessList[nextIndex].classList.add(' active');
+
+          // exit the loop
+          break;
+        }
+      }
+    }
+
+    document.querySelector("chess").classList.add(" active");
+    document.getElementById("right-arrow").addEventListener("click", chessWheel);
+  </script>
 </body>
 
 </html>
