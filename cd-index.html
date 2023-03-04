@@ -54,8 +54,8 @@
 
 
     img {
-      max-height: 500px;
-      max-width: 33vw;
+      max-height: 100%;
+      max-width: 100%;
       width: auto;
       align-self: center;
     }
@@ -64,6 +64,25 @@
       display: flex;
       justify-content: center;
       align-items: center;
+    }
+
+    .tiles {
+      margin: 20px auto;
+      width: 100%;
+      height: 100%;
+      display: grid;
+      grid-template-columns: 33% 33% 33%;
+      grid-row: auto auto;
+      text-align: center;
+      column-gap: 1%;
+      row-gap: 5%;
+      font-family: "VT323";
+      font-size: 32px;
+    }
+    
+    .tile {
+      float: left;
+      margin-top: 1vh;
     }
   </style>
 </head>
@@ -85,6 +104,8 @@
     
     </pre>
   </div>
+
+<!-- 
   <div class="stuff">
     <img src="images/avalanche.png" alt="">
     <h2>
@@ -93,10 +114,38 @@
         <li><a href="./i-antichrist/">I, ANTICHRIST</a></li>
         <li><a href="./chronic-mindcrimes/">CHRONIC MINDCRIMES</a></li>
         <li><a href="./wiki-all.html">WIKI</a></li>
-        <!-- <li><a href="./shepherds-of-apocrypha/">SHEPHERDS OF APOCRYPHA</a></li> -->
+        <li><a href="./shepherds-of-apocrypha/">SHEPHERDS OF APOCRYPHA</a></li>
       </ol>
     </h2>
+  </div> 
+-->
+
+  <div class="tiles">
+  
+    <div>
+      <a href="./spectral-peaks/">
+        <img src="images/avalanche.png"/><br />
+        SPECTRAL PEAKS
+      </a>
+    </div>
+  
+    <div>
+      <a href="./i-antichrist/">
+        <img src="./images/sckfsh-IA.jpg"/><br />
+        I, ANTICHRIST
+      </a>
+    </div>
+        
+    <div>
+      <a href="./chronic-mindcrimes/">
+        <img src="./images/sckfsh-CM.jpg"/><br />
+        CHRONIC MINDCRIMES
+      </a>
+    </div>
   </div>
+
+  <spn style="position: fixed; bottom: 0; left: 0;" ><a href="./wiki-all.html">WIKI</a></spn >
+
   <audio src="./audio/main-index-theme.mp3" autoplay></audio>
   <!-- <script src="./js/indexScript.js"></script> -->
 </body>
