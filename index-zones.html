@@ -10,65 +10,58 @@
       background-image: url("./images/paper.gif"); 
     } */
 
-    #meta-index {
+    body {
       list-style-type: cjk-ideographic;
-      /* list of lists https://www.w3schools.com/css/tryit.asp?filename=trycss_list-style-type_all */
       font-family: "VT323";
       font-size: 32px;
-    }
-
-    .stuff {
-      display: grid;
-      /* align-items: center; */
-      grid-template-columns: 1fr 1fr;
-      gap: 5%;
-      width: 100%;
-      margin: auto;
     }
 
     a,
     a:visited {
       color: black;
+      clear: both;
+      line-height: 160%;
+      margin-top: 0;
     }
 
     a:hover {
       color: blue;
-    }
-
-    h2 {
+      clear: both;
+      line-height: 160%;
       margin-top: 0;
     }
 
-    li::marker {
-      font-family: "Roboto Mono";
-      font-size: 24px;
-    }
-
-    li {
-      padding: 0;
-      margin: 0;
-      list-style: none;
-      line-break: strict;
-      white-space: nowrap;
-    }
-
-
     img {
-      max-height: 500px;
-      max-width: 33vw;
       width: auto;
       align-self: center;
+      max-width: 80%;
+      filter: grayscale() contrast(1.5);
+      
     }
 
     .index-ascii {
       display: flex;
       justify-content: center;
       align-items: center;
+      font-size: 1.5vw;
+      margin-top: -50px;
+    }
+
+    .tiles {
+      margin: 20px auto;
+      width: 80%;
+      height: 80%;
+      display: grid;
+      grid-template-columns: 50% 50%;
+      grid-row: auto auto;
+      text-align: center;
+      column-gap: 1%;
+      row-gap: 5%;
     }
     
-    .icon {
-      max-height: 50px;
-      max-width: 50px;
+    .tile {
+      float: left;
+      margin-top: 1vh;
     }
   </style>
 </head>
@@ -76,33 +69,50 @@
 <body>
   <div class="index-ascii">
     <pre>
-      
-
-
-
       __/\\\\\\\\\\\\\\\_______/\\\\\_______/\\\\\_____/\\\__/\\\\\\\\\\\\\\\_____/\\\\\\\\\\\___        
-      _\////////////\\\______/\\\///\\\____\/\\\\\\___\/\\\_\/\\\///////////____/\\\/////////\\\_       
-       ___________/\\\/_____/\\\/__\///\\\__\/\\\/\\\__\/\\\_\/\\\______________\//\\\______\///__      
-        _________/\\\/______/\\\______\//\\\_\/\\\//\\\_\/\\\_\/\\\\\\\\\\\_______\////\\\_________     
-         _______/\\\/_______\/\\\_______\/\\\_\/\\\\//\\\\/\\\_\/\\\///////___________\////\\\______    
-          _____/\\\/_________\//\\\______/\\\__\/\\\_\//\\\/\\\_\/\\\_____________________\////\\\___   
-           ___/\\\/____________\///\\\__/\\\____\/\\\__\//\\\\\\_\/\\\______________/\\\______\//\\\__  
-            __/\\\\\\\\\\\\\\\____\///\\\\\/_____\/\\\___\//\\\\\_\/\\\\\\\\\\\\\\\_\///\\\\\\\\\\\/___ 
-             _\///////////////_______\/////_______\///_____\/////__\///////////////____\///////////_____
-     
-     
+       _\////////////\\\______/\\\///\\\____\/\\\\\\___\/\\\_\/\\\///////////____/\\\/////////\\\_       
+        ___________/\\\/_____/\\\/__\///\\\__\/\\\/\\\__\/\\\_\/\\\______________\//\\\______\///__      
+         _________/\\\/______/\\\______\//\\\_\/\\\//\\\_\/\\\_\/\\\\\\\\\\\_______\////\\\_________     
+          _______/\\\/_______\/\\\_______\/\\\_\/\\\\//\\\\/\\\_\/\\\///////___________\////\\\______    
+           _____/\\\/_________\//\\\______/\\\__\/\\\_\//\\\/\\\_\/\\\_____________________\////\\\___   
+            ___/\\\/____________\///\\\__/\\\____\/\\\__\//\\\\\\_\/\\\______________/\\\______\//\\\__  
+             __/\\\\\\\\\\\\\\\____\///\\\\\/_____\/\\\___\//\\\\\_\/\\\\\\\\\\\\\\\_\///\\\\\\\\\\\/___ 
+              _\///////////////_______\/////_______\///_____\/////__\///////////////____\///////////_____
     </pre>
   </div>
-  <div class="stuff">
-    <h2>
-      <ol id="meta-index" class="meta-index">
-        <li><a href="./cd-landing.html">CODEX DIGITAL<a ></li>
-        <li><a href="./pa-landing.html">PHANTOM ARCHIVES<a></li>
-        <li><a href="./hyperbolic-time-chamber/">HYPERBOLIC TIME CHAMBER<a ></li>
-        <li>SPECTRE COMPLEX</li>
-      </ol>
-    </h2>
+
+  <div class="tiles">
+  
+    <div>
+      <a href="./cd-landing.html">
+        <img src="./images/cd-brain-icon.png"/><br />
+        CODEX DIGITAL
+      </a>
+    </div>
+  
+    <div>
+      <a href="./pa-landing.html">
+        <img src="./images/pa_blue.png"/><br />
+        PHANTOM ARCHIVES
+      </a>
+    </div>
+        
+    <div>
+      <a href="">
+        <img src="./images/cd-brain-icon.png"/><br />
+        SPECTRE COMPLEX
+      </a>
+    </div>
+  
+    <div>
+      <a href="./hyperbolic-time-chamber/">
+        <img src="./images/cd-brain-icon.png"/><br />
+        <!-- HYPERBOLIC TIME CHAMBER -->HTC
+      </a>
+    </div>
+
   </div>
+
   <audio src="./audio/main-index-theme.mp3" autoplay></audio>
-  <!-- <script src="./js/indexScript.js"></script> -->
+
 </body>
