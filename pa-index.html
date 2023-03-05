@@ -287,7 +287,7 @@
   <!--TODO: SET FONT TO UNKNOWN RND-->
   <div class="nav">
     <button class="arrows" id="left-arrow">←</button>
-    <span id="chess-button">Digital Riptide</span>
+    <span id="chess-button">Neon Babylon</span>
     <button class="arrows" id="right-arrow">→</button>
   </div>
 
@@ -314,6 +314,14 @@
           break;
         }
       }
+    }
+
+    chessButton = document.getElementById('chess-button')
+    const contags = ["Neon Babylon", "Octagon of Dex", "Digital Riptide", "The Electric Snow Dream"]
+    let i = 0
+
+    const changeChessButton = () => {
+      chessButton.innerHTML = `${contags[i % 4]}`
     }
     
     const switchAnimCW = () => {
@@ -343,6 +351,9 @@
     const rotateCW = () => {
       swapCW()
       switchAnimCW()
+
+      i++
+      changeChessButton()
     }
 
     const switchAnimCCW = () => {
@@ -372,6 +383,9 @@
     const rotateCCW = () => {
       swapCCW()
       switchAnimCCW()
+
+      i--
+      changeChessButton()
     }
 
     // document.querySelector("chess").classList.add(" active");
