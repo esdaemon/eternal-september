@@ -13,7 +13,7 @@
     body {
       list-style-type: cjk-ideographic;
       font-family: "VT323";
-      font-size: 32px;
+      font-size: 2.25rem
     }
 
     a,
@@ -36,7 +36,7 @@
       align-self: center;
       max-width: 80%;
       filter: grayscale() contrast(1.5);
-      
+      margin-bottom: -15px;
     }
 
     .index-ascii {
@@ -44,24 +44,33 @@
       justify-content: center;
       align-items: center;
       font-size: 1.5vw;
-      margin-top: -50px;
+      margin-top: -35px;
+      height: 15vh;
     }
 
     .tiles {
       margin: 20px auto;
-      width: 80%;
-      height: 80%;
+      width: 40vw;
+      height: 50vh;
       display: grid;
       grid-template-columns: 50% 50%;
       grid-row: auto auto;
       text-align: center;
       column-gap: 1%;
       row-gap: 5%;
+      justify-items: center;
+      align-items: center;
     }
     
     .tile {
       float: left;
       margin-top: 1vh;
+      height: 80%;
+      width: 80%;
+    }
+
+    pre {
+      font-size: 2vh;
     }
   </style>
 </head>
@@ -83,28 +92,28 @@
 
   <div class="tiles">
   
-    <div>
+    <div class="tile">
       <a href="./cd-landing.html">
         <img src="static/images/cd-brain-icon.png"/><br />
         CODEX DIGITAL
       </a>
     </div>
   
-    <div>
+    <div class="tile">
       <a href="./pa-landing.html">
         <img src="static/images/pa_blue.png"/><br />
         PHANTOM ARCHIVES
       </a>
     </div>
         
-    <div>
+    <div class="tile">
       <a href="">
         <img src="static/images/cd-brain-icon.png"/><br />
         SPECTRE COMPLEX
       </a>
     </div>
   
-    <div>
+    <div class="tile">
       <a href="./hyperbolic-time-chamber/">
         <img src="static/images/cd-brain-icon.png"/><br />
         <!-- HYPERBOLIC TIME CHAMBER -->HTC

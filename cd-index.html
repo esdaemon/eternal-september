@@ -17,6 +17,10 @@
       font-size: 32px;
     }
 
+    body {
+      overflow: hidden;
+    }
+
     .stuff {
       display: grid;
       /* align-items: center; */
@@ -52,10 +56,9 @@
       white-space: nowrap;
     }
 
-
     img {
-      max-height: 100%;
-      max-width: 100%;
+      height: 80%;
+      width: 80%;
       width: auto;
       align-self: center;
     }
@@ -64,6 +67,7 @@
       display: flex;
       justify-content: center;
       align-items: center;
+      margin-top: -60px;
     }
 
     .tiles {
@@ -78,11 +82,14 @@
       row-gap: 5%;
       font-family: "VT323";
       font-size: 32px;
+      margin-bottom: -35px;
     }
     
     .tile {
       float: left;
       margin-top: 1vh;
+      /* height: 80%;
+      width: 80%; */
     }
   </style>
 </head>
@@ -107,21 +114,21 @@
 
   <div class="tiles">
   
-    <div>
+    <div class="tile">
       <a href="./spectral-peaks/">
         <img src="static/images/avalanche.png"/><br />
         SPECTRAL PEAKS
       </a>
     </div>
   
-    <div>
+    <div class="tile">
       <a href="./i-antichrist/">
         <img src="static/images/sckfsh-IA.jpg"/><br />
         I, ANTICHRIST
       </a>
     </div>
         
-    <div>
+    <div class="tile">
       <a href="./chronic-mindcrimes/">
         <img src="static/images/sckfsh-CM.jpg"/><br />
         CHRONIC MINDCRIMES
@@ -129,7 +136,7 @@
     </div>
   </div>
 
-  <spn style="position: fixed; bottom: 0; left: 0;" ><a href="./wiki-all.html">WIKI</a></spn >
+  <spn style="position: fixed; bottom: 0; left: 0;" ><a href="wiki/wiki-all.html">WIKI</a></spn >
 
   <audio src="./audio/main-index-theme.mp3" autoplay></audio>
   <!-- <script src="./js/indexScript.js"></script> -->
