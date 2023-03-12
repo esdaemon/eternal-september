@@ -37,7 +37,7 @@
 }
 .HTC-title,
 .buttons button {
-  animation: fade 1s;
+  animation: fade 6s;
   opacity: 0;
 }
 
@@ -48,7 +48,7 @@
 }
 
 html {
-  background-color: black;
+  background-color: rgb(0, 0, 0);
 }
 
 body {
@@ -71,13 +71,10 @@ main {
 }
 
 video {
-  max-width: 80vw;
-  min-width: 70vw;
-  max-height: 70vh;
-  box-shadow: 5px 6px var(--htc);
+  width: 100%;
+  max-height: 80vh;
   display: block;
   margin: 0 auto;
-  border: 1px solid white;
 }
 
 .square-video {
@@ -107,6 +104,7 @@ button {
 
 .next-button:hover {
   opacity: 100%;
+  cursor: pointer;
 }
 
 .leave-button:hover {

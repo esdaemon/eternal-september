@@ -6,9 +6,11 @@
 
 html,
 body {
-  background-color: white;
-  /* font-family: sans-serif; */
+  /* background-color: #d8f34e; */
+  font-family: Times, serif;
   margin: 30px;
+  background-image: url(../static/images/paper.gif);
+  /* background-blend-mode: multiply; */
 }
 
 .yellowlight {
@@ -19,13 +21,13 @@ a,
 [data-wiki] {
   color: black;
 }
-a:visited,
-[data-wiki] {
-  color: black;
-}
 a:hover,
 [data-wiki]:hover {
   color: blue;
+}
+a:visited,
+[data-wiki] {
+  color: inherit;
 }
 
 h2 {
@@ -36,13 +38,23 @@ img {
   border: 1px solid black;
   box-shadow: 4px 4px black;
 }
-
-li {
-  font-family: monospace;
+.ia-ascii {
+  border: 1px solid black;
+  box-shadow: 4px 4px black;
+  background-color: #ff5baa;
+  /* background-color: #d8f34e; */
 }
+
+.entry-list {
+  margin: 0;
+  padding: 2rem;
+}
+
 main {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  max-width: 100%;
 }
 
 code {
