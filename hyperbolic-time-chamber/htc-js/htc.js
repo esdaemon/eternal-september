@@ -29,6 +29,6 @@ function getRndmUrl() {
   );
 }
 
-const timer = setTimeout(() => {
-  next.classList.remove("next-button");
-}, 2000);
+// const timer = setTimeout(() => {
+//   next.classList.remove("next-button");
+// }, 2000);

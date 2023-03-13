@@ -2,41 +2,256 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0" /> -->
   <title>𝔻𝕀𝔾𝕀𝕋𝔸𝕃 ℝ𝕀ℙ𝕋𝕀𝔻𝔼</title>
-  <link rel="stylesheet" type="text/css" href="../contag-index.css" />
-  <link rel="stylesheet" href="./dr-styles.css">
+  <link rel="stylesheet" href="../spstyle.css" />
+  <link rel="stylesheet" href="../player.css" />
+  <link rel="stylesheet" href="dr-styles.css" />
 
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+    }
+
+    .dr-top {
+      height: 100vh;
+      width: 100%;
+      margin: 0;
+      padding: 0;
+      background-color: #362389;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .pa-arrow {
+      width: 90px;
+      border: none;
+      box-shadow: none;
+      margin: 0 30px;
+    }
+
+    .right {
+      transform: scaleX(-1);
+    }
+
+    .pa-nav {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .pa-nav a {
+      display: flex;
+      justify-content: center;
+    }
+
+    .pa-logo {
+      border: none;
+      box-shadow: none;
+      width: 13%;
+      margin: 0;
+    }
+
+    .pa-icon-title {
+      display: flex;
+      justify-content: space-around;
+
+    }
+
+    .pa-icon-title img {
+      margin: 0;
+      border: none;
+      box-shadow: none;
+    }
+
+    .pa-icon-title h1 {
+      font-size: 10rem;
+      color: #D3B2E2;
+      text-shadow: 4px 4px black;
+      font-weight: normal;
+
+    }
+
+    main {
+      margin: 40px;
+    }
+  </style>
 </head>
 
 <body>
-  <!-- <pre class="dr-ascii">
-    _____    _____   ______  _____  _______          _         
-   (____ \  (_____) / _____)(_____)(_______)   /\   | |        
-    _   \ \    _   | /  ___    _    _         /  \  | |        
-   | |   | |  | |  | | (___)  | |  | |       / /\ \ | |        
-   | |__/ /  _| |_ | \____/| _| |_ | |_____ | |__| || |_____   
-   |_____/  (_____) \_____/ (_____) \______)|______||_______)  
-                                                               
-    ______   _____  ______   _______  _____  _____    _______  
-   (_____ \ (_____)(_____ \ (_______)(_____)(____ \  (_______) 
-    _____) )   _    _____) ) _          _    _   \ \  _____    
-   (_____ (   | |  |  ____/ | |        | |  | |   | ||  ___)   
-         | | _| |_ | |      | |_____  _| |_ | |__/ / | |_____  
-         |_|(_____)|_|       \______)(_____)|_____/  |_______) 
-    </pre> -->
-  <h1 class="digital-riptide-index-title">Digital Riptide</h1>
-  <div class="index-main">
-    <img src="./dr-images/digital-riptide-index.png" alt="">
-    <div class="contag-index-li">
-      <ul>
-        <li><a href="./pink-twilight.html">Pink Twilight</a></li>
-        <li><a href="./into-the-turqoise.html">Into The Turqoise</a></li>
-      </ul>
+  <section class="dr-top">
+    <nav class="pa-nav">
+      <img class="left pa-arrow" src="./dr-images/arrow-purple.svg"></img>
+      <a href="../phantom-archives/pa-index.html"><img class="pa-logo" src="./dr-images/pa_purple.png" alt=""></a>
+      <img class="right pa-arrow" src="./dr-images/arrow-purple.svg"></img>
+    </nav>
+
+    <div class="pa-icon-title">
+      <img src="./dr-images/digital-riptide-icon.png" alt="">
+      <h1>Digital<br />Riptide</h1>
     </div>
-  </div>
+  </section>
+  <main>
+    <h1>
+      "PINK TWILIGHT"<br>
+      (feat. Gordon Voidwell)
+    </h1>
+    <video>
+      <source
+        src="https://prismic-io.s3.amazonaws.com/eternal-september/cbdc7c97-9496-4c65-a898-f38125b631e8_smaller-pink-twilight.mp4"
+        type="video/mp4">
+    </video>
+    <div class="spacer"></div>
+    <div class="audio-player">
+      <div class="controls">
+        <button class="play-pause">
+          ▷
+        </button>
+        <input type="range" class="seekbar"></input>
+        <span class="volume-icon">
+          ⏦
+        </span>
+        <input title="volume" type="range" class="volume"></input>
+      </div>
+    </div>
+    <div class="spacer"></div>
+    <div class="lyrics code">
+      <p>
+        all that i've known since the moment you said it <br>
+        and all that i want is to know if you meant it<br>
+        in this abyss of useless rumination<br>
+        froze in the pose of endless hesitation<br>
+        pounding the walls like i'm framed in a photo<br>
+        calling your name like a <span data-wiki="ornithomancy">crow</span> in a tunnel<br>
+        bury my mind in the bright ice of metal<br>
+        but all i can hear is you calling me baby
+      </p>
+      <p class="one"><em>(you called me "baby")</em></p>
+    </div>
+    <div id="into-the-turquoise">
+      <h1>
+        Into the Turquoise
+      </h1>
+      <img src="./dr-images/into-the-turquoise.jpeg" alt="black hole" />
+      <div class="spacer"></div>
+      <audio>
+        <source
+          src="https://prismic-io.s3.amazonaws.com/eternal-september/e6cb697e-cbd1-4362-9554-264022e4daa6_IntoTheTurquoise.mp3"
+          type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>
+      <div class="audio-player">
+        <div class="controls">
+          <button class="play-pause">
+            ▷
+          </button>
+          <input type="range" class="seekbar"></input>
+          <span class="volume-icon">
+            ⏦
+          </span>
+          <input type="range" class="volume"></input>
+        </div>
+      </div>
+      <div class="spacer"></div>
+
+      <div class="lyrics">
+        <h2 class="press-start">XXXXXXXXXXXXXXXXXXXXX</h2>
+
+        <p class="poemTitle pointfive"><strong>Into the Turquoise</strong></p>
+
+        <p>
+          i am thinking back <br />
+          <span class="pointfive">to the <span data-wiki="event-horizon">event horizon</span></span>
+          <br />
+          <span class="tenpt pointfive">&emsp;&emsp;to the event horizon <br /></span>
+          <span class="eightpt one">to the event horizon</span>
+        </p>
+        <div class="spacer"></div>
+        <p>
+          thinking back about wet skin in a dark pond<br />
+          <span class="pointfive">going back into the turquoise its getting darker</span><br />
+          <span class="one">thinking back about pale light on a tanline </span><br />
+          <span class="onepointfive">going back into the twilight but now its darker</span>
+        </p>
+        <div class="smallspacer"></div>
+        <p class="one">
+          sit back <span class="inlinespace">melt ice</span>
+          <span class="inlinespace">roll paper</span>
+        </p>
+        <p class="onepointfive tenpt">
+          sit back <span class="inlinespace">melt ice</span>
+          <span class="inlinespace">roll paper</span>
+        </p>
+        <p class="two eightpt">
+          sit back <span class="inlinespace">melt ice</span>
+          <span class="inlinespace">roll paper</span>
+        </p>
+        <div class="spacer"></div>
+        <p class="two">
+          <em>there is real and there is turquoise</em>
+        </p>
+
+        <p class="two">(the sun felt so good on my skin)</p>
+        <p class="spacedout">. . . . . . . . . . . . .</p>
+        <div class="press-start">
+          <p class="spacedout2">bitz bitz bitz bitz</p>
+        </div>
+        <p class="center">blonde lockes turn green in the water</p>
+        <div class="press-start">
+          <p class="spacedout2">bitz bitz bitz bitz</p>
+        </div>
+
+        <p class="center">sit back melt ice roll paper</p>
+
+        <div class="press-start">
+          <p class="spacedout2">bitz bitz bitz bitz</p>
+        </div>
+
+        <p class="center">
+          <em>a shadowfax of neon, mint mist in the peroxide</em>
+        </p>
+        <p class="spacedout">. . . . . . . . . . . . .</p>
+
+        <p class="onepointfive">
+          <span class="minusfive">i can hide by making mirrors</span> <br />
+          mirrors that mirror and <br />
+          make more mirrors
+        </p>
+
+        <p class="two">
+          rolled up like mercury pooling <br />
+          this videotex is shaman
+        </p>
+
+        <p class="three">
+          <span class="minusfive">i take the rightful place </span><br />
+          on the throne of <br />
+          the throne of <br />
+          <span class="one fade">oblivion</span>
+        </p>
+        <p class="spacedout">. . . . . . . . . . . . .</p>
+
+        <p class="spacedout2">
+          what <span class="press-start">bitz</span> of&ensp;what
+          <span class="press-start">bitz</span>
+        </p>
+
+        <p class="one">of what</p>
+
+        <p class="onepointfive">
+          oblivion oblivion <br />
+          <span class="two">/\ </span><br />
+          <span class="onepointfive"><span data-wiki="he-man">i have the power</span></span>
+        </p>
+
+        <p class="spacedout">. . . . . . . . . . . . .</p>
+
+        <h2 class="press-start">XXXXXXXXXXXXXXXXXXXXX</h2>
+      </div>
+    </div>
+  </main>
+  <script type="module" src="../js/dr-script.js"></script>
 </body>
 
 </html>
