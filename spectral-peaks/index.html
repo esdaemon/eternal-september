@@ -11,26 +11,36 @@
   <link rel="stylesheet" type="text/css" href="../spstyle.css" />
   <style>
     body {
-      background-image: url('..static/images/paper.gif');
+      background-image: url('../static/images/');
     }
 
-    img {
-      width: 66%;
+    .container {
+      display: grid;
+      grid-template-columns: 1fr 5fr;
+      grid-template-rows: 1fr;
+      gap: 12px;
+      width: 100%;
+    }
+
+    .poem {
+      padding: 30px;
     }
   </style>
 </head>
 
 <body>
-  <p><a class="homeButton" href="/home-zones.html">𝔼𝕋𝔼ℝℕ𝔸𝕃 𝕊𝔼ℙ𝕋𝔼𝕄𝔹𝔼ℝ</a></p>
+  <p><a class="homeButton" href="/home-zones.html">ℂ𝕆𝔻𝔼𝕏 𝔻𝕀𝔾𝕀𝕋𝔸𝕃</a></p>
 
 
   <!-- <h1 style="font-family:'Times New Roman', Times, serif; font-weight: normal;">SPECTRAL PEAKS</h1> -->
-  <img src="./images/spektral-peaks.png" alt="">
+  <img class="spIndexAscii border" src="./images/spindex.jpg" alt="">
   <!-- <p class="poemTitle">
-      <strong>Index</strong>
-    </p> -->
-  <div class="spIndex">
-    <p>
+        <strong>Index</strong>
+      </p> -->
+
+  <div class="container">
+    <p class="spIndex border">
+      <strong>INDEX:</strong> <br>
       <a href="./silver-walls.html">Silver Walls</a> <br />
       <a href="./phantom-city.html">Phantom City</a> <br />
       <a href="./od-on-vaporwave.html">O.D. on Vaporwave</a>
@@ -75,12 +85,126 @@
       <br />
       <a href="./spectral-peaks.html">Spectral Peaks</a>
     </p>
+    <div class="poem border">
+      <p><a class="homeButton" href="../es-index.html">𝔼𝕋𝔼ℝℕ𝔸𝕃 𝕊𝔼ℙ𝕋𝔼𝕄𝔹𝔼ℝ</a></p>
+
+
+
+      <p class="poemTitle">
+        <strong><span data-wiki="asphodel-meadows">Asphodel Meadows</span><a href="" class="Ω">Ω</a></strong>
+      </p>
+      <p>
+        Through the use of my
+        <span data-wiki="coltan">coltan</span> fantastic<sup>1</sup> <br>
+        I’ve come to know the rivers of the underworld
+      </p>
+
+      <div class="move-arrow" id="move-arrow1"></div>
+
+      <p class="pointfive">
+        <span class="code">Styx</span> ::&nbsp prominent, labyrinthian, early ’80’s<br>
+        <span class="code">Acheron</span> ::&nbsp the river of pain, darkly erotic, Burgundian<br>
+        <span class="code"> <span data-wiki="asphodel-meadows">Lethe</span></span> ::&nbsp gateway to oblivion,
+        scrambled
+        <span data-wiki="skinemax">Skinemax</span> <br>
+        <span class=" code">Phelgethon</span> ::&nbsp molten, flows thru Tartarus, re:UFC<br>
+        <span class="code">Cocytus</span> ::&nbsp made of tears, strangely sanguine<br>
+        <span class="code">Oceanus</span> ::&nbsp edge of the mortal world, Californian<br>
+      </p>
+
+      <div class="move-arrow" id="move-arrow2"></div>
+
+      <p>
+        <span class="code pointfive"> <span data-wiki="gowanus-canal">Gowanus</span></span> ::&nbsp spans lost dolphin
+        graveyard, purple-er
+        than
+        Newtown Creek
+      </p>
+      <p class="onepointfive">(I’ve come to think of traffic <br>
+        as something nefarious</p>
+
+      <p class="onepointfive"><span class="minusfive">like &emsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;banana-flavored
+          fluoride
+        </span> <br>
+        salads at a steakhouse<br>
+        flavor crystal gum</p>
+      <p class="onepointfive">
+        <em>a poignance in the air</em> <br>
+        <em> like kimchi’s ferment)</em>
+      </p>
+      <div class="move-arrow" id="move-arrow3"></div>
+      <span class="code pointfive">Charon</span> ::&nbsp I have brought with me an
+      <span data-wiki="obolus">Obolus</span> <br>
+      <!-- links to self *ready* -->
+      <span class="code pointfive"><span data-wiki="error">Kosuzcko Bridge</span></span> ::&nbsp the toll remains unpaid
+      </p>
+      <p class="onepointfive">(a reckoning will come via the post)</p>
+      <div class="move-arrow" id="move-arrow4"></div>
+      <p><span class="code onepointfive">Quotidian Rebirth</span> ::</p>
+      <p class="two">
+        <em>in burial comes not defeat but<br>
+          <span class="pointfive">
+            endless (dot)wavs of
+            <span data-wiki="apocrypha">Apocrypha</span>.
+          </span></em>
+      </p>
+      <br>
+      <div class="footnote">
+        <p>
+          <!-- links to "Ma Bell" -->
+          <sup>1</sup><span data-wiki="error">Nokia</span> smartphone.
+        </p>
+      </div>
+
+
+      <script type="module">
+        import initWiki from "../js/initWiki.js";
+
+        initWiki();
+
+        function arrowSetup() {
+          //arrow variables
+          let speed = 0.6;
+          let angle = 0;
+          let framerate = 100;
+          let arrowLength = 16;
+          let arrowChr1 = "-";
+          let arrowChr2 = ">";
+          let myArrow1, myArrow2, myArrow3, myArrow4, angleFunction;
+
+          myArrow1 = setInterval(drawArrow, framerate, arrowLength, "move-arrow1");
+          myArrow2 = setInterval(drawArrow, framerate, arrowLength - 8, "move-arrow2");
+          myArrow3 = setInterval(drawArrow, framerate, arrowLength - 11, "move-arrow3");
+          myArrow4 = setInterval(drawArrow, framerate, arrowLength - 13, "move-arrow4");
+          angleFunction = setInterval(() => (angle += speed), framerate);
+          function drawArrow(al, id) {
+            let arrowString = "";
+            let x = Math.floor(map_range(angle % 9, 0, 9, 0, al));
+
+            for (let i = 0; i < al; i++) {
+              if (i == x) {
+                arrowString += arrowChr2;
+              } else arrowString += arrowChr1;
+            }
+            if (document.getElementById(id)) {
+              document.getElementById(id).innerHTML = arrowString;
+            }
+          }
+        }
+        // replicates p5.js map() function
+        function map_range(value, low1, high1, low2, high2) {
+          return low2 + ((high2 - low2) * (value - low1)) / (high1 - low1);
+        }
+        arrowSetup();
+      </script>
+    </div>
   </div>
+
   <audio
     src="https://prismic-io.s3.amazonaws.com/eternal-september/893a1129-057a-4090-97fd-a1b8517df2d2_Spectral+Peaks+Theme.mp3"
     autoplay loop></audio>
 
-  <pre>
+  <!-- <pre>
                .                      ,;        .,                                                              
               ;W  t                 f#i        ,Wt             j.                                     i
              f#E  ED.             .E#t        i#D.  GEEEEEEEL  EW,                     ..            LE
@@ -109,7 +233,7 @@
                     E#L;;;;;;,      ,WW;       G##i,,G##,  E#t   jD   .D#j
                     E#t              .D#;    :K#K:   L##,  j#t       ,WK,
                     E#t                tt   ;##D.    L##,   ,;       EG.
-  </pre>
+  </pre> -->
 </body>
 
 </html>
