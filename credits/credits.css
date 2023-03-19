@@ -175,6 +175,32 @@ body {
 
 /***************************************************************************/
 
+@import url("https://themes.googleusercontent.com/fonts/css?kit=xWek9Q675IxrFNkDvAHFcbjx_xCWwqgXWei6oZPXc80");
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+
+:root {
+  font-family: "VT323";
+  --dark-grey: #434343;
+  --pink: #ea9999;
+  --turq: #a2c4c9;
+  --blue: #1155cc;
+}
+
+p {
+    margin-top: 0.4rem;
+    margin-bottom: 0.4rem;
+    color: var(--dark-grey);
+}
+
+a {
+    color: var(--pink);
+    padding: 0;
+}
+  
+  a:visited {
+    color: var(--pink);
+}
+
 
 .container {
     width: 75vw;
@@ -191,6 +217,12 @@ body {
     font-size: 5rem;
     font-weight: 400;
     color: #094cff;
+    background-image: linear-gradient(45deg, #094cff 10%, #ccc);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    -moz-background-clip: text;
+
     text-decoration: solid;
     -webkit-text-stroke-color: black;
     -webkit-text-stroke-width: 0.2rem;
@@ -232,6 +264,51 @@ h2::selection {
 .content {
     position: relative;
     top: -2vh;
+}
+
+img {
+    max-width: 100%;
+    min-width: 100%;
+    aspect-ratio: 1/1;
+    object-fit: contain;
+    filter: grayscale(100%);
+}
+
+.imgs {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80%;
+
+    margin-top: 2%;
+    margin-bottom: 4%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 2%;
+}
+
+figure {
+    display: grid;
+    margin: 0;
+    padding-bottom: 0.8rem;
+}
+  
+figcaption {
+    text-align: center;
+}
+
+figcaption p {
+    font-size: 1rem;
+    padding: 0;
+    margin: 0.2rem;
+}
+
+.production figcaption {
+    text-align: left;
+}
+
+.description {
+    font-size: 0.9rem;
 }
 
 h3 {
@@ -333,7 +410,7 @@ h3 {
     to {height: 500px}
 }
 
-.description {
+.description1 {
     font-family: ff-real-headline-pro-2,sans-serif;
     font-weight: 400;
     font-style: normal;
