@@ -3,60 +3,116 @@
 
 <head>
   <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
   <title>Octagon of Dex</title>
-  <link rel="stylesheet" type="text/css" href="../contag-index.css" />
+  <link rel="stylesheet" href="../spstyle.css" />
+  <link rel="stylesheet" href="../player.css" />
+  <link rel="stylesheet" href="ood-styles.css" />
+
   <style>
-    @font-face {
-      font-family: General Station;
-      src: url("../static/fonts/GeneraleStation-SemiExtended.otf") format("opentype");
-    }
-
     body {
+      margin: 0;
+      padding: 0;
+    }
+
+    .ood-top {
+      height: 100vh;
+      width: 100vw;
+      margin: 0;
+      padding: 0;
       background-color: #106E88;
+      display: flex;
+      flex-direction: column;
     }
 
-    h1,
-    h3 {
-      font-family: "General Station";
-      color: #51D8D2
+    .pa-arrow {
+      width: 90px;
+      border: none;
+      box-shadow: none;
+      margin: 0 30px;
     }
 
-    h1 {
-      font-size: 4rem;
+    .right {
+      transform: scaleX(-1);
     }
 
-    a:hover {
+    .pa-nav {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .pa-nav a {
+      display: flex;
+      justify-content: center;
+    }
+
+    .pa-logo {
+      border: none;
+      box-shadow: none;
+      width: 13%;
+      margin: 0;
+    }
+
+    .pa-icon-title {
+      display: flex;
+      justify-content: space-around;
+      margin-top: 20vh;
+    }
+
+    .pa-icon-title img {
+      margin: 0;
+      border: none;
+      box-shadow: none;
+    }
+
+    .pa-icon-title h1 {
+      font-size: 5rem;
+      color: #51D8D2;
+      text-shadow: 4px 4px black;
+      font-weight: normal;
+    }
+
+    main {
+      margin: 40px;
+    }
+
+    main h1 {
+      font-size: 3rem;
+    }
+
+    /* a:hover {
       color: #AD348B
-    }
+    } */
   </style>
 </head>
 
 <body>
-  <h1>Octagon of Dex</h1>
-  <div class="index-main">
-    <img src="../static/images/ood-icon.png" alt="">
-    <div class="contag-index-li">
-      <ul>
-        <li>
-          <h3><a href="">My Nepenthe</a></h3>
-        </li>
-        <li>
-          <h3><a href="">Octagon of Dex (theme from Wintermute)</a></h3>
-        </li>
-        <li>
-          <h3><a href="">Skynet Syndrome</a></h3>
-        </li>
-        <li>
-          <h3><a href="">Kodak Boy</a></h3>
-        </li>
-        <li>
-          <h3><a href="">Burning Chrome</a></h3>
-        </li>
-      </ul>
+  <section class="ood-top">
+    <nav class="pa-nav">
+      <img class="left pa-arrow" src="./ood-images/cyan-arrow.svg"/>
+      <a href="../phantom-archives/pa-index.html"><img class="pa-logo" src="./ood-images/PA.png" alt=""></a>
+      <img class="right pa-arrow" src="./ood-images/cyan-arrow.svg"/>
+    </nav>
+
+    <div class="pa-icon-title">
+      <img src="./ood-images/ood-icon.svg" alt="">
+      <h1>Octagon<br /> of Dex</h1>
     </div>
-  </div>
+  </section>
+
+  <main>
+    <h1>My Nepenthe</h1>
+    <div class="spacer"></div>
+    <h1>Octagon of Dex<br />(theme from Wintermute)</h1>
+    <div class="spacer"></div>
+    <h1>Skynet Syndrome</h1>
+    <div class="spacer"></div>
+    <h1>Kodak Boy</h1>
+    <div class="spacer"></div>
+    <h1>Burning Chrome</h1>
+  </main>
+
 </body>
 
 </html>
