@@ -3,15 +3,97 @@
 
 <head>
   <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
   <title>𝔼𝕝𝕖𝕔𝕥𝕣𝕚𝕔 𝕊𝕟𝕠𝕨 𝔻𝕣𝕖𝕒𝕞</title>
-  <link rel="stylesheet" href="./snowdream.css">
+  <link rel="stylesheet" href="../spstyle.css" />
+  <link rel="stylesheet" href="../player.css" />
+  <link rel="stylesheet" href="esd-styles.css" />
   <style>
+    body {
+      margin: 0;
+      padding: 0;
+      overflow-x: hidden;
+    }
+
+    .esd-top {
+      height: 100vh;
+      width: 100vw;
+      margin: 0;
+      padding: 0;
+      background-color: #094CFF;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .pa-arrow {
+      width: 90px;
+      border: none;
+      box-shadow: none;
+      margin: 0 30px;
+    }
+
+    .right {
+      transform: scaleX(-1);
+    }
+
+    .pa-nav {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .pa-nav a {
+      display: flex;
+      justify-content: center;
+    }
+
+    .pa-logo {
+      border: none;
+      box-shadow: none;
+      width: 13%;
+      margin: 0;
+    }
+
+    .pa-icon-title {
+      display: flex;
+      justify-content: space-around;
+    }
+
+    .pa-icon-title img {
+      margin: 0;
+      border: none;
+      box-shadow: none;
+      max-width: 35vw;
+    }
+
+    .pa-icon-title h1 {
+      font-size: 9rem;
+      color: #81BEE0;
+      text-shadow: 4px 4px black;
+      font-weight: normal;
+    }
+
+    main {
+      margin: 40px;
+    }
   </style>
 </head>
 
 <body>
+  <section class="esd-top">
+    <nav class="pa-nav">
+      <img class="left pa-arrow" src="./esd-images/arrow-blue.svg"/>
+      <a href="../phantom-archives/pa-index.html"><img class="pa-logo" src="./esd-images/PA.png" alt=""></a>
+      <img class="right pa-arrow" src="./esd-images/arrow-blue.svg"/>
+    </nav>
+
+    <div class="pa-icon-title">
+      <img src="./esd-images/electric-snowdream_pixel.png" alt="">
+      <h1>Electric<br />Snow Dream</h1>
+    </div>
+  </section>
+
+
   <h1 class="electric-snow-dream-title">ELECTRIC SNOW DREAM</h1>
   <img src="./snow-dream-img/esd-icon.png" alt="">
   <section class="alive-in-the">
