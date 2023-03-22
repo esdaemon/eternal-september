@@ -28,28 +28,6 @@ dormantList.forEach(dormant => {
     })
 })
 
-let toggle = 0
-const hamburger = document.getElementById('hamburger')
-const menu = document.querySelector('.menu')
-console.log(menu.style.width)
-menuWidth = window.innerWidth > 600 ? '-50vw' : '-90vw'
-hamburger.addEventListener('click', () => {
-    toggleMenu()
-})
-
-menu.addEventListener('touchmove', toggleMenu)
-
-function toggleMenu() {
-    if (!toggle) {
-        menu.style.transform = `translateX(${menuWidth})`
-        toggle = 1
-    } else {
-        menu.style.transform = 'translateX(-1vw)'
-        toggle = 0
-    }
-}
-
-
 
 // let currIndex = 0
 // let startPos = 0;
