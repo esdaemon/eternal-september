@@ -30,7 +30,7 @@ export default function windowResized() {
   // find line break classes then draw across w/ characters and scale
   // new version using class
   slashes = new drawAcrossClass("slashes", "/", 7);
-  dashes = new drawAcrossClass("dashes", "—", 17.5);
+  dashes = new drawAcrossClass("dashes", "—", 25);
   periods = new drawAcrossClass("periods", ".", 5);
   infinity = new drawAcrossClass("infinity", "∞", 13);
   slashes.doTheDraw();
