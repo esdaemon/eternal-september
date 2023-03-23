@@ -9,87 +9,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Spectral Peaks</title>
   <link rel="stylesheet" type="text/css" href="../spstyle.css" />
-  <style>
-    body {
-      background-image: url('../static/images/');
-    }
-
-    .container {
-      display: grid;
-      grid-template-columns: 1fr 5fr;
-      grid-template-rows: 1fr;
-      gap: 12px;
-      width: 100%;
-    }
-
-    .poem {
-      padding: 30px;
-    }
-  </style>
 </head>
 
 <body>
-  <p><a class="homeButton" href="/home-zones.html">ℂ𝕆𝔻𝔼𝕏 𝔻𝕀𝔾𝕀𝕋𝔸𝕃</a></p>
-
-
-  <!-- <h1 style="font-family:'Times New Roman', Times, serif; font-weight: normal;">SPECTRAL PEAKS</h1> -->
-  <img class="spIndexAscii border" src="./images/spindex.jpg" alt="">
-  <!-- <p class="poemTitle">
-        <strong>Index</strong>
-      </p> -->
-
-  <div class="container">
-    <p class="spIndex border">
-      <strong>INDEX:</strong> <br>
-      <a href="./silver-walls.html">Silver Walls</a> <br />
-      <a href="./phantom-city.html">Phantom City</a> <br />
-      <a href="./od-on-vaporwave.html">O.D. on Vaporwave</a>
-      <br />
-      <a href="./beautiful-dreamer.html">Beautiful Dreamer</a>
-      <br />
-      <a href="./asphodel-meadows.html">Asphodel Meadows</a>
-      <br />
-      <a href="./delorean-days.html">DeLorean Days</a> <br />
-      <a href="./in-america.html">In America</a><br />
-      <a href="./i-love-you-chris-marker.html">I Love You Chris Marker</a>
-      <br />
-      <a href="./commando-in-syntax.html">Commando in Syntax</a>
-      <br />
-      <a href="./i-heart-ice.html">i . heart . ice</a> <br />
-      <a href="./cygnet-of-orient.html">Cygnet of Orient</a>
-      <br />
-      <a href="./normcore.html">NormCore™</a> <br />
-      <a href="./tikrit-imagined.html">Tikrit, Imagined</a>
-      <br />
-      <a href="./poison-the-daylight.html">Poison the Daylight</a>
-      <br />
-      <a href="./god-of-condo.html">GOD OF CONDO</a> <br />
-      <a href="./dillinger-is-dead.html">Dillinger is Dead</a><br />
-      <a href="./love-theme-from-stalker.html">"Love Theme" from <em>Stalker</em></a>
-      <br />
-      <a href="./aping-the-eucharist.html">Aping the Eucharist</a><br />
-      <a href="./predator-at-bay.html">Predator at Bay</a>
-      <br />
-      <a href="./altered-id.html">Altered Id</a> <br />
-      <a href="./codex.html">###CODEX###</a><br />
-      <a href="./necropolis.html">Necropolis</a> <br />
-      <a href="./hadean-lands.html">Hadean Lands</a> <br />
-      <a href="./burgundy-fairchild.html">Burgundy Fairchild</a><br />
-      <a href="./pantheon-of-dust.html">Pantheon of Dust</a>
-      <br />
-      <a href="./without-chasms.html">Without Chasms </a><br />
-      <a href="./future-crime.html">Future Crime</a> <br />
-      <a href="./the-clairvoyant.html">The Clairvoyant </a><br />
-      <a href="./from-the-white-moon-of-solaris-the-pinkish-sentient-ocean.html">From the White Moon of Solaris,
-        the Pinkish Sentient Ocean</a>
-      <br />
-      <a href="./spectral-peaks.html">Spectral Peaks</a>
-    </p>
+  <p><a class="homeButton" href="../codex-digital/cd-index.html">ℂ𝕆𝔻𝔼𝕏 𝔻𝕀𝔾𝕀𝕋𝔸𝕃</a></p>
+  <img class="sp-ascii border" src="./images/spindex.jpg" alt="incredibly cool spectral peaks banner">
+  <div class="sp-main">
+    <sp-index></sp-index>
     <div class="poem border">
-      <p><a class="homeButton" href="../es-index.html">𝔼𝕋𝔼ℝℕ𝔸𝕃 𝕊𝔼ℙ𝕋𝔼𝕄𝔹𝔼ℝ</a></p>
-
-
-
       <p class="poemTitle">
         <strong><span data-wiki="asphodel-meadows">Asphodel Meadows</span><a href="" class="Ω">Ω</a></strong>
       </p>
@@ -155,85 +82,55 @@
           <sup>1</sup><span data-wiki="error">Nokia</span> smartphone.
         </p>
       </div>
-
-
-      <script type="module">
-        import initWiki from "../js/initWiki.js";
-
-        initWiki();
-
-        function arrowSetup() {
-          //arrow variables
-          let speed = 0.6;
-          let angle = 0;
-          let framerate = 100;
-          let arrowLength = 16;
-          let arrowChr1 = "-";
-          let arrowChr2 = ">";
-          let myArrow1, myArrow2, myArrow3, myArrow4, angleFunction;
-
-          myArrow1 = setInterval(drawArrow, framerate, arrowLength, "move-arrow1");
-          myArrow2 = setInterval(drawArrow, framerate, arrowLength - 8, "move-arrow2");
-          myArrow3 = setInterval(drawArrow, framerate, arrowLength - 11, "move-arrow3");
-          myArrow4 = setInterval(drawArrow, framerate, arrowLength - 13, "move-arrow4");
-          angleFunction = setInterval(() => (angle += speed), framerate);
-          function drawArrow(al, id) {
-            let arrowString = "";
-            let x = Math.floor(map_range(angle % 9, 0, 9, 0, al));
-
-            for (let i = 0; i < al; i++) {
-              if (i == x) {
-                arrowString += arrowChr2;
-              } else arrowString += arrowChr1;
-            }
-            if (document.getElementById(id)) {
-              document.getElementById(id).innerHTML = arrowString;
-            }
-          }
-        }
-        // replicates p5.js map() function
-        function map_range(value, low1, high1, low2, high2) {
-          return low2 + ((high2 - low2) * (value - low1)) / (high1 - low1);
-        }
-        arrowSetup();
-      </script>
     </div>
   </div>
+
+  <script type="module">
+    import initWiki from "../js/initWiki.js";
+
+    initWiki();
+
+    function arrowSetup() {
+      //arrow variables
+      let speed = 0.6;
+      let angle = 0;
+      let framerate = 100;
+      let arrowLength = 16;
+      let arrowChr1 = "-";
+      let arrowChr2 = ">";
+      let myArrow1, myArrow2, myArrow3, myArrow4, angleFunction;
+
+      myArrow1 = setInterval(drawArrow, framerate, arrowLength, "move-arrow1");
+      myArrow2 = setInterval(drawArrow, framerate, arrowLength - 8, "move-arrow2");
+      myArrow3 = setInterval(drawArrow, framerate, arrowLength - 11, "move-arrow3");
+      myArrow4 = setInterval(drawArrow, framerate, arrowLength - 13, "move-arrow4");
+      angleFunction = setInterval(() => (angle += speed), framerate);
+      function drawArrow(al, id) {
+        let arrowString = "";
+        let x = Math.floor(map_range(angle % 9, 0, 9, 0, al));
+
+        for (let i = 0; i < al; i++) {
+          if (i == x) {
+            arrowString += arrowChr2;
+          } else arrowString += arrowChr1;
+        }
+        if (document.getElementById(id)) {
+          document.getElementById(id).innerHTML = arrowString;
+        }
+      }
+    }
+    // replicates p5.js map() function
+    function map_range(value, low1, high1, low2, high2) {
+      return low2 + ((high2 - low2) * (value - low1)) / (high1 - low1);
+    }
+    arrowSetup();
+  </script>
+  <script src="../js/components/sp-index.js"></script>
+
 
   <audio
     src="https://prismic-io.s3.amazonaws.com/eternal-september/893a1129-057a-4090-97fd-a1b8517df2d2_Spectral+Peaks+Theme.mp3"
     autoplay loop></audio>
-
-  <!-- <pre>
-               .                      ,;        .,                                                              
-              ;W  t                 f#i        ,Wt             j.                                     i
-             f#E  ED.             .E#t        i#D.  GEEEEEEEL  EW,                     ..            LE
-           .E#f   E#K:           i#W,        f#f    ,;;L#K;;.  E##j                   ;W,           L#E
-          iWW;    E##W;         L#D.       .D#i        t#E     E###D.                j##,          G#W.
-         L##Lffi  E#E##t      :K#Wfff;    :KW,         t#E     E#jG#W;              G###,         D#K.
-        tLLG##L   E#ti##f     i##WLLLLt   t#f          t#E     E#t t##f           :E####,        E#K.
-          ,W#i    E#t ;##D.    .E#L        ;#G         t#E     E#t  :K#E:        ;W#DG##,      .E#E.
-         j#E.     E#ELLE##K:     f#E:       :KE.       t#E     E#KDDDD###i      j###DW##,     .K#E
-       .D#j       E#L;;;;;;,      ,WW;       .DW:      t#E     E#f,t#Wi,,,     G##i,,G##,    .K#D
-      ,WK,        E#t              .D#;        L#,     t#E     E#t  ;#W:     :K#K:   L##,   .W#G
-      EG.         E#t                tt         jt      fE     DWi   ,KK:   ;##D.    L##,  :W##########Wt
-      ,                                                  :                  ,,,      .,,   :,,,,,,,,,,,,,.
-                                                                                                          
-                                                                                                          
-                                                                                                          
-                                        ,;                 G:                 .                           
-                    t                 f#i                  E#,    :          ;W
-                    ED.             .E#t               ..  E#t  .GE         f#E
-                    E#K:           i#W,               ;W,  E#t j#K;       .E#f
-                    E##W;         L#D.               j##,  E#GK#f        iWW;
-                    E#E##t      :K#Wfff;            G###,  E##D.        L##Lffi
-                    E#ti##f     i##WLLLLt         :E####,  E##Wi       tLLG##L
-                    E#t ;##D.    .E#L            ;W#DG##,  E#jL#D:       ,W#i
-                    E#ELLE##K:     f#E:         j###DW##,  E#t ,K#j     j#E.
-                    E#L;;;;;;,      ,WW;       G##i,,G##,  E#t   jD   .D#j
-                    E#t              .D#;    :K#K:   L##,  j#t       ,WK,
-                    E#t                tt   ;##D.    L##,   ,;       EG.
-  </pre> -->
 </body>
 
 </html>
