@@ -70,7 +70,7 @@
 }
 
 body {
-  margin: 20px 120px;
+  margin: 20px 80px;
   padding: 0;
   box-sizing: border-box;
   scroll-behavior: smooth;
@@ -80,6 +80,7 @@ body {
   justify-content: center;
   /* min-width: 580px; */
   background-color: var(--sp-grey);
+  background-image: url("../static/images/paper.gif");
   /* background-image: url("./images/paper.gif"); */
   /* background-color: #d8d8d8; */
   /* scrollbar-width: thin;
@@ -127,6 +128,9 @@ em::selection {
 
 .poemTitle {
   padding-bottom: 20px;
+}
+.poem {
+  padding: 30px;
 }
 
 strong {
@@ -244,20 +248,15 @@ th {
   border: 2px solid black;
 }
 
-.spIndexAscii {
-  padding: 10px 350px;
+.sp-ascii {
+  width: 500px;
+  align-self: center;
 }
+
 .border {
   border: 1px solid var(--lines);
   box-shadow: 5px 5px 0 -1px var(--sp-grey), 5px 5px var(--lines);
   background: rgb(209, 209, 209);
-}
-
-.spIndex {
-  padding: 10px;
-  margin: 0;
-  font-family: "Chicago", monospace;
-  line-height: 25px;
 }
 
 .homeButton:visited {
@@ -267,4 +266,12 @@ th {
 .homeButton:hover {
   color: hotpink;
   cursor: pointer;
+}
+
+.sp-main {
+  display: grid;
+  grid-template-columns: 1fr 5fr;
+  grid-template-rows: 1fr;
+  gap: 12px;
+  width: 100%;
 }
