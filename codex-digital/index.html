@@ -21,19 +21,110 @@
     }
 
     a:hover {
-      color: blue;
+      color: #4a22d7;
     }
 
     div {
       margin-top: 33vh;
+    }
+
+    /* h1 {
+        position: relative;
+        top: 25vh;
+        text-align: center;
+        /* color: rgb(52, 246, 42);
+        color: paleturquoise;
+        font-family: dotgothic16, sans-serif;
+        font-size: 5rem;
+    } 
+    */
+
+    .period {
+      display: none;
+    }
+
+    .normal {
+      animation: flicker1 1500ms;
+      animation-iteration-count: infinite;
+    }
+
+    .x {
+        animation: x-shift 5000ms ease-in-out;
+        animation-fill-mode: forwards;
+    }
+
+    .hyphen {
+        color: paleturquoise;
+        animation: hyphenate 7000ms ease-in-out;
+        animation-fill-mode: forwards;
+    }
+
+    @keyframes x-shift {
+        0% {
+            font-size: 5rem;
+            margin-left: 0rem;
+            color: paleturquoise;
+        }
+
+        25% {
+            color: palegoldenrod;
+        }
+
+        50% {
+            font-size: 8rem;
+            margin-left: 2rem;
+            color: palegreen;
+        }
+
+        62% {
+            color: palevioletred;
+        }
+
+        75% {
+            font-size: 8rem;
+            margin-left: 2rem;
+            color: white;
+        }
+
+        100% {
+            font-size: 6.5rem;
+            margin-left: 0rem;
+            color: paleturquoise;
+        }
+    }
+
+    .x {
+        animation: x-shift 7000ms ease-in-out;
+        animation-fill-mode: forwards;
+    }
+
+    @keyframes hyphenate {
+        0% {
+            font-size: 0rem;
+            opacity: 0%;
+        }
+
+        25% {
+            font-size: 5rem;
+            opacity: 0%;
+        }
+
+        75% {
+            font-size: 5rem;
+            opacity: 0%;
+        }
+
+        100% {
+            font-size: 5rem;
+            opacity: 100%;
+        }
     }
   </style>
 </head>
 
 
 <body>
-<!--
-  <pre>
+  <pre class="period">
     
 
  ██████╗ ██████╗ ██████╗ ███████╗   ██╗  ██╗    
@@ -53,10 +144,9 @@
 
 
   </pre>
--->
 
     <a href="./cd-index.html">
-  <pre>
+  <pre class="normal">
          ██████╗ ██████╗ ██████╗ ███████╗██╗  ██╗     
         ██╔════╝██╔═══██╗██╔══██╗██╔════╝╚██╗██╔╝     
         ██║     ██║   ██║██║  ██║█████╗   ╚███╔╝      
