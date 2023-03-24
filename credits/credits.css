@@ -315,6 +315,11 @@ figcaption p {
     margin: 0.1rem;
 }
 
+.production {
+    position: relative;
+    left: 15vw;
+}
+
 .production figcaption {
     text-align: left;
 }
