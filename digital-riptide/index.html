@@ -6,7 +6,6 @@
   <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0" /> -->
   <title>𝔻𝕀𝔾𝕀𝕋𝔸𝕃 ℝ𝕀ℙ𝕋𝕀𝔻𝔼</title>
   <link rel="stylesheet" href="../spstyle.css" />
-  <link rel="stylesheet" href="../player.css" />
   <link rel="stylesheet" href="dr-styles.css" />
 
   <style>
@@ -73,6 +72,10 @@
 
     }
 
+    es-video {
+      margin: 0;
+    }
+
     main {
       margin: 40px;
     }
@@ -97,24 +100,9 @@
       "PINK TWILIGHT"<br>
       (feat. Gordon Voidwell)
     </h1>
-    <video>
-      <source
-        src="https://prismic-io.s3.amazonaws.com/eternal-september/cbdc7c97-9496-4c65-a898-f38125b631e8_smaller-pink-twilight.mp4"
-        type="video/mp4">
-    </video>
-    <div class="spacer"></div>
-    <div class="audio-player">
-      <div class="controls">
-        <button class="play-pause">
-          ▷
-        </button>
-        <input type="range" class="seekbar"></input>
-        <span class="volume-icon">
-          ⏦
-        </span>
-        <input title="volume" type="range" class="volume"></input>
-      </div>
-    </div>
+    <es-video
+      src="https://prismic-io.s3.amazonaws.com/eternal-september/cbdc7c97-9496-4c65-a898-f38125b631e8_smaller-pink-twilight.mp4">
+    </es-video>
     <div class="spacer"></div>
     <div class="lyrics code">
       <p>
@@ -135,7 +123,8 @@
       </h1>
       <img src="./dr-images/into-the-turquoise.jpeg" alt="black hole" />
       <div class="spacer"></div>
-      <audio>
+      <h4 style="text-align: center">[add into the turquoise audio player here or replace with video]</h4>
+      <!-- <audio>
         <source
           src="https://prismic-io.s3.amazonaws.com/eternal-september/e6cb697e-cbd1-4362-9554-264022e4daa6_IntoTheTurquoise.mp3"
           type="audio/mpeg">
@@ -152,7 +141,7 @@
           </span>
           <input type="range" class="volume"></input>
         </div>
-      </div>
+      </div> -->
       <div class="spacer"></div>
 
       <div class="lyrics">
@@ -252,6 +241,7 @@
     </div>
   </main>
   <script type="module" src="../js/dr-script.js"></script>
+  <script src="../js/components/ESVideoPlayer.js"></script>
 </body>
 
 </html>
