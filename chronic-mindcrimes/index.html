@@ -12,11 +12,17 @@
     @import url('https://fonts.googleapis.com/css2?family=Electrolize&family=Quantico&family=Share+Tech+Mono&display=swap');
     @import url('https://fonts.googleapis.com/css2?family=Electrolize&family=Quantico&family=Share+Tech+Mono&display=swap');
     @import url('https://fonts.googleapis.com/css2?family=Electrolize&family=Quantico&family=Share+Tech+Mono&family=VT323&display=swap');
+    @font-face {
+      font-family: LunchTime;
+      src: url('/static/fonts/LunchDS.ttf');
+    }
 
     .titlebox {
       background-color: #101010;
       color: white;
       margin: auto;
+      width: 100vw;
+      background: linear-gradient(to right, rgba(0,0,0,255), rgba(0,0,0,0));
     }
 
     html {
@@ -31,13 +37,12 @@
     }
 
     body {
-    width: 60vw;
-    margin: auto;
-    padding-top: 35px;
-    background-color: rgb(19, 12, 35);
-    background-image: url("../static/images/paper2.jpg");
-    background-blend-mode: exclusion;
-    background-position: center;
+      margin: auto;
+      padding-top: 35px;
+      background-color: rgb(19, 12, 35);
+      background-image: url("../static/images/paper2.jpg");
+      background-blend-mode: exclusion;
+      background-position: center;
     }
 
     p {
@@ -49,11 +54,13 @@
     .bucket1 {
       background-color:black;
       color: #72c6ff;
+      padding: 10px;
     }
 
     .bucket2 {
       background-color:navy;
       color:rgb(255, 255, 255);
+      padding: 10px;
     }
 
     .bucket2 p {
@@ -62,8 +69,9 @@
     }
 
     .bucket3 {
-      background-color:antiquewhite;
-      color:darkolivegreen;
+      background-color:rgb(0, 91, 70);
+      color:rgb(169, 253, 216);
+      padding: 10px;
     }
 
     ol {
@@ -71,16 +79,30 @@
     }
 
     .chronicTitle {
-      font-family: 'Quantico', sans-serif;
+      font-family: 'LunchTime';
     }
 
     .heading {
-      font-size: 40px;
+      font-size: 45px;
     }
 
     img {
       padding: 10px;
       max-width: 30%;
+    }
+
+    .border {
+      padding: 0px;
+      margin: 0px;
+    }
+
+    .sp-main {
+      width: 60vw;
+      margin: auto;
+    }
+
+    pre {
+      /* margin: auto; */
     }
   </style>
 
@@ -120,7 +142,7 @@
     <div class="poem border">
       <div class="bucket2">
         <img src="./images/moonpic2.png" class="moonPic" />
-        <p class="chronicTitle heading" style="font-size: 30px; font-family: 'Courier';">
+        <p class="chronicTitle heading">
             <strong>Pink Twilight Theory</strong>
         </p>
         <p>
