@@ -254,6 +254,10 @@ h2 {
     /* color: #444; */
 }
 
+.section {
+    text-indent: 9rem;
+}
+
 h2::selection {
     background-color: #b1cbda;
     color: #333;
@@ -309,6 +313,11 @@ figcaption p {
     font-size: 1.3rem;
     padding: 0;
     margin: 0.1rem;
+}
+
+.production {
+    position: relative;
+    left: 15vw;
 }
 
 .production figcaption {
