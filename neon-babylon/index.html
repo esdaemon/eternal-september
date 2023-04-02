@@ -3,22 +3,79 @@
 
 <head>
   <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
   <title>Neon Babylon</title>
-  <link rel="stylesheet" type="text/css" href="../contag-index.css" />
+  <link rel="stylesheet" href="../spstyle.css" />
+  <link rel="stylesheet" href="../player.css" />
+  <link rel="stylesheet" href="nb-styles.css" />
   <style>
-    @font-face {
-      font-family: Pixtur;
-      src: url("../static/fonts/pixtur.otf") format("opentype");
+    body {
+      margin: 0;
+      padding: 0;
+      overflow-x: hidden;
     }
 
-    body {
-      background-image: url("./stained.jpg");
-      margin: 60px;
-      display: grid;
-      justify-content: center;
+    .nb-top {
+      height: 100vh;
+      width: 100vw;
+      margin: 0;
+      padding: 0;
+      background-color: #AD348B;
+      display: flex;
+      flex-direction: column;
+    }
 
+    .pa-arrow {
+      width: 90px;
+      border: none;
+      box-shadow: none;
+      margin: 0 30px;
+      filter: saturate(5.5) brightness(0.5) hue-rotate(15deg);
+    }
+
+    .right {
+      transform: scaleX(-1);
+    }
+
+    .pa-nav {
+      display: flex;
+      justify-content: space-between;
+      background: linear-gradient(#FF54FF, #AD348B)
+    }
+
+    .pa-nav a {
+      display: flex;
+      justify-content: center;
+    }
+
+    .pa-logo {
+      border: none;
+      box-shadow: none;
+      width: 13%;
+      margin: 0;
+    }
+
+    .pa-icon-title {
+      display: flex;
+      justify-content: space-around;
+    }
+
+    .pa-icon-title img {
+      margin: 0;
+      border: none;
+      box-shadow: none;
+    }
+
+    .pa-icon-title h1 {
+      font-size: 9rem;
+      color: #FF54FF;
+      text-shadow: 4px 4px black;
+      font-weight: normal;
+    }
+
+    main {
+      margin: 40px;
     }
 
     .ascii {
@@ -32,62 +89,36 @@
       border: 1px solid hotpink;
       box-shadow: 4px 4px black;
     }
-
-    h1 {
-      font-family: Pixtur;
-      font-size: 4rem;
-    }
-
-    h3 {
-      font-family: Pixtur;
-      font-size: 2rem;
-    }
-
-    img {
-      background-color: #AD348B;
-      max-width: 25vw;
-    }
-
-    a,
-    a:visited {
-      color: black;
-    }
-
-    a:hover {
-      color: blue;
-    }
-
-    li {
-      font-size: 1.3rem;
-    }
   </style>
-
 </head>
 
 <body>
-  <h1>Neon Babylon</h1>
-  <div class="index-main">
-    <img src="../static/images/nb-icon.png" alt="">
-    <div class="contag-index-li">
-      <ul>
-        <li>
-          <h3>The Illuminati Suite</h3>
-        </li>
-        <ul>
-          <li><a href="">I. The March of the Archons</a></li>
-          <li><a href="">II. Thuban (Alpha Draconis)</a></li>
-          <li><a href="">III. The Moon Matrix</a></li>
-          <li><a href="">IV. Brotherhood of Babylon</a></li>
-        </ul>
-        <li><a href="">
-            <h3>A Lake Cimmerian</h3>
-          </a></li>
-        <li><a href="">
-            <h3>Oh Labyrinth</h3>
-          </a></li>
-      </ul>
+  <section class="nb-top">
+    <nav class="pa-nav">
+      <a href="../octagon-of-dex/index.html"><img class="left pa-arrow" src="./nb-images/pink-arrow.svg"/></a >
+      <a href="../phantom-archives/pa-index.html"><img class="pa-logo" src="./nb-images/PA.png" alt=""></a>
+      <a href="../electric-snow-dream/index.html"><img class="right pa-arrow" src="./nb-images/pink-arrow.svg"/></a >
+    </nav>
+
+    <div class="pa-icon-title">
+      <img src="./nb-images/neon-babylon-pink.png" alt="">
+      <h1>Neon<br />Babylon</h1>
     </div>
-  </div>
+  </section>
+
+  <main>
+    <h1>The Illuminati Suite</h1><br />
+    <ul>
+      <li><a href="">I. The March of the Archons</a></li>
+      <li><a href="">II. Thuban (Alpha Draconis)</a></li>
+      <li><a href="">III. The Moon Matrix</a></li>
+      <li><a href="">IV. Brotherhood of Babylon</a></li>
+    </ul>
+    <div class="spacer"></div>
+    <h1>A Lake Cimmerian</h1>
+    <div class="spacer"></div>
+    <h1>Oh Labyrinth</h1>
+  </main>
 </body>
 
 </html>
