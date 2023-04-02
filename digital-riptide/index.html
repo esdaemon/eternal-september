@@ -72,7 +72,8 @@
 
     }
 
-    es-video {
+    es-video,
+    es-audio {
       margin: 0;
     }
 
@@ -124,24 +125,8 @@
       <img src="./dr-images/into-the-turquoise.jpeg" alt="black hole" />
       <div class="spacer"></div>
       <h4 style="text-align: center">[add into the turquoise audio player here or replace with video]</h4>
-      <!-- <audio>
-        <source
-          src="https://prismic-io.s3.amazonaws.com/eternal-september/e6cb697e-cbd1-4362-9554-264022e4daa6_IntoTheTurquoise.mp3"
-          type="audio/mpeg">
-        Your browser does not support the audio element.
-      </audio>
-      <div class="audio-player">
-        <div class="controls">
-          <button class="play-pause">
-            ▷
-          </button>
-          <input type="range" class="seekbar"></input>
-          <span class="volume-icon">
-            ⏦
-          </span>
-          <input type="range" class="volume"></input>
-        </div>
-      </div> -->
+      <es-audio
+        src="https://prismic-io.s3.amazonaws.com/eternal-september/e6cb697e-cbd1-4362-9554-264022e4daa6_IntoTheTurquoise.mp3"></es-audio>
       <div class="spacer"></div>
 
       <div class="lyrics">
@@ -242,6 +227,7 @@
   </main>
   <script type="module" src="../js/dr-script.js"></script>
   <script src="../js/components/ESVideoPlayer.js"></script>
+  <script src="../js/components/ESAudioPlayer.js"></script>
 </body>
 
 </html>
