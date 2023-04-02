@@ -5,12 +5,29 @@
   <meta charset="utf-8" />
   <title>PHANTOM ARCHIVES</title>
   <style>
-    @import url("https://use.typekit.net/hkv0hsz.css");
+    
+    /* space grotesk font */
     @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap');
 
+    /* bd-geminis font [Digital Riptide?]*/
+    @import url("https://use.typekit.net/hkv0hsz.css");
+    
+    /* GeneraleStation font [Octagon of Dex] */
+    @font-face {
+      font-family: GeneraleStation;
+      src: url("../static/fonts/GeneraleStation-SemiExtended.otf") format("opentype");
+    }
+    
+    /* pixtur font [Neon Babylon]*/
     @font-face {
       font-family: Pixtur;
       src: url("../static/fonts/pixtur.otf") format("opentype");
+    }
+
+    /* betatron font [Electric Snow Dream]*/
+    @font-face {
+      font-family: Betatron-Regular;
+      src: url("../static/fonts/Betatron-Regular.otf") format("opentype");
     }
 
     html {
@@ -63,6 +80,14 @@
       margin-right: 3vw;
     }
 
+    .left-arrow:hover {
+      cursor: pointer;
+    }
+
+    .right-arrow:hover {
+      cursor: pointer;
+    }
+
     #right-arrow {
       /* position:absolute; */
       /* top: 60vh; */
@@ -82,6 +107,11 @@
       background-color: #071279;
       border: 5px solid #E6618A;
       border-radius: 1rem;
+    }
+
+    #chess-button:hover {
+      /* color:aquamarine; */
+      cursor: pointer;
     }
 
     .bottom {
@@ -219,7 +249,9 @@
       background-repeat: no-repeat;
       position: absolute;
       top: -15%;
-      left: 6.5%;
+      left: 50vw;
+      transform: translateX(-50%);
+      /* left: 6.5%; */
       width: 84vw;
       height: 90vh;
     }
@@ -250,7 +282,7 @@
   </div>
 
   <div class="nav">
-    <img src="./pa-images/arrow-pink.svg" alt="">
+    <img class="left-arrow" src="./pa-images/arrow-pink.svg" alt="">
     <span id="chess-button">Neon Babylon</span>
     <img class="right-arrow" src="./pa-images/arrow-pink.svg" alt="">
   </div>
@@ -282,10 +314,12 @@
 
     chessButton = document.getElementById('chess-button')
     const contags = ["Neon Babylon", "Octagon of Dex", "Digital Riptide", "The Electric Snow Dream"]
+    const fonts = ["Pixtur", "GeneraleStation", "bd-geminis", "Betatron-Regular"]
     let i = 0
 
     const changeChessButton = () => {
       chessButton.innerHTML = `${contags[i % 4]}`
+      chessButton.style.fontFamily = `${fonts[i % 4]}`
     }
 
     const switchAnimCW = () => {
@@ -312,14 +346,6 @@
       left.className = 'top'
     }
 
-    const rotateCW = () => {
-      swapCW()
-      switchAnimCW()
-
-      i++
-      changeChessButton()
-    }
-
     const switchAnimCCW = () => {
       const bottom = document.querySelector('.bottom')
       const right = document.querySelector('.right')
@@ -344,19 +370,28 @@
       left.className = 'bottom'
     }
 
+    const rotateCW = () => {
+      swapCW()
+      switchAnimCW()
+
+      i++
+      changeChessButton()
+    }
+
     const rotateCCW = () => {
       swapCCW()
       switchAnimCCW()
 
       i--
+      i = i < 0 ? 3 : i;
       changeChessButton()
     }
 
     // document.querySelector("chess").classList.add(" active");
     // document.getElementById("right-arrow").addEventListener("click", chessWheel);
 
-    document.getElementById("right-arrow").addEventListener("click", rotateCW);
-    document.getElementById("left-arrow").addEventListener("click", rotateCCW);
+    document.querySelector(".right-arrow").addEventListener("click", rotateCW);
+    document.querySelector(".left-arrow").addEventListener("click", rotateCCW);
   </script>
 </body>
 
