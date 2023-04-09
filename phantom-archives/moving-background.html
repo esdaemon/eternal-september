@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .background-image {
+      position: fixed;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+    }
+
+    .shape-1 {
+      filter: brightness(220%);
+      background: url('pa-images/phantom-archives-logo-bg.png') no-repeat;
+      background-size: cover;
+    }
+
+    .shape-2 {
+      filter: brightness(140%);
+      background: url('pa-images/phantom-archives-logo-bg.png') no-repeat;
+      background-size: cover;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="background-image shape-1"></div>
+  <div class="background-image shape-2"></div>
+</body>
+
+<script>
+
+  const backgroundImageOne = document.querySelector('.shape-1');
+
+
+  window.addEventListener('load', () =>
+    applyBackgroundMotion(backgroundImageOne)
+
+  );
+
+  function applyBackgroundMotion(node1,) {
+    move(node1, .3);
+  }
+  function move(node, inc = 1, direction = false) {
+    if (direction === true) node.style.top = '-50px';
+
+    const interval = setInterval(() => {
+      const currentTop = Number(window.getComputedStyle(node).top.split('px')[0]);
+      const newTop = direction ? currentTop + inc : currentTop - inc;
+
+      if (newTop === -10 || newTop === 0) {
+        direction = !direction;
+      }
+
+      requestAnimationFrame(() => {
+        node.style.top = `${newTop}px`;
+      });
+    }, 100);
+  }
+</script>
+
+</html>
