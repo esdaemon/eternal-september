@@ -1,5 +1,5 @@
 const poems = [
-  { url: "/entries.html", title: "CLICK HERE TO START" }
+  { url: "/chronic-mindcrimes/entries.html", title: "CLICK HERE TO START" }
 ];
 
 console.log(document.URL.split("/chronic-mindcrimes")[1]);
