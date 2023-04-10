@@ -57,7 +57,7 @@ class SPIndex extends HTMLElement {
     padding: 10px;
     font-family: "Chicago", monospace;  
     border: 1px solid var(--lines);
-    box-shadow: 5px 5px 0 -1px var(--sp-grey), 5px 5px var(--lines);
+    box-shadow: 5px 5px 0 -1px rgb(0,0,63), 5px 5px var(--lines);
     background: rgb(209, 209, 209);
   }
   ul {
