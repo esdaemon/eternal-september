@@ -1,4 +1,6 @@
+
 export class ESVideoPlayer extends HTMLElement {
+
   constructor() {
     super();
     const src = this.getAttribute("src");

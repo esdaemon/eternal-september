@@ -7,41 +7,8 @@
   <style>
     /* @import url("https://use.typekit.net/nlc0wxe.css"); */
 
-    @keyframes fade {
-      0% {
-
-        opacity: 0;
-        /* text-shadow: rgba(0, 0, 0, 0); */
-        /* pointer-events: none; */
-        pointer-events: all;
-      }
-
-      15% {
-
-        opacity: 1;
-        /* text-shadow: 1px 1px rgba(255, 0, 128, 0.824), -1px -1px yellowgreen; */
-        text-shadow: 2px 2px hotpink;
-        pointer-events: all;
-      }
-
-
-      99% {
-        /* text-shadow: rgba(0, 0, 0, 0); */
-        opacity: 0;
-        pointer-events: all;
-      }
-
-      100% {
-        pointer-events: none;
-        opacity: 0;
-      }
-    }
-
-
-
     body {
-      /* background-color: rgb(193, 193, 193); */
-      animation: fade 25s 1;
+      text-shadow: 2px 2px hotpink;
       background-color: black;
       opacity: 0;
       pointer-events: none;
@@ -50,8 +17,7 @@
       justify-content: center;
       align-items: center;
     }
-
-
+    
     img {
       width: 100%;
       height: 100vh;
@@ -64,14 +30,14 @@
 
 <body>
   <div>
-    <!-- TODO: fix size -->
     <img src="https://ptrks.s3.amazonaws.com/eternal-september/pent-simp-1.gif" alt="">
   </div>
 
   <p><a href="credits/credits.html">CREDITS</a></p>
 
   <audio
-    src="https://prismic-io.s3.amazonaws.com/eternal-september/80e791c0-4179-4d35-9458-00e846bee4c5_MetaSimTheme.mp3"></audio>
+    src="https://prismic-io.s3.amazonaws.com/eternal-september/80e791c0-4179-4d35-9458-00e846bee4c5_MetaSimTheme.mp3">
+  </audio>
   <script>
     const hex = document.querySelector('img')
     const audio = document.querySelector('audio')
@@ -82,6 +48,7 @@
       audio.play();
     })
   </script>
+
 </body>
 
 </html>
