@@ -5,33 +5,47 @@
   <meta charset="utf-8" />
   <title>𝔼𝕋𝔼ℝℕ𝔸𝕃 𝕊𝔼ℙ𝕋𝔼𝕄𝔹𝔼ℝ</title>
   <style>
-    @import url("https://use.typekit.net/nlc0wxe.css");
+    /* @import url("https://use.typekit.net/nlc0wxe.css"); */
 
     body {
       text-shadow: 2px 2px hotpink;
       background-color: black;
-      text-align: center;
+      opacity: 0;
+      pointer-events: none;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
     }
 
-    a,
-    a:visited {
-      color: white;
-    }
 
-    a:hover {
-      color: blue;
+    img {
+      width: 100%;
+      height: 100vh;
+      margin: auto;
+      cursor: pointer;
     }
   </style>
 </head>
 
 
 <body>
-  <p>
-    <a href="title-page.html">START</a>
-  </p><br
-  <p>
-    <a href="credits/credits.html">CREDITS</a>
-  </p>
+  <div>
+    <!-- TODO: fix size -->
+    <img src="https://ptrks.s3.amazonaws.com/eternal-september/pent-simp-1.gif" alt="">
+  </div>
+  <audio
+    src="https://prismic-io.s3.amazonaws.com/eternal-september/80e791c0-4179-4d35-9458-00e846bee4c5_MetaSimTheme.mp3"></audio>
+  <script>
+    const hex = document.querySelector('img')
+    const audio = document.querySelector('audio')
+    audio.addEventListener('ended', () => {
+      window.location.href = '/index-zones.html'
+    })
+    hex.addEventListener('click', () => {
+      audio.play();
+    })
+  </script>
 </body>
 
 </html>

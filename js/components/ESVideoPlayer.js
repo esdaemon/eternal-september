@@ -1,4 +1,4 @@
-class ESVideoPlayer extends HTMLElement {
+export class ESVideoPlayer extends HTMLElement {
   constructor() {
     super();
     const src = this.getAttribute("src");
@@ -92,5 +92,3 @@ class ESVideoPlayer extends HTMLElement {
     }
   }
 }
-
-customElements.define("es-video", ESVideoPlayer);
