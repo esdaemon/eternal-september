@@ -1,5 +1,5 @@
 .container {
-  width: 500px;
+  width: 600px;
   background: white;
   font-family: monospace;
   border: 1px solid black;
@@ -13,23 +13,30 @@
   justify-content: center;
 }
 .controls {
+  width: 90%;
   display: flex;
+  padding-top: 10px;
   flex-direction: row;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 .currently-playing {
   text-decoration: underline;
+  font-weight: bold;
 }
+.play-pause {
+  font-size: 24px;
+}
+
 .trax {
-}
-li {
-  list-style: none;
+  width: 90%;
+  padding-bottom: 10px;
 }
 
 li:hover {
   cursor: pointer;
   font-weight: bold;
+  text-shadow: 1px 1px hotpink;
 }
 input {
   outline: none;
