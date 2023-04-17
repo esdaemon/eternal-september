@@ -7,8 +7,40 @@
   <style>
     /* @import url("https://use.typekit.net/nlc0wxe.css"); */
 
+    @keyframes fade {
+      0% {
+
+        opacity: 0;
+        /* text-shadow: rgba(0, 0, 0, 0); */
+        /* pointer-events: none; */
+        pointer-events: all;
+      }
+
+      15% {
+
+        opacity: 1;
+        /* text-shadow: 1px 1px rgba(255, 0, 128, 0.824), -1px -1px yellowgreen; */
+        pointer-events: all;
+      }
+
+
+      99% {
+        /* text-shadow: rgba(0, 0, 0, 0); */
+        opacity: 0;
+        pointer-events: all;
+      }
+
+      100% {
+        pointer-events: none;
+        opacity: 0;
+      }
+    }
+
+
+
     body {
-      text-shadow: 2px 2px hotpink;
+      /* background-color: rgb(193, 193, 193); */
+      animation: fade 25s 1;
       background-color: black;
       opacity: 0;
       pointer-events: none;
