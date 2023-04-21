@@ -1,3 +1,22 @@
+const flicker = document.querySelector(".flicker")
+const container = document.querySelector(".container")
+
+console.log(container.className)
+
+let on = 1;
+flicker.addEventListener('click', () => {
+    on = !on
+    if (on) {
+        container.className = "container crt"
+    } else {
+        container.className = "container"
+    }
+
+    console.log(container.className)
+})
+
+
+
 const dormantList = document.querySelectorAll('.dormant');
 
 dormantList.forEach(dormant => {
