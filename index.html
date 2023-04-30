@@ -20,7 +20,6 @@
 
         opacity: 1;
         /* text-shadow: 1px 1px rgba(255, 0, 128, 0.824), -1px -1px yellowgreen; */
-        text-shadow: 2px 2px hotpink;
         pointer-events: all;
       }
 
@@ -51,24 +50,17 @@
       align-items: center;
     }
 
+    h1 {
+      font-family: "Moret";
+      color: hotpink;
+      display: none;
+    }
 
     img {
       width: 100%;
-      height: 100%; 
+      height: 100vh;
       margin: auto;
-    }
-
-    .es {
-      width: 66%;
-    }
-
-    a,
-    a:visited {
-      color: white;
-    }
-
-    a:hover {
-      color: blue;
+      cursor: pointer;
     }
   </style>
 </head>
@@ -77,12 +69,21 @@
 <body>
   <div>
     <!-- TODO: fix size -->
-    <a href="./index-zones.html">
-      <img src="https://ptrks.s3.amazonaws.com/eternal-september/pent-simp-1.gif" alt="">
-    </a>
+    <h1>Eternal September</h1>
+    <img src="https://ptrks.s3.amazonaws.com/eternal-september/pent-simp-1.gif" alt="">
   </div>
-  <audio src="./audio/MetaSimTheme.mp3" autoplay></audio>
-  <p><a href="credits/credits.html">CREDITS</a></p>
+  <audio
+    src="https://prismic-io.s3.amazonaws.com/eternal-september/80e791c0-4179-4d35-9458-00e846bee4c5_MetaSimTheme.mp3"></audio>
+  <script>
+    const hex = document.querySelector('img')
+    const audio = document.querySelector('audio')
+    audio.addEventListener('ended', () => {
+      window.location.href = '/index-zones.html'
+    })
+    hex.addEventListener('click', () => {
+      audio.play();
+    })
+  </script>
 </body>
 
 </html>

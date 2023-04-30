@@ -1,0 +1,108 @@
+.container {
+  width: 600px;
+  background: white;
+  font-family: monospace;
+  border: 1px solid black;
+  padding: 20px;
+  box-shadow: 4px 4px;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.controls {
+  width: 90%;
+  display: flex;
+  padding-top: 10px;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+.currently-playing {
+  text-decoration: underline;
+  font-weight: bold;
+}
+.play-pause {
+  font-size: 24px;
+}
+
+.trax {
+  width: 90%;
+  padding-bottom: 10px;
+}
+
+li:hover {
+  cursor: pointer;
+  font-weight: bold;
+  text-shadow: 1px 1px hotpink;
+}
+input {
+  outline: none;
+  -webkit-appearance: none;
+  background: transparent;
+  border: none;
+  width: 50%;
+}
+input[title="volume"] {
+  width: 23%;
+}
+
+button,
+span {
+  font-size: 30px;
+  padding: 2px;
+  border: none;
+  background: transparent;
+  color: #000000;
+  outline: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+}
+button {
+  cursor: pointer;
+}
+span {
+  cursor: default;
+}
+
+input:focus {
+  outline: none;
+}
+
+input::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  height: 18px;
+  width: 2px;
+  background: black;
+  cursor: pointer;
+  transform: translateY(-10px);
+}
+
+input::-moz-range-thumb {
+  -webkit-appearance: none;
+  height: 18px;
+  width: 2px;
+  background: black;
+  cursor: pointer;
+  transform: translateY(-10px);
+}
+
+input::-webkit-slider-runnable-track {
+  width: 100%;
+  height: 5px;
+  cursor: pointer;
+  border-top: 1px solid black;
+  transform: translateY(2.8px);
+}
+
+input::-moz-range-track {
+  width: 100%;
+  height: 5px;
+  cursor: pointer;
+  border-top: 1px solid black;
+  transform: translateY(2.8px);
+}
