@@ -36,11 +36,11 @@ body {
 
 a,
 [data-wiki] {
-  color: black;
+  color: blue;
 }
 a:visited,
 [data-wiki] {
-  color: black;
+  color: blue;
 }
 a:hover,
 [data-wiki]:hover {
