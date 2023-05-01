@@ -23,9 +23,9 @@ h1 {
 
 html,
 body {
-  background-image: url("../static/images/paper.gif");
+  background-image: url("../static/images/paper-high-contrast.jpeg");
   background-color: rgb(195, 0, 39);
-  background-blend-mode: darken;
+  background-blend-mode: multiply;
   /* font-family: sans-serif; */
   margin: 30px;
 }
