@@ -24,7 +24,7 @@ h1 {
 html,
 body {
   background-image: url("../static/images/paper.gif");
-  background-color: rgb(195, 0, 39);
+  background-color: rgb(62, 1, 1);
   background-blend-mode: darken;
   /* font-family: sans-serif; */
   margin: 30px;
