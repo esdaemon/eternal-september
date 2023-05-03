@@ -5,19 +5,18 @@
   <meta charset="utf-8" />
   <title>PHANTOM ARCHIVES</title>
   <style>
-    
     /* space grotesk font */
     @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap');
 
     /* bd-geminis font [Digital Riptide?]*/
     @import url("https://use.typekit.net/hkv0hsz.css");
-    
+
     /* GeneraleStation font [Octagon of Dex] */
     @font-face {
       font-family: GeneraleStation;
       src: url("../static/fonts/GeneraleStation-SemiExtended.otf") format("opentype");
     }
-    
+
     /* pixtur font [Neon Babylon]*/
     @font-face {
       font-family: Pixtur;
@@ -37,11 +36,13 @@
 
     body {
       background-color: rgb(0, 0, 0);
-      color: #ffffff;
       height: 100%;
       overflow-x: hidden;
+      overflow-y: hidden;
       margin: 0;
       padding: 0;
+      background-image: url("../static/images/pa-index-floor.png");
+      background-size: cover;
     }
 
     h1 {
@@ -49,7 +50,7 @@
     }
 
     img {
-      max-width: 125px;
+      max-width: 170px;
       position: absolute;
     }
 
@@ -73,8 +74,6 @@
     }
 
     #left-arrow {
-      /* position:absolute; */
-      /* top: 60vh; */
       left: 20vw;
       font-size: 5vw;
       margin-right: 3vw;
@@ -89,19 +88,13 @@
     }
 
     #right-arrow {
-      /* position:absolute; */
-      /* top: 60vh; */
       left: 60vw;
       font-size: 5vw;
       margin-left: 3vw;
     }
 
     #chess-button {
-      /* position:absolute; */
-      /* top: 67vh; */
-      /* left: 34.75vw; */
       width: 50vw;
-      height: 10vh;
       text-align: center;
       font-family: Pixtur;
       font-size: 4rem;
@@ -114,206 +107,7 @@
     }
 
     #chess-button:hover {
-      /* color:aquamarine; */
       cursor: pointer;
-    }
-
-    /* .bottom {
-      top: 450px;
-      left: 47vw;
-      animation: bottomCW 1000ms;
-      animation-fill-mode: forwards;
-      animation-timing-function: linear;
-    } */
-
-    .origin {
-      background-color: #e6618965;
-      width: 45vw;
-      height: 45vw;
-      position: absolute;
-      left: 50vw;
-      top: 42vh;
-      transform: translate(-50%, -50%);
-      border-radius: 50%;
-    }
-
-    .nb {
-      position: absolute;
-      transform: translate(-50%, -40%);
-      /* top: 450px;
-      left: 47vw; */
-      animation: bottomCW 1000ms;
-      animation-fill-mode: forwards;
-      animation-timing-function: linear;
-    }
-
-    /* @keyframes bottomCW {
-      from {
-        top: 33%;
-        left: 77%;
-      }
-
-      to {
-        top: 450px;
-        left: 47vw;
-      }
-    } */
-
-    /* @keyframes bottomCCW {
-      from {
-        top: 30%;
-        left: 10%;
-      }
-
-      to {
-        top: 450px;
-        left: 47vw;
-      }
-    } */
-
-    /* .top {
-      top: 5%;
-      left: 43%;
-      animation: topCW 1000ms;
-      animation-fill-mode: forwards;
-      animation-timing-function: linear;
-    } */
-
-    .dr {
-      position: absolute;
-      transform: translate(-50%, -50%);
-      /* top: 5%;
-      left: 43%; */
-      animation: topCW 1000ms;
-      animation-fill-mode: forwards;
-      animation-timing-function: linear;
-    }
-
-    /* @keyframes topCW {
-      from {
-        top: 30%;
-        left: 10%;
-      }
-
-      to {
-        top: 5%;
-        left: 43%;
-      }
-    } */
-
-    /* @keyframes topCCW {
-      from {
-        top: 33%;
-        left: 77%;
-      }
-
-      to {
-        top: 5%;
-        left: 43%;
-      }
-    } */
-
-    /* .left {
-      top: 30%;
-      left: 10%;
-      animation: leftCW 1000ms;
-      animation-fill-mode: forwards;
-      animation-timing-function: linear;
-    } */
-
-    .esd {
-      position: absolute;
-      transform: translate(-50%, -50%);
-      /* top: 500px; */
-      /* left: 10%; */
-      animation: leftCW 1000ms;
-      animation-fill-mode: forwards;
-      animation-timing-function: linear;
-    }
-
-    /* @keyframes leftCW {
-      from {
-        top: 450px;
-        left: 47vw;
-      }
-
-      to {
-        top: 30%;
-        left: 10%;
-      }
-    } */
-
-    /* @keyframes leftCCW {
-      from {
-        top: 5%;
-        left: 43%;
-      }
-
-      to {
-        top: 30%;
-        left: 10%;
-      }
-    } */
-
-    /* .right {
-      top: 33%;
-      left: 77%;
-      animation: rightCW 1000ms;
-      animation-fill-mode: forwards;
-      animation-timing-function: linear;
-    } */
-
-    .od {
-      position: absolute;
-      transform: translate(-50%, -30%);
-      /* top: 33%; */
-      /* left: 77%; */
-      animation: rightCW 1000ms;
-      animation-fill-mode: forwards;
-      animation-timing-function: linear;
-    }
-
-    /* @keyframes rightCW {
-      from {
-        top: 5%;
-        left: 43%;
-      }
-
-      to {
-        top: 33%;
-        left: 77%;
-      }
-    }
-
-    @keyframes rightCCW {
-      from {
-        top: 450px;
-        left: 47vw;
-      }
-
-      to {
-        top: 33%;
-        left: 77%;
-      }
-    } */
-
-
-    .chessboard-container {
-
-      background-image: url("../static/images/pa-index-floor.png");
-      background-repeat: no-repeat;
-      position: absolute;
-      top: -15%;
-      left: 50vw;
-      transform: translateX(-50%);
-      /* left: 6.5%; */
-      width: 84vw;
-      height: 90vh;
-    }
-
-    .chessboard {
-      width: 200%;
-      position: absolute;
     }
 
     .right-arrow {
@@ -323,10 +117,6 @@
 </head>
 
 <body>
-  <div class="chessboard-container">
-
-  </div>
-
   <!-- <div class="origin"></div>  -->
   <div class="chess">
     <a href="../neon-babylon/index.html"><img src="../static/images/nb-icon.png" class="nb" /></a>
@@ -354,10 +144,10 @@
     }
 
     //current icons
-    let neon = new Contag(document.querySelector(".nb"), "Neon Babylon", "Pixtur", {top: 80, left: 43})
-    let octagon = new Contag(document.querySelector(".od"), "Octagon of Dex", "GeneraleStation", {top: 30, left: 10})
-    let riptide = new Contag(document.querySelector(".dr"), "Digital Riptide", "bd-geminis", {top: 5, left: 43})
-    let snowDream = new Contag(document.querySelector(".esd"), "The Electric Snow Dream", "Betatron-Regular", {top: 30, left: 77})
+    let neon = new Contag(document.querySelector(".nb"), "Neon Babylon", "Pixtur", { top: 80, left: 43 })
+    let octagon = new Contag(document.querySelector(".od"), "Octagon of Dex", "GeneraleStation", { top: 30, left: 15 })
+    let riptide = new Contag(document.querySelector(".dr"), "Digital Riptide", "bd-geminis", { top: 5, left: 43 })
+    let snowDream = new Contag(document.querySelector(".esd"), "The Electric Snow Dream", "Betatron-Regular", { top: 30, left: 77 })
 
     //contags list
     const contags = [neon, octagon, riptide, snowDream]
@@ -365,7 +155,7 @@
 
     //variable used to change positioning of icons and contents of the chessButton
     let offset = 0
-    
+
     //displays title of "active" icon [the one on the bottom]
     const chessButton = document.getElementById('chess-button')
     const changeChessButton = () => {
@@ -375,21 +165,21 @@
     }
 
     //variables and functions used for setting icon positions
-    const widthRadius = 18
+    const widthRadius = 22
     const heightRadius = 25
-    const angle = (2*Math.PI)/size
-    const aspectRatio = window.screen.availWidth/window.screen.availHeight
-    const angleOffset = Math.PI/50
+    const angle = (2 * Math.PI) / size
+    const aspectRatio = window.screen.availWidth / window.screen.availHeight
+    const angleOffset = Math.PI / 50
     const findPos = (index) => {
       let x = widthRadius * Math.cos((angle * (index - 1)) + angleOffset)
       let y = heightRadius * Math.sin((angle * (index - 1)))
-      return {top: 36 - y, left: (x + 46 - widthRadius) * aspectRatio} //the 36 and 46 should be placed into variables instead of hardcoded
+      return { top: 36 - y, left: (x + 46 - widthRadius) * aspectRatio } //the 36 and 46 should be placed into variables instead of hardcoded
     }
-    
+
     const setPositions = () => {
       for (i = 0; i < size; i++) {
         contags[i].position = findPos(i - offset)
-        contags[i].object.style.top = `${contags[i].position.top}vh`        
+        contags[i].object.style.top = `${contags[i].position.top}vh`
         contags[i].object.style.left = `${contags[i].position.left}vw`
       }
     }
@@ -398,7 +188,6 @@
       offset++
       setPositions()
       changeChessButton()
-      
     }
 
     const rotateCCW = () => {
