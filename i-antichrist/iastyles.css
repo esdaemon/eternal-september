@@ -23,11 +23,12 @@ h1 {
 
 html,
 body {
-  background-image: url("../static/images/paper.gif");
-  background-color: rgb(62, 1, 1);
+  background-image: url("../static/images/paper2.jpg");
+  background-color: rgb(85, 2, 2);
   background-blend-mode: darken;
   /* font-family: sans-serif; */
   margin: 30px;
+  margin-top: 0px;
 }
 
 .yellowlight {
@@ -59,6 +60,7 @@ img {
 li {
   font-family: monospace;
 }
+
 main {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -82,6 +84,7 @@ p code {
 .pt10 div p {
   font-size: 10pt;
 }
+
 .press-start {
   font-family: "Press Start 2P";
 }
