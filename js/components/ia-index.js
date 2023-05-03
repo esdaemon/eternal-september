@@ -1,5 +1,5 @@
 const poems = [
-  { url: "./thor-vs-ragnarok.html", title: "Thor vs. Ragnarok" },
+  { url: "./thor-vs-ragnarok.html", title: "Thor vs. Ragnarök" },
   { url: "./bland-axiom.html", title: "Bland Axiom" },
   { url: "./wisconsin-yr-so-brutalist.html", title: "Wisconsin, Yr So Brutalist" },
   { url: "./metal-swans-in-rain.html", title: "Metal Swans in Rain" },

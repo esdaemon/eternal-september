@@ -6,6 +6,10 @@
   --wiki-box-shadow: 4px 4px black;
 }
 
+.wiki::-webkit-scrollbar {
+  z-index: 0;
+}
+
 .wiki {
   display: grid;
   visibility: hidden;
@@ -30,6 +34,7 @@
   max-width: inherit;
   border-bottom: var(--wiki-border);
   height: 21px;
+  z-index: 4;
   background-image: linear-gradient(
     52deg,
     #000000 12.5%,
@@ -59,6 +64,7 @@
   background-color: var(--wiki-background);
   border-left: var(--wiki-border);
   height: 100%;
+  z-index: 5;
 }
 
 .close:hover,
@@ -67,6 +73,7 @@
   background-color: black;
   text-decoration: none;
   cursor: pointer;
+  z-index: 5;
 }
 
 .wikiImg {
