@@ -30,7 +30,18 @@ body {
   margin: 30px;
   margin-top: 0px;
 }
+.ia-banner {
+  width: 500px;
+  align-self: center;
+}
 
+.ia-main {
+  display: grid;
+  grid-template-columns: 1fr 5fr;
+  grid-template-rows: 1fr;
+  gap: 12px;
+  width: 100%;
+}
 .yellowlight {
   background-color: #fff2cc;
 }
@@ -116,5 +127,5 @@ p code {
 }
 
 .border {
-  box-shadow: 5px 5px 0 -1px rgb(0, 0, 63), 5px 5px rgb(0,0,63);
+  box-shadow: 5px 5px 0 -1px rgb(0, 0, 63), 5px 5px rgb(0, 0, 63);
 }
