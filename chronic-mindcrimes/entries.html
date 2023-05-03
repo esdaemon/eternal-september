@@ -5,95 +5,140 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Chronic Mindcrimes</title>
+  <link rel="stylesheet" type="text/css" href="../spstyle.css" />
 
   <style>
-    /*add new font weights for body*/
     @import url('https://fonts.googleapis.com/css2?family=Quantico&display=swap');
     @import url('https://fonts.googleapis.com/css2?family=Electrolize&family=Quantico&family=Share+Tech+Mono&display=swap');
     @import url('https://fonts.googleapis.com/css2?family=Electrolize&family=Quantico&family=Share+Tech+Mono&display=swap');
     @import url('https://fonts.googleapis.com/css2?family=Electrolize&family=Quantico&family=Share+Tech+Mono&family=VT323&display=swap');
-
-
-    p {
-        font-family: 'Share Tech Mono', sans-serif;
-        font-size: 20px;
-        line-height: 1.5rem;
+    @font-face {
+      font-family: LunchTime;
+      src: url('/static/fonts/LunchDS.ttf');
     }
 
-    .bucket1 {
-        background-color:black;
-        color: #72c6ff;
-        margin-left:auto;
-        margin-right:auto;
-        padding:15px;
-        max-width:50%;
+    .titlebox {
+      background-color: #101010;
+      color: white;
+      margin: auto;
+      width: 100vw;
+      background: linear-gradient(to right, rgba(0,0,0,255), rgba(0,0,0,0));
     }
 
-    .bucket2 {
-        background-color:navy;
-        color:rgb(255, 255, 255);
-        margin-left:auto;
-        margin-right:auto;
-        padding:15px;
-        max-width:50%;
+    html {
+      background-color: rgb(19, 12, 35);
+      background-image: url("../static/images/paper2.jpg");
+      background-blend-mode: exclusion;
+      background-position: center;
     }
 
-    .bucket2 p, .bucket2 pre {
-        font-family: 'VT323';
-        font-size: 24px;
-    }
-
-    .bucket3 {
-        background-color:antiquewhite;
-        color:darkolivegreen;
-        margin-left:auto;
-        margin-right:auto;
-        padding:15px;
-        max-width:50%;
+    a:visited {
+      color: blue;
     }
 
     body {
-        background-color:black;
-        margin:0;
-        padding:0;
+      margin: auto;
+      padding-top: 35px;
+      background-color: rgb(19, 12, 35);
+      background-image: url("../static/images/paper2.jpg");
+      background-blend-mode: exclusion;
+      background-position: center;
+    }
+
+    p {
+      font-family: 'Share Tech Mono', sans-serif;
+      font-size: 20px;
+      line-height: 1.5rem;
+    }
+
+    .bucket1 {
+      background-color:black;
+      color: #72c6ff;
+      padding: 10px;
+    }
+
+    .bucket2 {
+      background-color:navy;
+      color:rgb(255, 255, 255);
+      padding: 10px;
+    }
+
+    .bucket2 p {
+      font-family: 'VT323';
+      font-size: 24px;
+    }
+
+    .bucket3 {
+      background-color:rgb(0, 91, 70);
+      color:rgb(169, 253, 216);
+      padding: 10px;
     }
 
     ol {
-        font-family: 'Share Tech Mono', sans-serif;
+      font-family: 'Share Tech Mono', sans-serif;
     }
 
     .chronicTitle {
-        font-family: 'Quantico', sans-serif;
+      font-family: 'LunchTime';
     }
 
     .heading {
-        font-size: 40px;
+      font-size: 45px;
     }
 
-    .moonPic {
-        max-width:400px;
-        opacity:45%;
-        position:absolute;
-        top: 2vh;
-        left: 126vh;
-        transform: rotate(32deg);
+    img {
+      padding: 10px;
+      max-width: 30%;
     }
 
-    .divMoonPic {
-        text-align:right;
-        margin-left:auto;
-        margin-right:auto;
-        max-width:50%;
+    .border {
+      padding: 0px;
+      margin: 0px;
     }
 
+    .sp-main {
+      width: 60vw;
+      margin: auto;
+    }
   </style>
 
 </head>
 
+<!--http://patorjk.com/software/taag/#p=display&f=Delta%20Corps%20Priest%201&t=%20%20%20CHRONIC%0AMINDCRIMES-->
+
 <body>
-    <div class="bucket2">
-        <div class="divMoonPic"><img src="./images/moon_theory_moon.png" class="moonPic" /></div>
-        <p class="chronicTitle heading" style="font-size: 30px; font-family: 'Courier';">
+  <span><a class="homeButton" href="../codex-digital/cd-index.html">ℂ𝕆𝔻𝔼𝕏 𝔻𝕀𝔾𝕀𝕋𝔸𝕃</a></span>
+  <div class="titlebox">
+    <pre style="font-size: 10px">
+
+
+                  ▄████████    ▄█    █▄       ▄████████  ▄██████▄  ███▄▄▄▄    ▄█   ▄████████                        
+                  ███    ███   ███    ███     ███    ███ ███    ███ ███▀▀▀██▄ ███  ███    ███                        
+                  ███    █▀    ███    ███     ███    ███ ███    ███ ███   ███ ███▌ ███    █▀                         
+                  ███         ▄███▄▄▄▄███▄▄  ▄███▄▄▄▄██▀ ███    ███ ███   ███ ███▌ ███                               
+                  ███        ▀▀███▀▀▀▀███▀  ▀▀███▀▀▀▀▀   ███    ███ ███   ███ ███▌ ███                               
+                  ███    █▄    ███    ███   ▀███████████ ███    ███ ███   ███ ███  ███    █▄                         
+                  ███    ███   ███    ███     ███    ███ ███    ███ ███   ███ ███  ███    ███                        
+                  ████████▀    ███    █▀      ███    ███  ▀██████▀   ▀█   █▀  █▀   ████████▀                         
+                                              ███    ███                                                             
+  ▄▄▄▄███▄▄▄▄    ▄█  ███▄▄▄▄   ████████▄   ▄████████    ▄████████  ▄█    ▄▄▄▄███▄▄▄▄      ▄████████    ▄████████ 
+  ▄██▀▀▀███▀▀▀██▄ ███  ███▀▀▀██▄ ███   ▀███ ███    ███   ███    ███ ███  ▄██▀▀▀███▀▀▀██▄   ███    ███   ███    ███ 
+  ███   ███   ███ ███▌ ███   ███ ███    ███ ███    █▀    ███    ███ ███▌ ███   ███   ███   ███    █▀    ███    █▀  
+  ███   ███   ███ ███▌ ███   ███ ███    ███ ███         ▄███▄▄▄▄██▀ ███▌ ███   ███   ███  ▄███▄▄▄       ███        
+  ███   ███   ███ ███▌ ███   ███ ███    ███ ███        ▀▀███▀▀▀▀▀   ███▌ ███   ███   ███ ▀▀███▀▀▀     ▀███████████ 
+  ███   ███   ███ ███  ███   ███ ███    ███ ███    █▄  ▀███████████ ███  ███   ███   ███   ███    █▄           ███ 
+  ███   ███   ███ ███  ███   ███ ███   ▄███ ███    ███   ███    ███ ███  ███   ███   ███   ███    ███    ▄█    ███ 
+   ▀█   ███   █▀  █▀    ▀█   █▀  ████████▀  ████████▀    ███    ███ █▀    ▀█   ███   █▀    ██████████  ▄████████▀  
+                                                         ███    ███                                                
+    </pre>
+  </div>
+
+  <div class="sp-main">
+    <cm-index></cm-index>
+    <div class="poem border">
+      <div class="bucket2">
+        <img src="./images/moon_theory_moon.png" class="moonPic" />
+        <p class="chronicTitle heading">
             <strong>Pink Twilight Theory</strong>
         </p>
         <pre>
@@ -118,6 +163,50 @@
 <p>So as the sun sets further down into epic nighttime ephemeral oblivion, and the moonlight triggers a cool and calming melatonin, don't forget that you've been looking for me. And when we say goodnight, a single tear creeping past our closed eyelids, penetrating all pretense that we're not preparing to go to war with the next day, see if in your dreams you can find me. Lord knows I can't find myself...</p>
 
 <p>**"That mist is a mountain--and that mountain must be conquered. Up a trackless slope climbs the master artist, and at the top, on a windy ridge, whom do you think he meets? The panting and happy reader, and there they spontaneously embrace and are linked forever if the book lasts forever"</p>
+        </p>
+        <p>
+            I haven't even started, but I wouldn't be surprised if you already thought there was something wrong with me. I'm just floating here--Lucy in a sky of cubic zirconium. I love Lucy. I love the word "zirconium". I think there's something honest about it, as a message informing you how the world works. I won't confirm or deny whether or not there's something wrong with me, but I will tell you that I'm honest in a similar way.
+        </p>
+        <p>
+            Today's honesty regards a theory called "pink twilight," which is just a pretty way of describing the way things have to get ugly. According to philosopher Simone Rollkragen, any and all digital domains are doomed from the moment they cease to be commercially viable. 
+        </p>
+        <p>
+            Telecommunication technology when it falls into disuse it becomes primarily used for naught purposes
+        </p>
+        <p>
+            &emsp;&emsp;-"skeevy dudes"
+        </p>
+        <p>
+            Think the quick collapse of <span data-wiki="videotex">Minitel Pink</span> [<span data-wiki="error">Ma Bell</span> --> analog digital machine gun control], or [example]'s dense decline into degradation. In the beginning, and the end, is a Wild West of sorts. Nobody's safe when things turn left. 
+        </p>
+        <p>
+            And it ALWAYS turns left.
+        </p>
+        <p>
+            [reminds me of...]
+        </p>
+        <p>
+            Unless you pull the kill switch, as many companies often do. In a scramble to preserve profit or evade lawsuits, they take the coward's way out, aborting the <span data-wiki="internet">internet</span>'s natural program, substituting [pre-established] protocols of precarity for problematic pretense. In other words, Pink twilight is just the course of history uninterrupted, the thing that happens when you don't kill an ineluctably pinkening thing.<br />
+            -Minitel Pink Messaging + <span data-wiki="knight-ridder">Nightridder</span><br />
+            -Usenet<br />
+            -Video Text
+        </p>
+        <p>
+            -Populate with more Wiki stuff
+        </p>
+        <p>
+            greenwich village vibes => the village of the green witch
+        </p>
+        <p>
+            Pink twilights don't only apply to once safe places on the internet...[talk about relationships]
+        </p>
+        <p>
+            [conclusion]<br />
+            And the truth is here and who I am. And the truth is, you've been looking for me. Looking for [some person/an entity] who can actually admit there's probably something wrong with him. Maybe, despite the violence they tend to entail, we like pink twilights because they're more honest than anything else we come across these days. 
+        </p>
+        <p>
+            So as the sun sets further down into epic nighttime ephemeral <span data-wiki="error">oblivion</span>, and the moonlight triggers a cool and calming melatonin, don't forget that you've been looking for me. And when we say goodnight, a single tear creeping past our closed eyelids, penetrating any [pretenses] that we're not preparing to go to war with the next day, see if in your dreams you can find me. Lord knows I can't find myself... 
+        </p>
     </div>
     <div class="bucket3">
         <p class="chronicTitle heading">
@@ -135,7 +224,7 @@
         </p>
 
         <p>
-            Anyway, these strings are quite the characters -- they're at the very least charming enough to call our deities. They're thought to be 1-dimensional, but vibrate through 10 dimensions (the 4 unusual suspects comprising our understanding of space and time, plus 6 "pacman dimensions" in which objects travelling through it reach the end only to come back out the other side. Who knew the beloved Namco game was also a lesson in theoretical physics?). In the same way the different strings on a guitar correspond to different notes, the different vibrational modes of these 1D strings correspond to the mass and spin of the particles posited by the Standard Model. But while we can meditate on the idea that our universe is just a fancy game of Pacman, or is made up of what is essentially music, or that right now avalanches of proposals are being submitted by physicists to describe how these strings get tied together, or that nobody actually knows what these strings are made of in the first place, there's something else that has become a ghost which haunts me, just like all the others (Binky, Pinky, Inky Clyde).
+            Anyway, these strings are quite the characters -- they're at the very least charming enough to call our <span data-wiki="error">deities</span>. They're thought to be 1-dimensional, but vibrate through 10 dimensions (the 4 unusual suspects comprising our understanding of space and time, plus 6 "pacman dimensions" in which objects travelling through it reach the end only to come back out the other side. Who knew the beloved Namco game was also a lesson in theoretical physics?). In the same way the different strings on a guitar correspond to different notes, the different vibrational modes of these 1D strings correspond to the mass and spin of the particles posited by the Standard Model. But while we can meditate on the idea that our universe is just a fancy game of Pacman, or is made up of what is essentially music, or that right now avalanches of proposals are being submitted by physicists to describe how these strings get tied together, or that nobody actually knows what these strings are made of in the first place, there's something else that has become a ghost which haunts me, just like all the others (Binky, Pinky, Inky, Clyde).
         </p>
 
         <p>
@@ -143,11 +232,11 @@
         </p>
 
         <p>
-            At the heart of physics is a fundamental uncertainty-absurdity, masked by an illusion telling us there's some kind of kettle calling black a pot of gold if you can just make it, make it to the end of the horizon. If God exists they are a master manipulator, which is to say magician, making something out of nothing, a cell, a flower, a me, a you, and a we all out of nonsense. Donning a sly invisible coat and an overtuned grin, skin oily for aesthetic shimmer and functionally slippery in case of the need for a great and fashionable escape (hocus pocus, open sesame), they, in all their opaque omnipotence, exhort us, "I know I work in mysterious ways, Mr. Frost, Mr. Pacman, but all you have to do is walk a little further down the road you chose, and I promise you'll get to the point of it all."
+            At the heart of physics is a fundamental uncertainty-absurdity, masked by an illusion telling us there's some kind of kettle calling black a pot of gold if you can just make it, make it to the end of the horizon. If God exists they are a master manipulator, which is to say magician, making something out of <span data-wiki="dharma">nothing</span>, a cell, a flower, a me, a you, and a we all out of nonsense. Donning a sly invisible coat and an overtuned grin, skin oily for aesthetic shimmer and functionally slippery in case of the need for a great and fashionable escape (hocus pocus, open sesame), they, in all their opaque omnipotence, exhort us, "I know I work in mysterious ways, Mr. Frost, Mr. Pacman, but all you have to do is walk a little further down the road you chose, and I promise you'll get to the point of it all."
         </p>
 
         <p>
-            Maybe black holes are what we should be praying to these days, worshipping on weekends and hailing as creator. Maybe black holes are simply waiting for our worship to reveal themselves. Maybe the hole is the whole point of holiness. Maybe black holes are portraits of a future we can't see. Maybe they're just lonely maybe God's in every one of them.
+            Maybe <span data-wiki="error">black holes</span> are what we should be praying to these days, worshipping on weekends and hailing as creator. Maybe black holes are simply waiting for our worship to reveal themselves. Maybe the hole is the whole point of holiness. Maybe black holes are portraits of a future we can't see. Maybe they're just lonely maybe God's in every one of them.
         </p>
         <p>
             Dear God, dear reader, dear ex, dear oblivion, if you're in there I would like to politely ask you to please stop hiding. If I spoke into the void that I miss you and want to see you again, would you appear out of thin air and say "there there" and make my heart ache less? Would you do anything to fill this void that is somehow both destroying and defining me, help me find the needle in a universe-sized haystack so we can string it all back together together? I beg of you. I beg of you! Don't just sit there and let me unravel! Don't tell me there's just a void in there. Don't avoid me. Don't void me. Don't say there's nothing left, or that there's nothing left to say. I won't believe you because I believe in you, just like how you've always wanted.
@@ -175,7 +264,7 @@
         </p>
 
         <p>
-            And it hurts us too, because we love you, dear Abian, and we know you've worked so hard so much so grittily. It takes a herculean push to migrate from Iran to the states, to become an expert and authoritative voice in a field like mathematics. You've worked so hard, just to be stuck in a freezing house in Buffalo, or a state university in Iowa. Your passions have only led you to an absurd and absolutely boring time loop. Abian, this life you know is your Sysyphean soliloquy. We know you tried, we know you're tired. We struggle with you along your long ladder leading nowhere, that inveigling invariance. We know the agony of the fact that the ladder is just barely less painful than falling off.
+            And it hurts us too, because we love you, dear Abian, and we know you've worked so hard so much so grittily. It takes a herculean push to migrate from Iran to the states, to become an expert and authoritative voice in a field like mathematics. You've worked so hard, just to be stuck in a freezing house in Buffalo, or a <span data-wiki="panopticon">state university in Iowa</span>. Your passions have only led you to an absurd and absolutely boring time loop. Abian, this life you know is your Sysyphean soliloquy. We know you tried, we know you're tired. We struggle with you along your long ladder leading nowhere, that inveigling invariance. We know the agony of the fact that the ladder is just barely less painful than falling off.
 
         </p>
 
@@ -191,4 +280,9 @@
             **Abian said that "Those critics who say 'Dismiss Abian's ideas' are very close to those who dismissed Galileo."[6]
         </p>
     </div>
+    </div>
+  </div>
+
+  <script type="module" src="../js/script.js"></script>
+  <script src="../js/components/cm-index.js"></script>
 </body>
