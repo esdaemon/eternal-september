@@ -26,13 +26,13 @@ const poems = [
 ];
 
 console.log(document.URL.split("/spectral-peaks")[1]);
-class SPIndex extends HTMLElement {
+class IAIndex extends HTMLElement {
   constructor() {
     super();
     const shadow = this.attachShadow({ mode: "open" });
     const div = document.createElement("div");
     const ul = document.createElement("ul");
-    const url = document.URL.split("/spectral-peaks/")[1];
+    const url = document.URL.split("/i-antichrist/")[1];
     const indexHeader = document.createElement("strong");
     indexHeader.textContent = "INDEX:";
     ul.appendChild(indexHeader);
@@ -71,7 +71,7 @@ class SPIndex extends HTMLElement {
   }
   a, a:visited {color: blue}
   a.current-poem {
-    background-color: hotpink;
+    background-color: rgb(195, 0, 39);
     color: black;
   }`;
     shadow.appendChild(div);
@@ -79,4 +79,4 @@ class SPIndex extends HTMLElement {
   }
 }
 
-customElements.define("sp-index", SPIndex);
+customElements.define("ia-index", IAIndex);

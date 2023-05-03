@@ -1,3 +1,5 @@
+import initWiki from "../../js/initWiki.js";
+
 const next = document.querySelector(".next-button");
 const fades = document.querySelectorAll(".fade");
 const urlList = [
@@ -28,7 +30,12 @@ function getRndmUrl() {
     rndmUrl + ".html"
   );
 }
+window.onLoad = setup();
 
+function setup() {
+  console.log("wiki loaded");
+  initWiki();
+}
 // const timer = setTimeout(() => {
 //   next.classList.remove("next-button");
 // }, 2000);
