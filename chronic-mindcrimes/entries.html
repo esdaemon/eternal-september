@@ -5,9 +5,13 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Chronic Mindcrimes</title>
-  <link rel="stylesheet" type="text/css" href="../spstyle.css" />
 
+  <script type="module" src="../js/script.js" defer></script>
   <style>
+    /*add wiki css*/
+    @import url("../wiki/wiki.css");
+    
+    /*add new font weights for body*/
     @import url('https://fonts.googleapis.com/css2?family=Quantico&display=swap');
     @import url('https://fonts.googleapis.com/css2?family=Electrolize&family=Quantico&family=Share+Tech+Mono&display=swap');
     @import url('https://fonts.googleapis.com/css2?family=Electrolize&family=Quantico&family=Share+Tech+Mono&display=swap');
@@ -45,6 +49,13 @@
       background-position: center;
     }
 
+    [data-wiki] {
+        text-decoration: underline;
+        cursor: pointer;
+        color: hotpink;
+        cursor: pointer;
+    }
+    
     p {
       font-family: 'Share Tech Mono', sans-serif;
       font-size: 20px;
@@ -96,10 +107,12 @@
       margin: 0px;
     }
 
-    .sp-main {
-      width: 60vw;
-      margin: auto;
+
+    .redacted-string {
+        background-color: #556B2F;
     }
+
+
   </style>
 
 </head>
@@ -107,39 +120,11 @@
 <!--http://patorjk.com/software/taag/#p=display&f=Delta%20Corps%20Priest%201&t=%20%20%20CHRONIC%0AMINDCRIMES-->
 
 <body>
-  <span><a class="homeButton" href="../codex-digital/cd-index.html">ℂ𝕆𝔻𝔼𝕏 𝔻𝕀𝔾𝕀𝕋𝔸𝕃</a></span>
-  <div class="titlebox">
-    <pre style="font-size: 10px">
-
-
-                  ▄████████    ▄█    █▄       ▄████████  ▄██████▄  ███▄▄▄▄    ▄█   ▄████████                        
-                  ███    ███   ███    ███     ███    ███ ███    ███ ███▀▀▀██▄ ███  ███    ███                        
-                  ███    █▀    ███    ███     ███    ███ ███    ███ ███   ███ ███▌ ███    █▀                         
-                  ███         ▄███▄▄▄▄███▄▄  ▄███▄▄▄▄██▀ ███    ███ ███   ███ ███▌ ███                               
-                  ███        ▀▀███▀▀▀▀███▀  ▀▀███▀▀▀▀▀   ███    ███ ███   ███ ███▌ ███                               
-                  ███    █▄    ███    ███   ▀███████████ ███    ███ ███   ███ ███  ███    █▄                         
-                  ███    ███   ███    ███     ███    ███ ███    ███ ███   ███ ███  ███    ███                        
-                  ████████▀    ███    █▀      ███    ███  ▀██████▀   ▀█   █▀  █▀   ████████▀                         
-                                              ███    ███                                                             
-  ▄▄▄▄███▄▄▄▄    ▄█  ███▄▄▄▄   ████████▄   ▄████████    ▄████████  ▄█    ▄▄▄▄███▄▄▄▄      ▄████████    ▄████████ 
-  ▄██▀▀▀███▀▀▀██▄ ███  ███▀▀▀██▄ ███   ▀███ ███    ███   ███    ███ ███  ▄██▀▀▀███▀▀▀██▄   ███    ███   ███    ███ 
-  ███   ███   ███ ███▌ ███   ███ ███    ███ ███    █▀    ███    ███ ███▌ ███   ███   ███   ███    █▀    ███    █▀  
-  ███   ███   ███ ███▌ ███   ███ ███    ███ ███         ▄███▄▄▄▄██▀ ███▌ ███   ███   ███  ▄███▄▄▄       ███        
-  ███   ███   ███ ███▌ ███   ███ ███    ███ ███        ▀▀███▀▀▀▀▀   ███▌ ███   ███   ███ ▀▀███▀▀▀     ▀███████████ 
-  ███   ███   ███ ███  ███   ███ ███    ███ ███    █▄  ▀███████████ ███  ███   ███   ███   ███    █▄           ███ 
-  ███   ███   ███ ███  ███   ███ ███   ▄███ ███    ███   ███    ███ ███  ███   ███   ███   ███    ███    ▄█    ███ 
-   ▀█   ███   █▀  █▀    ▀█   █▀  ████████▀  ████████▀    ███    ███ █▀    ▀█   ███   █▀    ██████████  ▄████████▀  
-                                                         ███    ███                                                
-    </pre>
-  </div>
-
-  <div class="sp-main">
-    <cm-index></cm-index>
-    <div class="poem border">
-      <div class="bucket2">
-        <img src="./images/moon_theory_moon.png" class="moonPic" />
-        <p class="chronicTitle heading">
-            <strong>Pink Twilight Theory</strong>
+    <div class="bucket2">
+        <div class="divMoonPic"><img src="./images/moon_theory_moon_circular.png" class="moonPic" /></div>
+        <p class="chronicTitle heading" style="font-size: 30px; font-family: 'Courier';">
+            <strong>Pink Twilight Theory<span data-wiki="error"><sup><a href = "">Ω</a></sup></span></strong>
+            <!-- need link to pink twilight song -->
         </p>
         <pre>
             Mirror mirror on the screen
@@ -150,7 +135,7 @@
 <p>I haven't even started, but I wouldn't be surprised if you already thought there was something wrong with me. I'm just floating here--Lucy in a sky of cubic zirconium. I love Lucy. I love the word "zirconium". I think there's something honest about it, as a message informing you how the world works. I won't confirm or deny whether or not there's something wrong with me, but I will tell you that I'm honest in a similar way. Like a con man dressed in a suspicious trench coat, or a president denying guilt at his most recent scandal. I might seem mysterious now, some new nihilist enigma gnawing nagging at your conscience, but you'll know exactly who I am as soon as things go left (and it ALWAYS goes left). Today I want to nag about a theory called "pink twilight," which is just a pretty way of describing the way things have to get ugly.</p>
 
 
-<p>'Minitel: Miracle or Monster?' These bold words headlining last Tuesday's Los Angeles Times made for quite the interesting cup of coffee for me (black hole black, no cream, half a pack of sugar (a message to myself that I'm not as much of a masochist as X says I am)). In this article, Rone Tempest tells me about the newest way France has found to stick its head up its ass. The French Government, itching to get ahead on the frontier of information technologies, thought it would be a good idea to distribute video text machines called Minitels to some 40 million of its citizens for free. Minitels have quite the charm to them, I would say. Their pixelated screens and clinky keyboards are magicians bringing you worlds in miniature [from the tip of a hat]. Their visual terminal interface makes it exponentially easier to order train tickets, manage your bank account, and talk with your friends, all from home. Penpals and weather updates, phone books and horoscopes, a trillion trinkets of curiosity with no cats killed. This and more are the promise of the largest computer network in le monde. France of course stands to profit tremendously, both economically by charging for time spent on its services, and politically as the bold entity leading the world into its next chapter.</p>
+<p>'Minitel: Miracle or Monster?' These bold words headlining last Tuesday's Los Angeles Times made for quite the interesting cup of coffee for me (black hole black, no cream, half a pack of sugar (a message to myself that I'm not as much of a masochist as X says I am)). In this article, Rone Tempest tells me about the newest way France has found to stick its head up its ass. The French Government, itching to get ahead on the frontier of information technologies, thought it would be a good idea to distribute Video Text machines called <span data-wiki="videotex">Minitels</span> to some 40 million of its citizens for free. Minitels have quite the charm to them, I would say. Their pixelated screens and clinky keyboards are magicians bringing you worlds in miniature [from the tip of a hat]. Their visual terminal interface makes it exponentially easier to order train tickets, manage your bank account, and talk with your friends, all from home. Penpals and weather updates, phone books and horoscopes, a trillion trinkets of curiosity with no cats killed. This and more are the promise of the largest computer network in le monde. France of course stands to profit tremendously, both economically by charging for time spent on its services, and politically as the bold entity leading the world into its next chapter.</p>
 
 <p>But the ennui of ingenuity is that Faustus always follows, and turning a new chapter in our book doesn't change the fact it's an erotica. We'd like to think the bad thoughts in our heads are only exceptions in a dataset whose mean remains utopian. But Minitel tells all, and the picture painted isn't pretty. Out of the 800,000 services offered by Minitel, over half of its profitability is generated on what are called "Pink Minitel" networks, offering sexual graphics, chatrooms, and even connections to prostitution rings. In fact, Minitel has been a key tool facilitating a steady stream of "difficult-to-detect, mostly sexually linked crimes" (sacre bleu!). In response to pressures to take responsibility for this proliferation of f[leshy fauna], France Telecom argues that it's just the medium, and should not be positioned as a censor of content, despite said content being the consequence of an explicitly government-initiated project. It's obvious that France just wants to keep its hand in the Minitel pot, even if that pot is a little sticky.</p>
 
@@ -213,7 +198,7 @@
             A String Theory of Being
         </p>
         <p>
-            What if I told you that black holes aren't just at the center of galaxies but at the center of the very things that make up who we are? What if I told you that at the center of everything... 
+            What if I told you that <span data-wiki="event-horizon">black holes</span> aren't just at the center of galaxies but at the center of the very things that make up who we are? What if I told you that at the center of everything... 
         </p>
         <p>
             is nothing?
@@ -228,11 +213,13 @@
         </p>
 
         <p>
-            The protagonists of String Theory can apparently form either rope-like lines or circular loops. But why do they form these loops? What are they looping around? Wouldn't you say there's gotta be something holding them together, like how Lucy and Rosa Parks held together the nonsense of the '50's? You might think this is a frivolous, trivial question, something that would win you a measly hundred bucks on a primetime game show. But it really matters to me, because it's at the core of the things that literally make up everything. I think there's something there, though I know my ex would call me crazy, say I'm "in one of my little loops" again (I know you're reading this. Why won't you call me back?). My ex is probably right. Maybe I'm just lonely because my ex is my ex, maybe these thoughts are what I get when I let Lucifer loosely loop around my head and love me like Lucy; these thoughts that won't leave, like Rosa, these thoughts that insist on being a ghost that haunts rather than a ghost that ghosts. I'm acting schwarz-childish, I know, but can you really blame me?
+            The protagonists of String Theory can apparently form either rope-like lines or circular loops. But why do they form these loops? What are they looping around? Wouldn't you say there's gotta be something holding them together, like how Lucy and Rosa Parks held together the nonsense of the '50's? You might think this is a frivolous, trivial question, something that would win you a measly hundred bucks on a primetime game show. But it really matters to me, because it's at the core of the things that literally make up everything. I think there's something there, though I know X would call me crazy, say I'm "in one of my little loops" again (I know you're reading this. Why won't you call me back?). X is probably right. Maybe I'm just lonely because X <span class="redacted-string">is my ex</span>, maybe these thoughts are what I get when I let <span data-wiki="luciferin">Lucifer</span> loosely loop around my head and love me like Lucy; these thoughts that won't leave, like Rosa, these thoughts that insist on being a ghost that haunts rather than a ghost that ghosts. I'm acting schwarz-childish, I know, but can you really blame me?
         </p>
 
+        <!-- need demiurge wiki popup link for "master manipulator" -->
         <p>
-            At the heart of physics is a fundamental uncertainty-absurdity, masked by an illusion telling us there's some kind of kettle calling black a pot of gold if you can just make it, make it to the end of the horizon. If God exists they are a master manipulator, which is to say magician, making something out of <span data-wiki="dharma">nothing</span>, a cell, a flower, a me, a you, and a we all out of nonsense. Donning a sly invisible coat and an overtuned grin, skin oily for aesthetic shimmer and functionally slippery in case of the need for a great and fashionable escape (hocus pocus, open sesame), they, in all their opaque omnipotence, exhort us, "I know I work in mysterious ways, Mr. Frost, Mr. Pacman, but all you have to do is walk a little further down the road you chose, and I promise you'll get to the point of it all."
+            At the heart of physics is a fundamental uncertainty-absurdity, masked by an illusion telling us there's some kind of kettle calling black a pot of gold if you can just make it, make it to the end of the horizon. If God exists they are a <span data-wiki="error">master manipulator</span>, which is to say magician, making something out of nothing, a cell, a flower, a me, a you, and a we all out of nonsense. Donning a sly invisible coat and an overtuned grin, skin oily for aesthetic shimmer and functionally slippery in case of the need for a great and fashionable escape (hocus pocus, open sesame), they, in all their opaque omnipotence, exhort us, "I know I work in mysterious ways, Mr. Frost, Mr. Pacman, but all you have to do is walk a little further down the road you chose, and I promise you'll get to the point of it all."
+
         </p>
 
         <p>
@@ -256,7 +243,7 @@
         </p>
 
         <p>
-            And that's something you might not care about, but I think we should at least hear him out. Plots might thicken into a savvy kind of gravy if we center it around a protagonist you can't help but feel skeptical of. Abian, a marvelous yet ultimately miscellaneous mathematician, is our hero here because he has a dream to save the world. In that dream, there are no natural disasters, no catastrophes subsequent to a wobbling Earth, no heatwaves or snowstorms or hurricanes. It's a good dream, I think, maybe even a beautiful one insofar as it facilitates smoother travel, more effective humanitarian aid and less volatile economic exchange. Climates are more stable, forcing strangers to figure out something other than the weather to discuss. Perhaps most charming of all, the Earth itself rebrands its angle, shifting from 29 to 45 degrees off its axis.
+            And that's something you might not care about, but I think we should at least hear him out. Plots might thicken into a savvy kind of gravy if we center it around a protagonist you can't help but feel skeptical of. Abian, a marvelous yet ultimately miscellaneous mathematician, is our hero here because he has a dream to save the world. In that dream, there are no natural disasters, no catastrophes subsequent to a wobbling Earth, no heatwaves or snowstorms or hurricanes. It's a good dream, I think, maybe even a beautiful one insofar as it facilitates smoother travel, more effective humanitarian aid and less volatile economic exchange. Climates are more stable, forcing strangers to figure out something other than the weather to discuss. Perhaps most charming of all, the Earth itself rebrands its angle, shifting from <span data-wiki="23-enigma">23</span> to 45 degrees off its axis.
         </p>
             
         <p>
