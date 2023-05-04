@@ -13,4 +13,10 @@ export const allTrax = {
       src: "https://prismic-io.s3.amazonaws.com/eternal-september/6899447f-0777-4dfd-95fe-88dc8841282b_KnightRidder8.mp3",
     },
   ],
+  "metal-swans": [
+    {
+      title: "Metal Swans",
+      src: "https://prismic-io.s3.amazonaws.com/eternal-september/b3b1cdbb-da1c-4419-a607-dcf9c2cbc01f_MetalSwans.EarlyDemo.mp3",
+    },
+  ],
 };
