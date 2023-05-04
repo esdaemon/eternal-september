@@ -1,0 +1,94 @@
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+@font-face {
+  font-family: General Station;
+  src: url("../static/fonts/GeneraleStation-SemiExtended.otf")
+    format("opentype");
+}
+
+.pa-top {
+  height: 100vh;
+  width: 100vw;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space between;
+}
+
+.pa-top img {
+  max-width: 40vw;
+}
+.ood-top {
+  background-color: #106e88;
+}
+
+.ood-top h1 {
+  font-size: 5rem;
+  font-family: "General Station";
+}
+
+.pa-arrow {
+  width: 90px;
+  border: none;
+  box-shadow: none;
+  margin: 0 30px;
+  filter: saturate(15) brightness(0.45) hue-rotate(13deg);
+}
+
+.right {
+  transform: scaleX(-1);
+}
+
+.footnote {
+  font-size: 10px;
+}
+
+.pa-nav {
+  display: flex;
+  justify-content: space-between;
+  background: linear-gradient(#51d8d2, #106e88);
+}
+
+.pa-nav a {
+  display: flex;
+  justify-content: center;
+}
+
+.pa-logo {
+  border: none;
+  box-shadow: none;
+  width: 13%;
+  margin: 0;
+}
+
+.pa-icon-title {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.pa-icon-title h1 {
+  font-size: 5rem;
+  text-shadow: 4px 4px black;
+  font-weight: normal;
+}
+.ood-top h1 {
+  color: #51d8d2;
+}
+
+main {
+  margin: 40px;
+}
+
+main h1 {
+  font-size: 2rem;
+}
+
+es-video {
+  margin-bottom: 30px;
+}
