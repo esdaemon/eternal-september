@@ -19,30 +19,23 @@
     a,
     a:visited {
       color: black;
-      clear: both;
-      line-height: 160%;
-      margin-top: 0;
+      margin-top: 5px;
     }
 
     a:hover {
       color: blue;
-      clear: both;
-      line-height: 160%;
-      margin-top: 0;
     }
 
     img {
       width: auto;
       align-self: center;
-      max-width: 80%;
+      max-width: 180px;
       filter: grayscale() contrast(1.5);
-      margin-bottom: -15px;
     }
 
     .index-ascii {
       display: flex;
       justify-content: center;
-      align-items: center;
       font-size: 1rem;
       padding: 40px;
       height: 15vh;
@@ -63,7 +56,8 @@
     }
 
     .tile {
-      float: left;
+      display: flex;
+      flex-direction: column;
       margin-top: 1vh;
       height: 80%;
       width: 80%;
@@ -87,31 +81,30 @@
   </div>
 
   <div class="tiles">
-
     <div class="tile">
+      <img src="/static/images/cd-brain-icon.png" />
       <a href="./codex-digital/">
-        <img src="/static/images/cd-brain-icon.png" /><br />
         CODEX DIGITAL
       </a>
     </div>
 
     <div class="tile">
+      <img src="/static/images/pa_blue.png" />
       <a href="./phantom-archives">
-        <img src="/static/images/pa_blue.png" /><br />
         PHANTOM ARCHIVES
       </a>
     </div>
 
     <div class="tile">
+      <img src="/static/images/cd-brain-icon.png" />
       <a href="https://truth-vivid-asiago.glitch.me/?room=Outside">
-        <img src="/static/images/cd-brain-icon.png" /><br />
         SPECTRE COMPLEX
       </a>
     </div>
 
     <div class="tile">
+      <img src="/static/images/cd-brain-icon.png" />
       <a href="./hyperbolic-time-chamber/">
-        <img src="/static/images/cd-brain-icon.png" /><br />
         <!-- HYPERBOLIC TIME CHAMBER -->HTC
       </a>
     </div>
