@@ -37,12 +37,12 @@ class IAIndex extends HTMLElement {
     indexHeader.textContent = "INDEX:";
     ul.appendChild(indexHeader);
 
-    poems.forEach((poem) => {
+    poems.forEach((poem, i) => {
       const a = document.createElement("a");
       const li = document.createElement("li");
       a.href = poem.url;
       a.innerHTML = poem.title;
-      if (url !== "" && poem.url.includes(url)) {
+      if ((url !== "" && poem.url.includes(url)) || (url == "")) {
         a.classList = "current-poem";
       }
       li.appendChild(a);
