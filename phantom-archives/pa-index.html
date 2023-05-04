@@ -29,6 +29,11 @@
       src: url("../static/fonts/Betatron-Regular.otf") format("opentype");
     }
 
+    @font-face {
+      font-family: Reg Times;
+      src: url("../static/fonts/RegTimes.otf") format("opentype");
+    }
+
     html {
       padding: 0;
       margin: 0;
@@ -119,10 +124,12 @@
 <body>
   <!-- <div class="origin"></div>  -->
   <div class="chess">
-    <a href="../neon-babylon/index.html"><img src="../static/images/nb-icon.png" class="nb" /></a>
-    <a href="../octagon-of-dex/index.html"><img src="../static/images/ood-icon.png" class="od" /></a>
-    <a href="../digital-riptide/index.html"><img src="../static/images/dr-icon.png" class="dr" /></a>
-    <a href="../electric-snow-dream/index.html"><img src="../static/images/esd-icon.png" class="esd" /></a>
+    <a href="../neon-babylon/"><img src="../static/images/nb-icon.png" class="nb" /></a>
+    <a href="../octagon-of-dex/"><img src="../static/images/ood-icon.png" class="od" /></a>
+    <a href="../digital-riptide/"><img src="../static/images/dr-icon.png" class="dr" /></a>
+    <a href="../electric-snow-dream/"><img src="../static/images/esd-icon.png" class="esd" /></a>
+    <!-- <a href="../tetra-denim/"><img src="../static/images/td-icon.png" class="td" /></a>
+    <a href="../hurricane-weather-report/"><img src="../static/images/cd-brain-icon.png" class="hwr" /></a> -->
   </div>
 
   <div class="nav">
@@ -148,8 +155,11 @@
     let octagon = new Contag(document.querySelector(".od"), "Octagon of Dex", "GeneraleStation", { top: 30, left: 15 })
     let riptide = new Contag(document.querySelector(".dr"), "Digital Riptide", "bd-geminis", { top: 5, left: 43 })
     let snowDream = new Contag(document.querySelector(".esd"), "The Electric Snow Dream", "Betatron-Regular", { top: 30, left: 77 })
+    // let tetraDenim = new Contag(document.querySelector(".td"), "Tetra Denim", "Reg Times", { top: 30, left: 77 })
+    // let hurricaneWeatherReport = new Contag(document.querySelector(".hwr"), "Hurricane Weather Report", "Monospace", { top: 40, left: 77 })
 
     //contags list
+    // const contags = [neon, octagon, riptide, snowDream, tetraDenim, hurricaneWeatherReport]
     const contags = [neon, octagon, riptide, snowDream]
     let size = contags.length
 

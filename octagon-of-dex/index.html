@@ -6,11 +6,8 @@
   <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
   <title>Octagon of Dex</title>
-  <link rel="stylesheet" href="../spstyle.css" />
-  <link rel="stylesheet" href="../player.css" />
   <link rel="stylesheet" href="ood-styles.css" />
-
-  <script type="module" src="../js/script.js" defer></script>
+  <script type="module" src="../js/dr-script.js" defer></script>
 
   <style>
     body {
@@ -90,6 +87,10 @@
       font-size: 2rem;
     }
 
+    es-video {
+      margin-bottom: 30px;
+    }
+
     /* a:hover {
       color: #AD348B
     } */
@@ -99,9 +100,9 @@
 <body>
   <section class="ood-top">
     <nav class="pa-nav">
-      <a href="../digital-riptide/index.html"><img class="left pa-arrow" src="./ood-images/cyan-arrow.svg"/></a>
+      <a href="../digital-riptide/index.html"><img class="left pa-arrow" src="./ood-images/cyan-arrow.svg" /></a>
       <a href="../phantom-archives/pa-index.html"><img class="pa-logo" src="./ood-images/PA.png" alt=""></a>
-      <a href="../neon-babylon/index.html"><img class="right pa-arrow" src="./ood-images/cyan-arrow.svg"/></a>
+      <a href="../neon-babylon/index.html"><img class="right pa-arrow" src="./ood-images/cyan-arrow.svg" /></a>
     </nav>
 
     <div class="pa-icon-title">
@@ -112,43 +113,84 @@
 
   <main>
     <h1>My Nepenthe</h1>
-    <video>
-      <source
-        src="https://prismic-io.s3.amazonaws.com/eternal-september/95499027-3e31-4579-b7e2-bd0ffd1aa909_MyNepentheCompressed.mp4"
-        type="video/mp4">
-    </video>
-    <div class="spacer"></div>
-    <div class="audio-player">
-      <div class="controls">
-        <button class="play-pause">
-          ▷
-        </button>
-        <input type="range" class="seekbar"></input>
-        <span class="volume-icon">
-          ⏦
-        </span>
-        <input title="volume" type="range" class="volume"></input>
-      </div>
-      <div class="spacer"></div>
 
-      <div class="lyrics">
-        <p class="vt323">
-          In the time of Draco<br />
-          before the birth of Christ<br />
-          the Acropolis family<br />
-          a clan of merchants and miscreants<br />
-          began selling a strange and powerful narcotic <br />
-          spanning vast oceans, countless riches<br />
-          and thousands of years<br />
-          this is their story…<br />
-        </p>
+    <es-video
+      src="https://prismic-io.s3.amazonaws.com/eternal-september/95499027-3e31-4579-b7e2-bd0ffd1aa909_MyNepentheCompressed.mp4">
+    </es-video>
 
-        <p class="one"><em>
+
+    <div class="lyrics">
+      <p class="vt323">
+        In the time of Draco<br />
+        before the birth of Christ<br />
+        the Acropolis family<br />
+        a clan of merchants and miscreants<br />
+        began selling a strange and powerful narcotic <br />
+        spanning vast oceans, countless riches<br />
+        and thousands of years<br />
+        this is their story…<br />
+      </p>
+
+      <p class="one"><em>
           you're my <span data-wiki="error">nepenthe</span>
         </em></p>
 
+      <p class="footnote">
+        Ref# :: Created and directed by <span data-wiki="error">Stephen Bochco</span>.
+      </p>
+    </div>
+    </div>
+
+    <div class="spacer"></div>
+
+    <div id="wintermute-theme">
+      <h1>Octagon of Dex (theme from Wintermute)</h1>
+      <es-video></es-video>
+
+      <div class="lyrics">
+        <h2 class="press-start">XXXXXXXXXXXXXXXXXXXXX</h2>
+
+        <p><em>
+            "In a land beyond time and space<br />
+            a new reality has emerged...<span data-wiki="error">cyberspace</span>!<br />
+            Where everything is connected <br />
+            and nothing is sacred. <br />
+            Into this grim world is brought a hero.<br />
+            A hero with one and only purpose<br />
+            to defeat the machine they call..."
+          </em></p>
+
+        <p class="press-start one"><em>
+            <span class="ramper" data-char="&lt;" data-init="14" data-n="3" data-mult=".85" data-ascend="false">
+            </span>
+            <span data-wiki="error" style="font-size: 20px; color: black;">wintermute</span>
+            <span class="ramper" data-char="&gt;" data-init="14" data-n="3" data-mult=".85" data-ascend="true">
+            </span>
+          </em></p>
+
+        <p>◊◊◊◊◊◊◊◊◊◊◊◊◊◊◊◊◊◊◊◊◊◊◊◊◊◊◊◊◊◊◊◊◊◊◊◊◊◊</p>
+
+        <p class="vt323">
+          My shoes were getting wet<br />
+          the zionite puts out his butt <br />
+          and says the car is coming<br />
+          the streets were filled with death<br />
+          I will destroy all of the world <br />
+          that has not fallen for her<br />
+          the gradients are a mess<br />
+          our wheels are covered in the guts<br />
+          of some old shoryuken<br />
+          I take an octagon of dex<br />
+          baby yes, baby yes<br />
+          and then I started swimming
+        </p>
+
+        <h2 class="press-start">XXXXXXXXXXXXXXXXXXXXX</h2>
+
         <p class="footnote">
-          Ref# :: Created and directed by <span data-wiki="error">Stephen Bochco</span>. 
+          *Ref# :: <em><span data-wiki="error">wintermute</span></em> [pilot episode]. Created by <span
+            data-wiki="error">Stephen Bochco</span>. Directed by REDACTED. Based on <span
+            data-wiki="error">Neuromancer</span> by <span data-wiki="error">William Gibson</span>.
         </p>
       </div>
     </div>
@@ -157,220 +199,101 @@
 
     <div id="wintermute-theme">
       <h1>Octagon of Dex (theme from Wintermute)</h1>
-      <video>
-        <source
-          src="https://prismic-io.s3.amazonaws.com/eternal-september/XXX"
-          type="video/mp4">
-      </video>
-      <div class="spacer"></div>
-      <div class="audio-player">
-        <div class="controls">
-          <button class="play-pause">
-            ▷
-          </button>
-          <input type="range" class="seekbar"></input>
-          <span class="volume-icon">
-            ⏦
-          </span>
-          <input title="volume" type="range" class="volume"></input>
-        </div>
-      </div>
+      <es-video
+        src="https://prismic-io.s3.amazonaws.com/eternal-september/bc20f9dc-abea-4b83-88f9-15f7e18e808c_WintermuteCompressed.mp4"></es-video>
 
-      <div class="spacer"></div>
 
       <div class="lyrics">
         <h2 class="press-start">XXXXXXXXXXXXXXXXXXXXX</h2>
 
         <p><em>
-          "In a land beyond time and space<br />
-          a new reality has emerged...<span data-wiki="error">cyberspace</span>!<br />
-          Where everything is connected <br />
-          and nothing is sacred. <br />
-          Into this grim world is brought a hero.<br />
-          A hero with one and only purpose<br />
-          to defeat the machine they call..."
-        </em></p>
+            "In a land beyond time and space<br />
+            a new reality has emerged...<span data-wiki="error">cyberspace</span>!<br />
+            Where everything is connected <br />
+            and nothing is sacred. <br />
+            Into this grim world is brought a hero.<br />
+            A hero with one and only purpose<br />
+            to defeat the machine they call..."
+          </em></p>
 
         <p class="press-start one"><em>
-          <span class="ramper"
-            data-char="&lt;" data-init="14" data-n="3" data-mult=".85" data-ascend="false">
-          </span>
-          <span data-wiki="error" style="font-size: 20px; color: black;">wintermute</span>
-          <span class="ramper"
-            data-char="&gt;" data-init="14" data-n="3" data-mult=".85" data-ascend="true">
-          </span>
-        </em></p>
+            <span class="ramper" data-char="&lt;" data-init="14" data-n="3" data-mult=".85" data-ascend="false">
+            </span>
+            <span data-wiki="error" style="font-size: 20px; color: black;">wintermute</span>
+            <span class="ramper" data-char="&gt;" data-init="14" data-n="3" data-mult=".85" data-ascend="true">
+            </span>
+          </em></p>
 
         <p>◊◊◊◊◊◊◊◊◊◊◊◊◊◊◊◊◊◊◊◊◊◊◊◊◊◊◊◊◊◊◊◊◊◊◊◊◊◊</p>
 
         <p class="vt323">
-          My shoes were getting wet<br/>
-          the zionite puts out his butt <br/>
-          and says the car is coming<br/>
-          the streets were filled with death<br/>
-          I will destroy all of the world <br/>
-          that has not fallen for her<br/>
-          the gradients are a mess<br/>
-          our wheels are covered in the guts<br/>
-          of some old shoryuken<br/>
-          I take an octagon of dex<br/>
-          baby yes, baby yes<br/>
-          and then I started swimming 
+          My shoes were getting wet<br />
+          the zionite puts out his butt <br />
+          and says the car is coming<br />
+          the streets were filled with death<br />
+          I will destroy all of the world <br />
+          that has not fallen for her<br />
+          the gradients are a mess<br />
+          our wheels are covered in the guts<br />
+          of some old shoryuken<br />
+          I take an octagon of dex<br />
+          baby yes, baby yes<br />
+          and then I started swimming
         </p>
 
         <h2 class="press-start">XXXXXXXXXXXXXXXXXXXXX</h2>
 
         <p class="footnote">
-          *Ref# :: <em><span data-wiki="error">wintermute</span></em> [pilot episode]. Created by <span data-wiki="error">Stephen Bochco</span>. Directed by REDACTED. Based on <span data-wiki="error">Neuromancer</span> by <span data-wiki="error">William Gibson</span>.
+          *Ref# :: <em><span data-wiki="error">wintermute</span></em> [pilot episode]. Created by <span
+            data-wiki="error">Stephen Bochco</span>. Directed by REDACTED. Based on <span
+            data-wiki="error">Neuromancer</span> by <span data-wiki="error">William Gibson</span>.
         </p>
       </div>
     </div>
 
     <div class="spacer"></div>
 
-    <div id="wintermute-theme">
-      <h1>Octagon of Dex (theme from Wintermute)</h1>
-      <video>
-        <source
-          src="https://prismic-io.s3.amazonaws.com/eternal-september/bc20f9dc-abea-4b83-88f9-15f7e18e808c_WintermuteCompressed.mp4"
-          type="video/mp4">
-      </video>
-      <div class="spacer"></div>
-      <div class="audio-player">
-        <div class="controls">
-          <button class="play-pause">
-            ▷
-          </button>
-          <input type="range" class="seekbar"></input>
-          <span class="volume-icon">
-            ⏦
-          </span>
-          <input title="volume" type="range" class="volume"></input>
-        </div>
-      </div>
-
-      <div class="spacer"></div>
-
-      <div class="lyrics">
-        <h2 class="press-start">XXXXXXXXXXXXXXXXXXXXX</h2>
-
-        <p><em>
-          "In a land beyond time and space<br />
-          a new reality has emerged...<span data-wiki="error">cyberspace</span>!<br />
-          Where everything is connected <br />
-          and nothing is sacred. <br />
-          Into this grim world is brought a hero.<br />
-          A hero with one and only purpose<br />
-          to defeat the machine they call..."
-        </em></p>
-
-        <p class="press-start one"><em>
-          <span class="ramper"
-            data-char="&lt;" data-init="14" data-n="3" data-mult=".85" data-ascend="false">
-          </span>
-          <span data-wiki="error" style="font-size: 20px; color: black;">wintermute</span>
-          <span class="ramper"
-            data-char="&gt;" data-init="14" data-n="3" data-mult=".85" data-ascend="true">
-          </span>
-        </em></p>
-
-        <p>◊◊◊◊◊◊◊◊◊◊◊◊◊◊◊◊◊◊◊◊◊◊◊◊◊◊◊◊◊◊◊◊◊◊◊◊◊◊</p>
-
-        <p class="vt323">
-          My shoes were getting wet<br/>
-          the zionite puts out his butt <br/>
-          and says the car is coming<br/>
-          the streets were filled with death<br/>
-          I will destroy all of the world <br/>
-          that has not fallen for her<br/>
-          the gradients are a mess<br/>
-          our wheels are covered in the guts<br/>
-          of some old shoryuken<br/>
-          I take an octagon of dex<br/>
-          baby yes, baby yes<br/>
-          and then I started swimming 
-        </p>
-
-        <h2 class="press-start">XXXXXXXXXXXXXXXXXXXXX</h2>
-
-        <p class="footnote">
-          *Ref# :: <em><span data-wiki="error">wintermute</span></em> [pilot episode]. Created by <span data-wiki="error">Stephen Bochco</span>. Directed by REDACTED. Based on <span data-wiki="error">Neuromancer</span> by <span data-wiki="error">William Gibson</span>.
-        </p>
-      </div>
-    </div>
-
-    <div class="spacer"></div>
-    
     <div id="skynet-syndrome">
       <h1>Skynet Syndrome</h1>
       <div class="spacer"></div>
-      <video>
-        <source
-          src="https://prismic-io.s3.amazonaws.com/eternal-september/XXX"
-          type="video/mp4">
-      </video>
+      <es-video></es-video>
       <div class="spacer"></div>
-      <div class="audio-player">
-        <div class="controls">
-          <button class="play-pause">
-            ▷
-          </button>
-          <input type="range" class="seekbar"></input>
-          <span class="volume-icon">
-            ⏦
-          </span>
-          <input title="volume" type="range" class="volume"></input>
-        </div>
-      </div>
-      
+
+
       <div class="spacer"></div>
 
       <div class="lyrics">
         <p class="footnote">
-          Ref# ::. Created by <span data-wiki="error">Stephen Bochco</span>. Based on material from <span data-wiki="error">James Cameron</span>'s <em><span data-wiki="error">Terminator</span></em> and Terminator 2: <em><span data-wiki="error">Judgment Day</span></em> starring <span data-wiki="error">Arnold Schwarzenegger</span>. Features concepts presented in William Tiler Belt's <span data-wiki="error">SkyNet Syndrome</span> concept AKA The Magnet to Extinction (ME) theory. 
+          Ref# ::. Created by <span data-wiki="error">Stephen Bochco</span>. Based on material from <span
+            data-wiki="error">James Cameron</span>'s <em><span data-wiki="error">Terminator</span></em> and Terminator
+          2: <em><span data-wiki="error">Judgment Day</span></em> starring <span data-wiki="error">Arnold
+            Schwarzenegger</span>. Features concepts presented in William Tiler Belt's <span data-wiki="error">SkyNet
+            Syndrome</span> concept AKA The Magnet to Extinction (ME) theory.
         </p>
       </div>
     </div>
 
     <div class="spacer"></div>
-    
+
     <div id="kodak-boy">
       <h1>Kodak Boy</h1>
-      <img src="./ood-images/kodak-boy.jpg" alt="black hole" />
       <div class="spacer"></div>
-      <audio>
-        <source
-          src="https://prismic-io.s3.amazonaws.com/eternal-september/XXX"
-          type="audio/mpeg">
-        Your browser does not support the audio element.
-      </audio>
-      <div class="audio-player">
-        <div class="controls">
-          <button class="play-pause">
-            ▷
-          </button>
-          <input type="range" class="seekbar"></input>
-          <span class="volume-icon">
-            ⏦
-          </span>
-          <input type="range" class="volume"></input>
-        </div>
-      </div>
+      <es-video></es-video>
 
       <div class="spacer"></div>
 
       <div class="lyrics">
         <p><em>
-          "nothing &nbsp; &nbsp; &nbsp; gray void &nbsp; &nbsp; no matrix &nbsp;&nbsp;no grid<br />
-          on the far rim of consciousness &nbsp;&nbsp;a scurrying<br />
-          a fleeting impression of something rushing<br />
-          towards him across leagues of black mirror "
-        </em></p>
+            "nothing &nbsp; &nbsp; &nbsp; gray void &nbsp; &nbsp; no matrix &nbsp;&nbsp;no grid<br />
+            on the far rim of consciousness &nbsp;&nbsp;a scurrying<br />
+            a fleeting impression of something rushing<br />
+            towards him across leagues of black mirror "
+          </em></p>
 
         <p>
           <span class="two">&nbsp;&nbsp;_______</span><br />
           <span class="two">&ensp;|&emsp;&emsp;&ensp;&nbsp;&nbsp;&nbsp;|</span><br />
-          <span class="two">&ensp;\/&emsp;&emsp;&nbsp;&nbsp;&nbsp;|</span><br/>
+          <span class="two">&ensp;\/&emsp;&emsp;&nbsp;&nbsp;&nbsp;|</span><br />
           <span class="one vt323">kodak boy, kodak boy</span>_____|
         </p>
 
@@ -401,7 +324,9 @@
 
         <p class="footnote">
           *Ref# :: Gibson, William :: <em><span data-wiki="error">Neuromancer</span></em>, Ch. 23.
-          *Ref# :: <em><span data-wiki="error">wintermute</span></em> [pilot episode]. Created by <span data-wiki="error">Stephen Bochco</span>. Directed by REDACTED. Based on <span data-wiki="error">Neuromancer</span> by <span data-wiki="error">William Gibson</span>.
+          *Ref# :: <em><span data-wiki="error">wintermute</span></em> [pilot episode]. Created by <span
+            data-wiki="error">Stephen Bochco</span>. Directed by REDACTED. Based on <span
+            data-wiki="error">Neuromancer</span> by <span data-wiki="error">William Gibson</span>.
         </p>
       </div>
     </div>
@@ -412,34 +337,20 @@
 
     <div id="airwolf">
       <h1>Airwolf (Redux)</h1>
-      <video>
-        <source
-          src="https://prismic-io.s3.amazonaws.com/eternal-september/XXX"
-          type="video/mp4">
-      </video>
+      <es-video>
+      </es-video>
       <div class="spacer"></div>
-      <div class="audio-player">
-        <div class="controls">
-          <button class="play-pause">
-            ▷
-          </button>
-          <input type="range" class="seekbar"></input>
-          <span class="volume-icon">
-            ⏦
-          </span>
-          <input title="volume" type="range" class="volume"></input>
-        </div>
-      </div>
+
 
       <div class="spacer"></div>
 
       <div class="lyrics">
         <p class="footnote">
-          Ref# ::. Starring: Jan Michael Vincent. Licensed by USA Network. 
+          Ref# ::. Starring: Jan Michael Vincent. Licensed by USA Network.
         </p>
       </div>
     </div>
-    
+
   </main>
   <script type="module" src="../js/dr-video-script.js"></script>
 
