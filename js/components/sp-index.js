@@ -56,6 +56,8 @@ class SPIndex extends HTMLElement {
       a.innerHTML = poem.title;
       if (url !== "" && poem.url.includes(url)) {
         a.classList = "current-poem";
+      } else if (url === "" && poem.url.includes("asphodel")) {
+        a.classList = "current-poem";
       }
       li.appendChild(a);
       ul.appendChild(li);

@@ -1,3 +1,5 @@
+@import url("../wiki/wiki.css");
+
 @font-face {
   font-family: Migha;
   src: url("../static/fonts/MighaLightsemiexpandedcntr-MVryw.otf")
@@ -37,7 +39,7 @@
 }
 .HTC-title,
 .buttons button {
-  animation: fade 1s;
+  animation: fade 5s;
   opacity: 0;
 }
 
@@ -72,7 +74,7 @@ main {
 
 video {
   max-width: 80vw;
-  min-width: 70vw;
+  min-width: 60vw;
   max-height: 70vh;
   box-shadow: 5px 6px var(--htc);
   display: block;
@@ -89,9 +91,10 @@ video {
   display: flex;
   justify-content: space-between;
   margin-top: 40px;
+  cursor: pointer;
 }
 
-button {
+.buttons button {
   font-family: Migha, sans;
   color: var(--htc);
   background-color: black;
@@ -101,6 +104,11 @@ button {
   padding: 6px 6px;
 }
 
+h1 [data-wiki] {
+  text-decoration: underline;
+  cursor: pointer;
+  color: var(--htc);
+}
 .next-button {
   animation: cursorPointer 10s;
 }

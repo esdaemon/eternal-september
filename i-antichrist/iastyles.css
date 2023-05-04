@@ -4,13 +4,44 @@
 @import url("https://fonts.googleapis.com/css2?family=Inknut+Antiqua:wght@700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300;400&display=swap");
 
-html,
-body {
-  background-color: white;
-  /* font-family: sans-serif; */
-  margin: 30px;
+@font-face {
+  font-family: California Sun;
+  src: url("../static/fonts/California\ sun.ttf");
 }
 
+h1 {
+  font-family: "California Sun";
+  font-size: 7rem;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+}
+
+.footnote {
+  font-size: 2px;
+}
+
+html,
+body {
+  background-image: url("../static/images/paper2.jpg");
+  background-color: rgb(85, 2, 2);
+  background-blend-mode: darken;
+  /* font-family: sans-serif; */
+  margin: 30px;
+  margin-top: 0px;
+}
+.ia-banner {
+  width: 500px;
+  align-self: center;
+}
+
+.ia-main {
+  display: grid;
+  grid-template-columns: 1fr 5fr;
+  grid-template-rows: 1fr;
+  gap: 12px;
+  width: 100%;
+}
 .yellowlight {
   background-color: #fff2cc;
 }
@@ -40,6 +71,7 @@ img {
 li {
   font-family: monospace;
 }
+
 main {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -63,6 +95,7 @@ p code {
 .pt10 div p {
   font-size: 10pt;
 }
+
 .press-start {
   font-family: "Press Start 2P";
 }
@@ -91,4 +124,8 @@ p code {
   font-family: "Source Code Pro", monospace;
   font-size: 12px;
   font-weight: 300;
+}
+
+.border {
+  box-shadow: 5px 5px 0 -1px rgb(0, 0, 63), 5px 5px rgb(0, 0, 63);
 }
