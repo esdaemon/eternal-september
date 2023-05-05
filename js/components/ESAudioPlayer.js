@@ -5,9 +5,9 @@ export class ESAudioPlayer extends HTMLElement {
     super();
     const src = this.getAttribute("src");
     const shadow = this.attachShadow({ mode: "open" });
-
-    const container = document.createElement("div");
-    container.classList = "container";
+    this.classList.add("container");
+    const player = document.createElement("div");
+    player.classList = "player";
     const audio = document.createElement("audio");
     let currentlyPlaying = 0;
 
@@ -25,6 +25,7 @@ export class ESAudioPlayer extends HTMLElement {
 
     const seekbar = document.createElement("input");
     seekbar.type = "range";
+    seekbar.value = 0;
     controls.appendChild(seekbar);
 
     const volumeIcon = document.createElement("span");
@@ -37,6 +38,9 @@ export class ESAudioPlayer extends HTMLElement {
     volume.value = 90;
     controls.appendChild(volume);
     if (traxList.length > 1) {
+      const img = document.createElement("img");
+      img.src = "../electric-snow-dream/esd-images/snowdreamcover.jpg";
+      player.appendChild(img);
       const trax = document.createElement("div");
       trax.classList = "trax";
       const playlist = document.createElement("ol");
@@ -52,6 +56,7 @@ export class ESAudioPlayer extends HTMLElement {
           const allTracks = this.shadowRoot.querySelectorAll("li");
           allTracks.forEach((t) => t.classList.remove("currently-playing"));
           e.target.classList.add("currently-playing");
+          img.src = traxList[clickedTrackNumber].img;
           if (!audioState.isPaused) {
             togglePlayPause();
             audio.currentTime = 0;
@@ -65,17 +70,17 @@ export class ESAudioPlayer extends HTMLElement {
         playlist.appendChild(li);
       });
       trax.appendChild(playlist);
-      container.appendChild(trax);
+      player.appendChild(trax);
     }
 
-    container.appendChild(audio);
-    container.appendChild(controls);
+    player.appendChild(audio);
+    player.appendChild(controls);
 
     const linkElem = document.createElement("link");
     linkElem.setAttribute("rel", "stylesheet");
-    linkElem.setAttribute("href", "/js/components/player.css");
+    linkElem.setAttribute("href", "/js/components/audio-player.css");
 
-    shadow.appendChild(container);
+    shadow.appendChild(player);
     shadow.append(linkElem);
 
     //player stuff
