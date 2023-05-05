@@ -1,13 +1,18 @@
-body {
-  margin: 0;
-  padding: 0;
-  overflow-x: hidden;
-}
+@import url("https://fonts.googleapis.com/css2?family=Audiowide&family=VT323&display=swap");
+@import url("../indents.css");
+@import url("../wiki/wiki.css");
+@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
 
 @font-face {
   font-family: General Station;
   src: url("../static/fonts/GeneraleStation-SemiExtended.otf")
     format("opentype");
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
 }
 
 .pa-top {
@@ -20,7 +25,7 @@ body {
   justify-content: space between;
 }
 
-.pa-top img {
+.pa-icon-title img {
   max-width: 40vw;
 }
 .ood-top {
@@ -51,9 +56,11 @@ body {
 .pa-nav {
   display: flex;
   justify-content: space-between;
-  background: linear-gradient(#51d8d2, #106e88);
 }
 
+.ood-top .pa-nav {
+  background: linear-gradient(#51d8d2, #106e88);
+}
 .pa-nav a {
   display: flex;
   justify-content: center;
@@ -70,6 +77,7 @@ body {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  height: 80vh;
 }
 
 .pa-icon-title h1 {
@@ -81,6 +89,12 @@ body {
   color: #51d8d2;
 }
 
+.ood-main h1 {
+  font-family: "General Station";
+}
+.spacer {
+  margin: 40px;
+}
 main {
   margin: 40px;
 }
@@ -91,4 +105,43 @@ main h1 {
 
 es-video {
   margin-bottom: 30px;
+}
+
+.lyrics {
+  margin: 0 auto;
+  margin-bottom: 8rem;
+  padding: 40px;
+  max-width: 600px;
+  border: 1px solid black;
+  box-shadow: 6px 6px;
+  background-color: white;
+  font-size: 1rem;
+}
+
+.vt323 {
+  font-family: "VT323";
+  font-size: 14pt;
+}
+
+.press-start {
+  font-family: "Press Start 2P";
+}
+
+h2.press-start {
+  text-align: center;
+}
+
+.airwolf-logo {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+.airwolf-logo img {
+  border: 1px solid hotpink;
+  box-shadow: 4px 4px black;
+  width: 60vw;
+}
+
+h1 [data-wiki] {
+  color: black;
 }

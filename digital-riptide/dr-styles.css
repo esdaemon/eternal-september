@@ -26,8 +26,6 @@ h1 {
 .lyrics {
   margin: 0 auto;
   margin-bottom: 8rem;
-
-  /* margin-bottom: 200px; */
   padding: 40px;
   max-width: 600px;
   border: 1px solid black;
@@ -115,15 +113,6 @@ h1 {
   color: black;
 }
 
-img {
-  display: block;
-  margin: 0 auto;
-  max-width: 80vw;
-  border: 1px solid hotpink;
-  box-shadow: 6px 6px;
-}
 .footnote p {
   font-size: 10px;
 }
-
-/* audio stuff */

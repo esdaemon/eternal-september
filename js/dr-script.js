@@ -1,6 +1,7 @@
 import initWiki from "./initWiki.js";
 import { ESAudioPlayer } from "./components/ESAudioPlayer.js";
 import { ESVideoPlayer } from "./components/ESVideoPlayer.js";
+import ramper from "./ramper.js";
 
 if (document.querySelectorAll("[data-wiki]").length > 0) {
   initWiki();
@@ -8,3 +9,4 @@ if (document.querySelectorAll("[data-wiki]").length > 0) {
 }
 customElements.define("es-audio", ESAudioPlayer);
 customElements.define("es-video", ESVideoPlayer);
+document.querySelectorAll(".ramper") ? ramper() : null;

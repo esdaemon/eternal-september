@@ -19,4 +19,10 @@ export const allTrax = {
       src: "https://prismic-io.s3.amazonaws.com/eternal-september/b3b1cdbb-da1c-4419-a607-dcf9c2cbc01f_MetalSwans.EarlyDemo.mp3",
     },
   ],
+  airwolf: [
+    {
+      title: "Airwolf",
+      src: "https://prismic-io.s3.amazonaws.com/eternal-september/b9c1baf9-df6e-4cb0-bee6-4a1dc7c3fcdb_airwolf.mp3",
+    },
+  ],
 };
