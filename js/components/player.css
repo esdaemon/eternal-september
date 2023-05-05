@@ -76,7 +76,7 @@ input::-moz-range-thumb {
   width: 2px;
   background: black;
   cursor: pointer;
-  transform: translateY(-10px);
+  border: none;
 }
 
 input::-webkit-slider-runnable-track {
