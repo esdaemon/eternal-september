@@ -109,6 +109,7 @@
       background-color: #071279;
       border: 5px solid #E6618A;
       border-radius: 1rem;
+      text-decoration: none;
     }
 
     #chess-button:hover {
@@ -119,34 +120,27 @@
       transform: scaleX(-1);
     }
 
-    .back {
+    .back-button {
       cursor: pointer;
-      width: 25vw;
-      /* height: 10vh; */
-      /* background-color: #E6618A; */
       color: rgb(2, 255, 32);
       position: absolute;
-      top: 0;
-      left: 0;
-
-      /* display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center; */
-    }
-
-    .back-button {
+      top: 12px;
+      left: 12px;
+      border: 1px solid rgb(2, 255, 32);
+      padding: 3px 5px;
       font-family: "Pixtur";
       font-size: 2rem;
+    }
+
+    .back-button:hover {
+      box-shadow: 4px 4px #071279;
     }
   </style>
 </head>
 
 <body>
-  <a href="../index-zones.html">
-    <div class="back">
-      <span class="back-button">leave</span>
-    </div>
+  <a href="../zones-index.html">
+    <span class="back-button">leave</span>
   </a>
 
   <div class="chessboard-container">
@@ -165,7 +159,7 @@
 
   <div class="nav">
     <img class="left-arrow" src="./pa-images/arrow-pink.svg" alt="">
-    <span id="chess-button">Neon Babylon</span>
+    <a href="../neon-babylon/" id="chess-button">Neon Babylon</a>
     <img class="right-arrow" src="./pa-images/arrow-pink.svg" alt="">
   </div>
 
@@ -173,24 +167,22 @@
 
     //if you want to add a new icon, create a new instance of this Contag class and add it to the contags list
     class Contag {
-      constructor(object, name, font, position) {
+      constructor(object, name, font, position, href) {
         this.object = object
         this.name = name
         this.font = font
         this.position = position
+        this.href = href
       }
     }
 
     //current icons
-    let neon = new Contag(document.querySelector(".nb"), "Neon Babylon", "Pixtur", { top: 80, left: 43 })
-    let octagon = new Contag(document.querySelector(".od"), "Octagon of Dex", "GeneraleStation", { top: 30, left: 15 })
-    let riptide = new Contag(document.querySelector(".dr"), "Digital Riptide", "bd-geminis", { top: 5, left: 43 })
-    let snowDream = new Contag(document.querySelector(".esd"), "The Electric Snow Dream", "Betatron-Regular", { top: 30, left: 77 })
+    let neon = new Contag(document.querySelector(".nb"), "Neon Babylon", "Pixtur", { top: 80, left: 43 }, '../neon-babylon')
+    let octagon = new Contag(document.querySelector(".od"), "Octagon of Dex", "GeneraleStation", { top: 30, left: 15 }, '../octagon-of-dex')
+    let riptide = new Contag(document.querySelector(".dr"), "Digital Riptide", "bd-geminis", { top: 5, left: 43 }, '../digital-riptide')
+    let snowDream = new Contag(document.querySelector(".esd"), "The Electric Snow Dream", "Betatron-Regular", { top: 30, left: 77 }, '../electric-snow-dream')
     // let tetraDenim = new Contag(document.querySelector(".td"), "Tetra Denim", "Reg Times", { top: 30, left: 77 })
     // let hurricaneWeatherReport = new Contag(document.querySelector(".hwr"), "Hurricane Weather Report", "Monospace", { top: 40, left: 77 })
-
-    //back button
-    let backButton = document.querySelector(".back-button")
 
     //back button
     let backButton = document.querySelector(".back-button")
@@ -208,13 +200,14 @@
     const changeChessButton = () => {
       chessButton.innerHTML = `${contags[offset % size].name}`
       chessButton.style.fontFamily = `${contags[offset % size].font}`
+      chessButton.href = contags[offset % size].href
       backButton.style.fontFamily = `${contags[offset % size].font}`
       chessButton.style.fontSize = offset % size == 1 ? "3.5rem" : "4rem"
     }
 
     //variables and functions used for setting icon positions
     const widthRadius = 22
-    const heightRadius = 25
+    const heightRadius = 21
     const angle = (2 * Math.PI) / size
     const aspectRatio = window.screen.availWidth / window.screen.availHeight
     const angleOffset = Math.PI / 50

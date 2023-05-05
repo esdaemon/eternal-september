@@ -12,7 +12,14 @@
   font-family: Betatron;
   src: url("../static/fonts/Betatron-Regular.otf") format("opentype");
 }
-
+.container {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
 body {
   margin: 0;
   padding: 0;
@@ -41,10 +48,6 @@ body {
   font-family: "General Station";
 }
 
-.esd-top h1,
-.esd-main h1 {
-  font-family: "Betatron";
-}
 .pa-arrow {
   width: 90px;
   border: none;
@@ -69,12 +72,22 @@ body {
 .ood-top .pa-nav {
   background: linear-gradient(#51d8d2, #106e88);
 }
+.esd-top h1,
+.esd-main h1 {
+  font-family: "Betatron";
+}
 .esd-top {
-  background-color: #094cff;
+  background-color: #ff50cb;
 }
 
 .esd-top .pa-nav {
-  background: linear-gradient(#81bee0, #094cff);
+  background: linear-gradient(#ff8fdd, #ff50cb);
+}
+.esd-top h1 {
+  color: white;
+}
+.esd-top .pa-arrow {
+  filter: saturate(10) brightness(0.9) hue-rotate(55deg);
 }
 
 .pa-nav a {
@@ -103,12 +116,6 @@ body {
 }
 .ood-top h1 {
   color: #51d8d2;
-}
-.esd-top h1 {
-  color: #81bee0;
-}
-.esd-top .pa-arrow {
-  filter: saturate(10) brightness(0.9) hue-rotate(55deg);
 }
 
 .ood-main h1 {

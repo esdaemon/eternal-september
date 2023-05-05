@@ -101,6 +101,10 @@ h1 {
     color: black;
   }
 }
+.container {
+  display: flex;
+  justify-content: center;
+}
 
 img,
 video {

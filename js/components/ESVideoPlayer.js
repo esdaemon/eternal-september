@@ -19,6 +19,7 @@ export class ESVideoPlayer extends HTMLElement {
 
     const seekbar = document.createElement("input");
     seekbar.type = "range";
+    seekbar.value = 0;
     controls.appendChild(seekbar);
 
     const volumeIcon = document.createElement("span");
