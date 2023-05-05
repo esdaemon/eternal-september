@@ -3,6 +3,7 @@
 
 <head>
   <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>𝔼𝕋𝔼ℝℕ𝔸𝕃 𝕊𝔼ℙ𝕋𝔼𝕄𝔹𝔼ℝ</title>
   <style>
     @import url("https://use.typekit.net/nlc0wxe.css");
@@ -107,10 +108,16 @@
       justify-content: center;
     }
 
-    .enter-button {
+    .enter-button,
+    .mobile-overlay-text {
       color: white;
       font-size: 4rem;
       text-align: center;
+    }
+
+    .mobile-overlay-text {
+      display: none;
+      font-size: 1.4rem;
     }
 
     .enter-button:hover {
@@ -139,22 +146,51 @@
     .footer a:hover {
       color: blue;
     }
+
+    @media (max-width: 500px) {
+      .mobile-overlay-text {
+        display: block;
+      }
+
+      .enter-button {
+        display: none;
+      }
+
+      .credits {
+        display: none;
+      }
+
+      .footer {
+        font-size: 1rem;
+        margin-right: 1rem;
+      }
+    }
   </style>
 </head>
 
 
 <body>
   <!-- TODO: fix size -->
-  <div class="overlay"><span class="enter-button">[ENTER<span class="underscore">_</span>]</span>
-    <div class="footer"><a href="">listserv</a>
-      <a href="credits">credits</a>
+  <div class="overlay">
+    <span class="enter-button">[ENTER<span class="underscore">_</span>]</span>
+
+    <div class="mobile-overlay-text">
+      <h3>THANKS FOR VISITING ETERNAL SEPTEMBER. </h3>
+      <h3>TO EXPERIENCE ETERNAL SEPTEMBER PLEASE
+        RETURN ON A TERMINAL OR COMPARABLY SIZED DEVICE<span class="underscore">_</span></h3>
+    </div>
+    <div class="footer"><a
+        href="mailto:eterseptdaemon@aol.com?subject=ETERNAL SEPTEMBER LISTSERV REQUEST&body=DEAR ETERNAL SEPTEMBER SYSOP I AM REQUESTING TO JOIN YOUR LISTSERV {{ADD PERSONAL DETAILS HERE FOR SYSOP CONSIDERATION}}">listserv</a>
+      <a class="credits" href="credits">credits</a>
     </div>
   </div>
+
   <h1>Eternal September</h1>
   <img class='hex1' src="https://ptrks.s3.amazonaws.com/eternal-september/pent-simp-1.gif" alt="">
 
-  <audio
-    src="https://prismic-io.s3.amazonaws.com/eternal-september/80e791c0-4179-4d35-9458-00e846bee4c5_MetaSimTheme.mp3"></audio>
+  <audio class="es-stinger"
+    src="https://prismic-io.s3.amazonaws.com/eternal-september/80e791c0-4179-4d35-9458-00e846bee4c5_MetaSimTheme.mp3">
+  </audio>
   <script>
     const hex1 = document.querySelector('.hex1')
     const audio = document.querySelector('audio')
