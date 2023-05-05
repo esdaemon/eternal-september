@@ -69,9 +69,11 @@ export default function initWiki() {
     } else {
       let response = await fetch(`../wiki/${entryID}.html`);
       let txt = await response.text();
-      txt.includes("Cannot GET /wiki/")
-        ? (entry.innerHTML = errorTxt)
-        : (entry.innerHTML = txt);
+      if (txt.includes("Cannot GET /wiki/")) {
+        entry.innerHTML = errorTxt;
+      } else {
+        entry.innerHTML = txt;
+      }
     }
     // adjust location based on click xy to avoid content leaving window
     if (wiki.style.visibility !== "visible") {
