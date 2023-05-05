@@ -87,6 +87,7 @@ class SPIndex extends HTMLElement {
   a.current-poem {
     background-color: hotpink;
     color: black;
+    padding: 2px 3px;
   }`;
     shadow.appendChild(div);
     shadow.append(style);

@@ -7,53 +7,107 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>HYPERBOLIC TIME CHAMBER</title>
   <!-- <link rel="stylesheet" type="text/css" href="../contag-index.css" /> -->
-  <link rel="stylesheet" type="text/css" href="htc-style.css" />
   <style>
-    img {
-      max-width: 50vw;
+    @font-face {
+      font-family: Migha;
+      src: url("../static/fonts/MighaLightsemiexpandedcntr-MVryw.otf") format("opentype");
     }
 
-    .doors {
+    body {
+      margin: 0;
+      padding: 0;
+      background: black;
+    }
+
+    main {
+      width: 100vw;
+      height: 100vh;
       position: relative;
-      display: block;
-      margin: 0 auto;
+    }
+
+    h1 {
+      position: absolute;
+      top: 30px;
+      left: 50px;
+      color: #48c6e1;
+      font-family: Migha;
+      z-index: 5;
     }
 
     .door1 {
+      z-index: 1;
+      position: absolute;
+      display: cover;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: opacity 2s ease-out;
+    }
+
+    .door2 {
+      z-index: 1;
+      position: absolute;
+      display: cover;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      opacity: 0;
+      transition: opacity 2s ease-out;
+    }
+
+    .door-overlay {
       position: relative;
       top: 0;
       left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 3;
+      display: flex;
+      justify-content: center;
+      align-items: center;
     }
 
-    .door2 {
-      position: absolute;
-      top: 0;
-      left: 0;
-      z-index: 1;
-    }
-
-    .door2 {
-      opacity: 0;
-      transition: all 1s ease-in;
-    }
-
-    .doors:hover .door2 {
-      opacity: 100;
-      transition: all 1s;
+    .door-link {
+      width: 550px;
+      height: 460px;
+      background-color: rgba(255, 105, 180, 0);
+      cursor: pointer;
+      z-index: 4;
     }
   </style>
 
 </head>
 
 <body>
-  <h1 class="HTC-index-title">HYPERBOLIC TIME CHAMBER</h1>
   <main>
-    <a class="doors" href="home.html">
-      <img src="./htc-images/DoorClosed.jpg" alt="" class="door1">
-      <img src="./htc-images/DoorOpen.jpg" alt="" class="door2">
-    </a>
+    <h1 class="HTC-index-title">HYPERBOLIC TIME CHAMBER</h1>
+    <img src="./htc-images/DoorClosed.jpg" alt="" class="door1">
+    <img src="./htc-images/DoorOpen.jpg" alt="" class="door2">
+    <div class="door-overlay">
+      <a class="doors" href="home.html">
+        <div class="door-link">
+        </div>
+      </a>
+    </div>
   </main>
+  <script>
+    const doorLink = document.querySelector('.door-link');
+    const door2 = document.querySelector('.door2');
+    const door1 = document.querySelector('.door1')
+    doorLink.addEventListener("mouseenter", () => {
+      door2.style.opacity = 1;
+      door1.style.opacity = 0;
+    })
+    doorLink.addEventListener('mouseleave', () => {
+      door2.style.opacity = 0;
+      door1.style.opacity = 1;
+    })
 
+  </script>
 </body>
 
 </html>
