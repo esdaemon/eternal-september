@@ -1,9 +1,16 @@
+@import url("https://fonts.googleapis.com/css2?family=VT323&display=swap");
+
 .container {
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.player {
   width: 600px;
   background: white;
-  font-family: monospace;
   border: 1px solid black;
-  padding: 20px;
   box-shadow: 4px 4px;
   margin: 0;
   padding: 0;
@@ -12,10 +19,11 @@
   align-items: center;
   justify-content: center;
 }
+
 .controls {
   width: 90%;
   display: flex;
-  padding-top: 10px;
+  padding: 15px;
   flex-direction: row;
   align-items: center;
   justify-content: space-around;
@@ -27,16 +35,21 @@
 .play-pause {
   font-size: 24px;
 }
-
+img {
+  padding-top: 5%;
+  width: 90%;
+  height: auto;
+}
 .trax {
   width: 90%;
-  padding-bottom: 10px;
+  font-family: "VT323";
+  font-size: 1.2rem;
 }
 
 li:hover {
   cursor: pointer;
   font-weight: bold;
-  text-shadow: 1px 1px hotpink;
+  text-shadow: 1px 1px #ff50cb;
 }
 input {
   outline: none;
@@ -88,7 +101,7 @@ input::-moz-range-thumb {
   width: 2px;
   background: black;
   cursor: pointer;
-  transform: translateY(-10px);
+  border: none;
 }
 
 input::-webkit-slider-runnable-track {

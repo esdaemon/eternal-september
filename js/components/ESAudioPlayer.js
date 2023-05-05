@@ -5,16 +5,18 @@ export class ESAudioPlayer extends HTMLElement {
     super();
     const src = this.getAttribute("src");
     const shadow = this.attachShadow({ mode: "open" });
-
-    const container = document.createElement("div");
-    container.classList = "container";
+    this.classList.add("container");
+    const player = document.createElement("div");
+    player.classList = "player";
     const audio = document.createElement("audio");
     let currentlyPlaying = 0;
+
     let traxList = allTrax[src];
+
     audio.setAttribute("src", traxList[currentlyPlaying].src);
 
     const controls = document.createElement("div");
-    controls.classList = "controls audio-controls";
+    controls.classList = "controls";
 
     const playPause = document.createElement("button");
     playPause.textContent = "▷";
@@ -23,6 +25,7 @@ export class ESAudioPlayer extends HTMLElement {
 
     const seekbar = document.createElement("input");
     seekbar.type = "range";
+    seekbar.value = 0;
     controls.appendChild(seekbar);
 
     const volumeIcon = document.createElement("span");
@@ -34,45 +37,50 @@ export class ESAudioPlayer extends HTMLElement {
     volume.title = "volume";
     volume.value = 90;
     controls.appendChild(volume);
-
-    const trax = document.createElement("div");
-    trax.classList = "trax";
-    const playlist = document.createElement("ol");
-    traxList.forEach((track, i) => {
-      const li = document.createElement("li");
-      li.textContent = track.title;
-      li.dataset.trackNumber = i;
-      if (i == 0) {
-        li.classList.add("currently-playing");
-      }
-      li.addEventListener("click", (e) => {
-        const clickedTrackNumber = e.target.dataset.trackNumber;
-        const allTracks = this.shadowRoot.querySelectorAll("li");
-        allTracks.forEach((t) => t.classList.remove("currently-playing"));
-        e.target.classList.add("currently-playing");
-        if (!audioState.isPaused) {
-          togglePlayPause();
-          audio.currentTime = 0;
-          audio.setAttribute("src", traxList[clickedTrackNumber].src);
-          togglePlayPause();
-        } else {
-          audio.currentTime = 0;
-          audio.setAttribute("src", traxList[clickedTrackNumber].src);
+    if (traxList.length > 1) {
+      const img = document.createElement("img");
+      img.src = "../electric-snow-dream/esd-images/electric-snowdream.png";
+      player.appendChild(img);
+      const trax = document.createElement("div");
+      trax.classList = "trax";
+      const playlist = document.createElement("ol");
+      traxList.forEach((track, i) => {
+        const li = document.createElement("li");
+        li.textContent = track.title;
+        li.dataset.trackNumber = i;
+        if (i == 0) {
+          li.classList.add("currently-playing");
         }
+        li.addEventListener("click", (e) => {
+          const clickedTrackNumber = e.target.dataset.trackNumber;
+          const allTracks = this.shadowRoot.querySelectorAll("li");
+          allTracks.forEach((t) => t.classList.remove("currently-playing"));
+          e.target.classList.add("currently-playing");
+          img.src = traxList[clickedTrackNumber].img;
+          if (!audioState.isPaused) {
+            togglePlayPause();
+            audio.currentTime = 0;
+            audio.setAttribute("src", traxList[clickedTrackNumber].src);
+            togglePlayPause();
+          } else {
+            audio.currentTime = 0;
+            audio.setAttribute("src", traxList[clickedTrackNumber].src);
+          }
+        });
+        playlist.appendChild(li);
       });
-      playlist.appendChild(li);
-    });
-    trax.appendChild(playlist);
+      trax.appendChild(playlist);
+      player.appendChild(trax);
+    }
 
-    container.appendChild(audio);
-    container.appendChild(controls);
-    container.appendChild(trax);
+    player.appendChild(audio);
+    player.appendChild(controls);
 
     const linkElem = document.createElement("link");
     linkElem.setAttribute("rel", "stylesheet");
     linkElem.setAttribute("href", "/js/components/audio-player.css");
 
-    shadow.appendChild(container);
+    shadow.appendChild(player);
     shadow.append(linkElem);
 
     //player stuff

@@ -3,118 +3,220 @@
 
 <head>
   <meta charset="UTF-8">
-  <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
   <title>Octagon of Dex</title>
-  <link rel="stylesheet" href="../spstyle.css" />
-  <link rel="stylesheet" href="../player.css" />
-  <link rel="stylesheet" href="ood-styles.css" />
-
+  <link rel="stylesheet" href="../phantom-archives/pa-styles.css" />
+  <script type="module" src="../js/dr-script.js" defer></script>
   <style>
     body {
-      margin: 0;
-      padding: 0;
-      overflow-x: hidden;
+      background: conic-gradient(from 90deg at 1px 1px, #51d8d2 90deg, yellow 0) 0 0/50px 50px;
     }
 
-    .ood-top {
-      height: 100vh;
-      width: 100vw;
-      margin: 0;
-      padding: 0;
-      background-color: #106E88;
-      display: flex;
-      flex-direction: column;
+    .lyrics img {
+      width: 100%;
     }
-
-    .pa-arrow {
-      width: 90px;
-      border: none;
-      box-shadow: none;
-      margin: 0 30px;
-      filter: saturate(15) brightness(0.45) hue-rotate(13deg);
-    }
-
-    .right {
-      transform: scaleX(-1);
-    }
-
-    .pa-nav {
-      display: flex;
-      justify-content: space-between;
-      background: linear-gradient(#51D8D2, #106E88)
-    }
-
-    .pa-nav a {
-      display: flex;
-      justify-content: center;
-    }
-
-    .pa-logo {
-      border: none;
-      box-shadow: none;
-      width: 13%;
-      margin: 0;
-    }
-
-    .pa-icon-title {
-      display: flex;
-      justify-content: space-around;
-      margin-top: 20vh;
-    }
-
-    .pa-icon-title img {
-      margin: 0;
-      border: none;
-      box-shadow: none;
-    }
-
-    .pa-icon-title h1 {
-      font-size: 5rem;
-      color: #51D8D2;
-      text-shadow: 4px 4px black;
-      font-weight: normal;
-    }
-
-    main {
-      margin: 40px;
-    }
-
-    main h1 {
-      font-size: 3rem;
-    }
-
-    /* a:hover {
-      color: #AD348B
-    } */
   </style>
 </head>
 
 <body>
-  <section class="ood-top">
+  <section class="pa-top ood-top">
     <nav class="pa-nav">
-      <a href="../digital-riptide/index.html"><img class="left pa-arrow" src="./ood-images/cyan-arrow.svg"/></a>
+      <a href="../digital-riptide/index.html"><img class="left pa-arrow" src="./ood-images/cyan-arrow.svg" /></a>
       <a href="../phantom-archives/pa-index.html"><img class="pa-logo" src="./ood-images/PA.png" alt=""></a>
-      <a href="../neon-babylon/index.html"><img class="right pa-arrow" src="./ood-images/cyan-arrow.svg"/></a>
+      <a href="../neon-babylon/index.html"><img class="right pa-arrow" src="./ood-images/cyan-arrow.svg" /></a>
     </nav>
 
     <div class="pa-icon-title">
-      <img src="./ood-images/ood-icon.svg" alt="">
+      <img src="./ood-images/ood-icon.png" alt="">
       <h1>Octagon<br /> of Dex</h1>
     </div>
   </section>
 
-  <main>
-    <h1>My Nepenthe</h1>
+  <main class="pa-main ood-main">
+    <h1><em>My Nepenthe</em></h1>
+    <es-video
+      src="https://prismic-io.s3.amazonaws.com/eternal-september/a1d9fcfb-deff-410f-a211-c751dd7b52b2_my-nepenthe.mp4">
+    </es-video>
     <div class="spacer"></div>
-    <h1>Octagon of Dex<br />(theme from Wintermute)</h1>
+    <div class="lyrics">
+      <p class="vt323">
+        In the time of <span data-wiki="error">Draco</span><br />
+        before the birth of Christ<br />
+        the Acropolis family<br />
+        a clan of merchants and miscreants<br />
+        began selling a strange and powerful <span data-wiki="narcotics">narcotic</span> <br />
+        spanning vast oceans, countless riches<br />
+        and thousands of years<br />
+        this is their story…<br />
+      </p>
+
+      <p class="one"><em>
+          you're my <span data-wiki="my-nepenthe">nepenthe</span>
+        </em></p>
+
+      <p class="footnote">
+        Ref# :: Created and directed by <span data-wiki="error">Stephen Bochco</span>.
+      </p>
+    </div>
+    </div>
+
     <div class="spacer"></div>
-    <h1>Skynet Syndrome</h1>
+
+    <div id="wintermute-theme">
+      <h1><em>Octagon of Dex</em> (<span data-wiki="wintermute">Wintermute</span> Theme)</h1>
+      <es-video
+        src="https://prismic-io.s3.amazonaws.com/eternal-september/e8e84510-240d-407a-be98-d1920a1f4169_wintermute.mp4"></es-video>
+      <div class="spacer"></div>
+      <div class="lyrics">
+        <h2 class="press-start">XXXXXXXXXXXXXXXXXXXXX</h2>
+        <p class="pointfive"><em>
+            "In a land beyond time and space<br />
+            a new reality has emerged...cyberspace!<br />
+            Where everything is connected <br />
+            and nothing is sacred. <br />
+            Into this grim world is brought a hero.<br />
+            A hero with one and only purpose<br />
+            to defeat the machine they call..."
+          </em></p>
+
+        <p class="press-start two"><em>
+            <span class="ramper" data-char="&lt;" data-init="14" data-n="3" data-mult=".85" data-ascend="false">
+            </span>
+            <span data-wiki="wintermute" style="font-size: 20px; color: black;">wintermute</span>
+            <span class="ramper" data-char="&gt;" data-init="14" data-n="3" data-mult=".85" data-ascend="true">
+            </span>
+          </em></p>
+
+        <p class="one">◊◊◊◊◊◊◊◊◊◊◊◊◊◊◊◊◊◊◊◊◊◊◊◊◊◊◊◊◊◊◊◊◊◊◊◊◊◊</p>
+
+        <p class="vt323">
+          My shoes were getting wet<br />
+          the zionite puts out his butt <br />
+          and says the car is coming<br />
+          the streets were filled with death<br />
+          I will destroy all of the world <br />
+          that has not fallen for her<br />
+          the gradients are a mess<br />
+          our wheels are covered in the guts<br />
+          of some old shoryuken<br />
+          I take an octagon of dex<br />
+          baby yes, baby yes<br />
+          and then I started swimming
+        </p>
+
+        <h2 class="press-start">XXXXXXXXXXXXXXXXXXXXX</h2>
+
+        <p class="footnote">
+          *Ref# :: <em><span data-wiki="wintermute">wintermute</span></em> [pilot episode]. Created by <span
+            data-wiki="error">Stephen Bochco</span>. Directed by REDACTED. Based on <span
+            data-wiki="william-gibson">Neuromancer</span> by William Gibson.
+        </p>
+      </div>
+    </div>
+
     <div class="spacer"></div>
-    <h1>Kodak Boy</h1>
+
+    <div id="skynet-syndrome">
+      <h1><em>Skynet Syndrome</em> [credits]</h1>
+      <div class="spacer"></div>
+      <es-video></es-video>
+      <div class="spacer"></div>
+
+
+      <div class="spacer"></div>
+
+      <div class="lyrics">
+        <p class="footnote">
+          Ref# ::. Created by <span data-wiki="error">Stephen Bochco</span>. Based on material from 
+          James Cameron's <em><span data-wiki="terminator">Terminator</span></em> and Terminator
+          2: <em><span data-wiki="error">Judgment Day</span></em> starring <span data-wiki="error">Arnold
+            Schwarzenegger</span>. Features concepts presented in William Tiler Belt's <span data-wiki="skynet-syndrome">SkyNet
+            Syndrome</span> concept AKA The Magnet to Extinction (ME) theory.
+        </p>
+      </div>
+    </div>
+
     <div class="spacer"></div>
-    <h1>Burning Chrome</h1>
+
+    <div id="kodak-boy">
+      <h1><em>Kodak Boy</em></h1>
+      <div class="spacer"></div>
+      <es-video
+        src="https://prismic-io.s3.amazonaws.com/eternal-september/8ae95c1b-10a6-4f31-be19-73370378c661_kodak-boy.mp4"></es-video>
+      <div class="spacer"></div>
+      <div class="lyrics">
+        <p><em>
+            "nothing &nbsp; &nbsp; &nbsp; gray void &nbsp; &nbsp; no matrix &nbsp;&nbsp;no grid<br />
+            on the far rim of consciousness &nbsp;&nbsp;a scurrying<br />
+            a fleeting impression of something rushing<br />
+            towards him across leagues of black mirror "
+          </em></p>
+
+        <p>
+          <span class="two">&nbsp;&nbsp;_______</span><br />
+          <span class="two">&ensp;|&emsp;&emsp;&ensp;&nbsp;&nbsp;&nbsp;|</span><br />
+          <span class="two">&ensp;\/&emsp;&emsp;&nbsp;&nbsp;&nbsp;|</span><br />
+          <span class="one vt323">kodak boy, kodak boy</span>_____|
+        </p>
+
+        <p class="vt323 onepointfive">
+          it's who we are<br />
+          it's who we are
+        </p>
+
+        <p class="vt323 pointfive">
+          i'm sitting here on the beach<br />
+          i'm staying here on the beach<br />
+          i'll never leave because
+        </p>
+
+        <p class="onepointfive vt323">
+          it's who we are
+        </p>
+
+        <p class="onepointfive">
+          &emsp;&emsp;◊◊◊◊◊◊◊◊◊◊◊◊◊◊◊◊◊◊◊◊◊◊◊◊◊◊◊◊◊◊◊◊◊◊◊◊◊◊
+        </p>
+
+        <p class="one vt323">
+          [ kodak boy :::::: a hive mind made of photographs]
+        </p>
+
+        <h2 class="press-start">XXXXXXXXXXXXXXXXXXXXX</h2>
+
+        <p class="footnote">
+          *Ref# :: Gibson, William :: <em><span data-wiki="william-gibson">Neuromancer</span></em>, Ch. 23.
+          *Ref# :: <em><span data-wiki="wintermute">wintermute</span></em> [pilot episode].  Created by <span
+            data-wiki="error">Stephen Bochco</span>. Directed by REDACTED. Based on <span
+            data-wiki="william-gibson">Neuromancer</span> by <span data-wiki="william-gibson">William Gibson</span>.
+        </p>
+      </div>
+    </div>
+
+    <div class="spacer"></div>
+
+    <div id="airwolf">
+      <h1><em>Airwolf</em> (Redux)</h1>
+      <div class="airwolf-logo">
+        <img src="./ood-images/airwolf.jpg" alt="">
+      </div>
+      <div class="spacer"></div>
+
+      <es-audio src="airwolf">
+      </es-audio>
+      <div class="spacer"></div>
+
+      <div class="spacer"></div>
+
+      <div class="lyrics">
+        <img src="./ood-images/airwolf-jmv.png" alt="">
+        <p class="footnote">
+          Ref# ::. Starring: <span data-wiki="jan-michael-vincent">Jan Michael Vincent</span>. Licensed by USA Network.
+        </p>
+      </div>
+    </div>
+
   </main>
+  <script type="module" src="../js/dr-video-script.js"></script>
 
 </body>
 

@@ -23,24 +23,36 @@ h1 {
 
 html,
 body {
-  background-image: url("../static/images/paper.gif");
-  background-color: rgb(195, 0, 39);
+  background-image: url("../static/images/paper2.jpg");
+  background-color: rgb(85, 2, 2);
   background-blend-mode: darken;
   /* font-family: sans-serif; */
   margin: 30px;
+  margin-top: 0px;
+}
+.ia-banner {
+  width: 500px;
+  align-self: center;
 }
 
+.ia-main {
+  display: grid;
+  grid-template-columns: 1fr 5fr;
+  grid-template-rows: 1fr;
+  gap: 12px;
+  width: 100%;
+}
 .yellowlight {
   background-color: #fff2cc;
 }
 
 a,
 [data-wiki] {
-  color: black;
+  color: blue;
 }
 a:visited,
 [data-wiki] {
-  color: black;
+  color: blue;
 }
 a:hover,
 [data-wiki]:hover {
@@ -59,6 +71,7 @@ img {
 li {
   font-family: monospace;
 }
+
 main {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -82,6 +95,7 @@ p code {
 .pt10 div p {
   font-size: 10pt;
 }
+
 .press-start {
   font-family: "Press Start 2P";
 }
@@ -113,5 +127,5 @@ p code {
 }
 
 .border {
-  box-shadow: 5px 5px 0 -1px rgb(0, 0, 63), 5px 5px rgb(0,0,63);
+  box-shadow: 5px 5px 0 -1px rgb(0, 0, 63), 5px 5px rgb(0, 0, 63);
 }

@@ -1,0 +1,176 @@
+@import url("https://fonts.googleapis.com/css2?family=Audiowide&family=VT323&display=swap");
+@import url("../indents.css");
+@import url("../wiki/wiki.css");
+@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
+
+@font-face {
+  font-family: General Station;
+  src: url("../static/fonts/GeneraleStation-SemiExtended.otf")
+    format("opentype");
+}
+@font-face {
+  font-family: Betatron;
+  src: url("../static/fonts/Betatron-Regular.otf") format("opentype");
+}
+.container {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+.pa-top {
+  height: 100vh;
+  width: 100vw;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space between;
+}
+
+.pa-icon-title img {
+  max-width: 40vw;
+}
+.ood-top {
+  background-color: #106e88;
+}
+
+.ood-top h1 {
+  font-size: 5rem;
+  font-family: "General Station";
+}
+
+.pa-arrow {
+  width: 90px;
+  border: none;
+  box-shadow: none;
+  margin: 0 30px;
+  filter: saturate(15) brightness(0.45) hue-rotate(13deg);
+}
+
+.right {
+  transform: scaleX(-1);
+}
+
+.footnote {
+  font-size: 10px;
+}
+
+.pa-nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+.ood-top .pa-nav {
+  background: linear-gradient(#51d8d2, #106e88);
+}
+.esd-top h1,
+.esd-main h1 {
+  font-family: "Betatron";
+}
+.esd-top {
+  background-color: #ff50cb;
+}
+
+.esd-top .pa-nav {
+  background: linear-gradient(#ff8fdd, #ff50cb);
+}
+.esd-top h1 {
+  color: white;
+}
+.esd-top .pa-arrow {
+  filter: saturate(10) brightness(0.9) hue-rotate(55deg);
+}
+
+.pa-nav a {
+  display: flex;
+  justify-content: center;
+}
+
+.pa-logo {
+  border: none;
+  box-shadow: none;
+  width: 13%;
+  margin: 0;
+}
+
+.pa-icon-title {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 80vh;
+}
+
+.pa-icon-title h1 {
+  font-size: 5rem;
+  text-shadow: 4px 4px black;
+  font-weight: normal;
+}
+.ood-top h1 {
+  color: #51d8d2;
+}
+
+.ood-main h1 {
+  font-family: "General Station";
+}
+.spacer {
+  margin: 40px;
+}
+main {
+  margin: 40px;
+}
+
+main h1 {
+  font-size: 2rem;
+}
+
+es-video {
+  margin-bottom: 30px;
+}
+
+.lyrics {
+  margin: 0 auto;
+  margin-bottom: 8rem;
+  padding: 40px;
+  max-width: 600px;
+  border: 1px solid black;
+  box-shadow: 6px 6px;
+  background-color: white;
+  font-size: 1rem;
+}
+
+.vt323 {
+  font-family: "VT323";
+  font-size: 14pt;
+}
+
+.press-start {
+  font-family: "Press Start 2P";
+}
+
+h2.press-start {
+  text-align: center;
+}
+
+.airwolf-logo {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+.airwolf-logo img {
+  border: 1px solid hotpink;
+  box-shadow: 4px 4px black;
+  width: 60vw;
+}
+
+h1 [data-wiki] {
+  color: black;
+}

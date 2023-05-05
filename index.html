@@ -3,79 +3,213 @@
 
 <head>
   <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>𝔼𝕋𝔼ℝℕ𝔸𝕃 𝕊𝔼ℙ𝕋𝔼𝕄𝔹𝔼ℝ</title>
   <style>
-    /* @import url("https://use.typekit.net/nlc0wxe.css"); */
+    @import url("https://use.typekit.net/nlc0wxe.css");
+
+    @font-face {
+      font-family: chicago;
+      src: url("./static/fonts/ChicagoFLF.ttf");
+    }
 
     @keyframes fade {
       0% {
-
         opacity: 0;
-        /* text-shadow: rgba(0, 0, 0, 0); */
-        /* pointer-events: none; */
-        pointer-events: all;
-      }
-
-      15% {
-
-        opacity: 1;
-        /* text-shadow: 1px 1px rgba(255, 0, 128, 0.824), -1px -1px yellowgreen; */
-        pointer-events: all;
-      }
-
-
-      99% {
-        /* text-shadow: rgba(0, 0, 0, 0); */
-        opacity: 0;
-        pointer-events: all;
       }
 
       100% {
-        pointer-events: none;
+        opacity: 1;
+      }
+    }
+
+    @keyframes es-fade-in {
+      0% {
+        opacity: 0;
+        font-size: 4rem;
+        text-shadow: none;
+      }
+
+      80% {
+        opacity: 1;
+      }
+
+      100% {
+        opacity: 1;
+        text-shadow: 4px 4px rgb(0, 255, 255);
+        font-size: 8rem;
+      }
+    }
+
+    @keyframes hex-fade-out {
+      0% {
+        opacity: 1;
+      }
+
+      100% {
         opacity: 0;
       }
     }
 
-
+    @keyframes blinker {
+      50% {
+        color: transparent;
+      }
+    }
 
     body {
       /* background-color: rgb(193, 193, 193); */
-      animation: fade 25s 1;
       background-color: black;
-      opacity: 0;
-      pointer-events: none;
-      height: 100%;
+      height: 95vh;
       display: flex;
       justify-content: center;
       align-items: center;
+      overflow-y: hidden;
+      font-family: chicago, monospace
     }
 
+    h1 {
+      font-family: "Moret";
+      font-size: 8rem;
+      color: hotpink;
+      text-shadow: 4px 4px rgb(0, 255, 255);
+      display: none;
+      animation: es-fade-in 13s 1;
+      top: 28vh;
+      text-align: center;
+      width: 100vw;
+      z-index: 2;
+    }
 
-    img {
-      width: 100%;
-      height: 100vh;
-      margin: auto;
+    .hex1 {
+      animation: fade 5s 1;
+      width: 100vw;
+      height: auto;
       cursor: pointer;
+      display: none;
+      z-index: 1;
+    }
+
+    .hide {
+      animation: hex-fade-out 10s 1;
+      opacity: 0;
+    }
+
+    .overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: black;
+      z-index: 3;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .enter-button,
+    .mobile-overlay-text {
+      color: white;
+      font-size: 4rem;
+      text-align: center;
+    }
+
+    .mobile-overlay-text {
+      display: none;
+      font-size: 1.4rem;
+    }
+
+    .enter-button:hover {
+      color: #00FF41;
+      cursor: pointer;
+    }
+
+    .underscore {
+      animation: blinker 1s step-start infinite
+    }
+
+    .footer {
+      position: fixed;
+      bottom: 12px;
+      right: 0;
+      color: white;
+      font-size: 2rem;
+    }
+
+    .footer a,
+    .footer a:visited {
+      color: white;
+      padding: 4px;
+    }
+
+    .footer a:hover {
+      color: #00FF41;
+    }
+
+    @media (max-width: 500px) {
+      .mobile-overlay-text {
+        display: block;
+      }
+
+      .enter-button {
+        display: none;
+      }
+
+      .credits {
+        display: none;
+      }
+
+      .footer {
+        font-size: 1rem;
+        margin-right: 1rem;
+      }
     }
   </style>
 </head>
 
 
 <body>
-  <div>
-    <!-- TODO: fix size -->
-    <img src="https://ptrks.s3.amazonaws.com/eternal-september/pent-simp-1.gif" alt="">
+  <!-- TODO: fix size -->
+  <div class="overlay">
+    <span class="enter-button">[ENTER<span class="underscore">_</span>]</span>
+
+    <div class="mobile-overlay-text">
+      <h3>THANKS FOR VISITING ETERNAL SEPTEMBER. </h3>
+      <h3>TO EXPERIENCE ETERNAL SEPTEMBER PLEASE
+        RETURN ON A TERMINAL OR COMPARABLY SIZED DEVICE<span class="underscore">_</span></h3>
+    </div>
+    <div class="footer"><a
+        href="mailto:eterseptdaemon@aol.com?subject=ETERNAL SEPTEMBER LISTSERV REQUEST&body=DEAR ETERNAL SEPTEMBER SYSOP I AM REQUESTING TO JOIN YOUR LISTSERV {{ADD PERSONAL DETAILS HERE FOR SYSOP CONSIDERATION}}">listserv</a>
+      <a class="credits" href="credits">credits</a>
+    </div>
   </div>
-  <audio
-    src="https://prismic-io.s3.amazonaws.com/eternal-september/80e791c0-4179-4d35-9458-00e846bee4c5_MetaSimTheme.mp3"></audio>
+
+  <h1>Eternal September</h1>
+  <img class='hex1' src="https://ptrks.s3.amazonaws.com/eternal-september/pent-simp-1.gif" alt="">
+
+  <audio class="es-stinger"
+    src="https://prismic-io.s3.amazonaws.com/eternal-september/80e791c0-4179-4d35-9458-00e846bee4c5_MetaSimTheme.mp3">
+  </audio>
   <script>
-    const hex = document.querySelector('img')
+    const hex1 = document.querySelector('.hex1')
     const audio = document.querySelector('audio')
+    const es = document.querySelector('h1');
+    const enter = document.querySelector('.enter-button')
+    const overlay = document.querySelector('.overlay')
     audio.addEventListener('ended', () => {
-      window.location.href = '/index-zones.html'
+      window.location.href = '/zones-index.html'
     })
-    hex.addEventListener('click', () => {
+    hex1.addEventListener('click', () => {
       audio.play();
+      es.style.display = 'block';
+      es.style.position = 'absolute';
+      hex1.classList.add('hide');
+    })
+
+    enter.addEventListener('click', () => {
+      overlay.style.display = 'none';
+      hex1.style.display = 'block';
     })
   </script>
 </body>

@@ -5,19 +5,18 @@
   <meta charset="utf-8" />
   <title>PHANTOM ARCHIVES</title>
   <style>
-    
     /* space grotesk font */
     @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap');
 
     /* bd-geminis font [Digital Riptide?]*/
     @import url("https://use.typekit.net/hkv0hsz.css");
-    
+
     /* GeneraleStation font [Octagon of Dex] */
     @font-face {
       font-family: GeneraleStation;
       src: url("../static/fonts/GeneraleStation-SemiExtended.otf") format("opentype");
     }
-    
+
     /* pixtur font [Neon Babylon]*/
     @font-face {
       font-family: Pixtur;
@@ -30,6 +29,11 @@
       src: url("../static/fonts/Betatron-Regular.otf") format("opentype");
     }
 
+    @font-face {
+      font-family: Reg Times;
+      src: url("../static/fonts/RegTimes.otf") format("opentype");
+    }
+
     html {
       padding: 0;
       margin: 0;
@@ -37,11 +41,13 @@
 
     body {
       background-color: rgb(0, 0, 0);
-      color: #ffffff;
       height: 100%;
       overflow-x: hidden;
+      overflow-y: hidden;
       margin: 0;
       padding: 0;
+      background-image: url("../static/images/pa-index-floor.png");
+      background-size: cover;
     }
 
     h1 {
@@ -49,7 +55,7 @@
     }
 
     img {
-      max-width: 125px;
+      max-width: 170px;
       position: absolute;
     }
 
@@ -73,8 +79,6 @@
     }
 
     #left-arrow {
-      /* position:absolute; */
-      /* top: 60vh; */
       left: 20vw;
       font-size: 5vw;
       margin-right: 3vw;
@@ -89,307 +93,153 @@
     }
 
     #right-arrow {
-      /* position:absolute; */
-      /* top: 60vh; */
       left: 60vw;
       font-size: 5vw;
       margin-left: 3vw;
     }
 
     #chess-button {
-      /* position:absolute; */
-      /* top: 67vh; */
-      /* left: 34.75vw; */
+      width: 50vw;
+      text-align: center;
       font-family: Pixtur;
       font-size: 4rem;
       padding: 1rem;
+      margin-bottom: 2rem;
       color: #E6618A;
       background-color: #071279;
       border: 5px solid #E6618A;
       border-radius: 1rem;
+      text-decoration: none;
     }
 
     #chess-button:hover {
-      /* color:aquamarine; */
       cursor: pointer;
-    }
-
-    .bottom {
-      top: 450px;
-      left: 47vw;
-      animation: bottomCW 1000ms;
-      animation-fill-mode: forwards;
-      animation-timing-function: linear;
-    }
-
-    @keyframes bottomCW {
-      from {
-        top: 33%;
-        left: 77%;
-      }
-
-      to {
-        top: 450px;
-        left: 47vw;
-      }
-    }
-
-    @keyframes bottomCCW {
-      from {
-        top: 30%;
-        left: 10%;
-      }
-
-      to {
-        top: 450px;
-        left: 47vw;
-      }
-    }
-
-    .top {
-      top: 5%;
-      left: 43%;
-      animation: topCW 1000ms;
-      animation-fill-mode: forwards;
-      animation-timing-function: linear;
-    }
-
-    @keyframes topCW {
-      from {
-        top: 30%;
-        left: 10%;
-      }
-
-      to {
-        top: 5%;
-        left: 43%;
-      }
-    }
-
-    @keyframes topCCW {
-      from {
-        top: 33%;
-        left: 77%;
-      }
-
-      to {
-        top: 5%;
-        left: 43%;
-      }
-    }
-
-    .left {
-      top: 30%;
-      left: 10%;
-      animation: leftCW 1000ms;
-      animation-fill-mode: forwards;
-      animation-timing-function: linear;
-    }
-
-    @keyframes leftCW {
-      from {
-        top: 450px;
-        left: 47vw;
-      }
-
-      to {
-        top: 30%;
-        left: 10%;
-      }
-    }
-
-    @keyframes leftCCW {
-      from {
-        top: 5%;
-        left: 43%;
-      }
-
-      to {
-        top: 30%;
-        left: 10%;
-      }
-    }
-
-    .right {
-      top: 33%;
-      left: 77%;
-      animation: rightCW 1000ms;
-      animation-fill-mode: forwards;
-      animation-timing-function: linear;
-    }
-
-    @keyframes rightCW {
-      from {
-        top: 5%;
-        left: 43%;
-      }
-
-      to {
-        top: 33%;
-        left: 77%;
-      }
-    }
-
-    @keyframes rightCCW {
-      from {
-        top: 450px;
-        left: 47vw;
-      }
-
-      to {
-        top: 33%;
-        left: 77%;
-      }
-    }
-
-
-    .chessboard-container {
-
-      background-image: url("../static/images/pa-index-floor.png");
-      background-repeat: no-repeat;
-      position: absolute;
-      top: -15%;
-      left: 50vw;
-      transform: translateX(-50%);
-      /* left: 6.5%; */
-      width: 84vw;
-      height: 90vh;
-    }
-
-    .chessboard {
-      width: 200%;
-      position: absolute;
-
     }
 
     .right-arrow {
       transform: scaleX(-1);
     }
+
+    .back-button {
+      cursor: pointer;
+      color: rgb(2, 255, 32);
+      position: absolute;
+      top: 12px;
+      left: 12px;
+      border: 1px solid rgb(2, 255, 32);
+      padding: 3px 5px;
+      font-family: "Pixtur";
+      font-size: 2rem;
+    }
+
+    .back-button:hover {
+      box-shadow: 4px 4px #071279;
+    }
   </style>
 </head>
 
 <body>
+  <a href="../zones-index.html">
+    <span class="back-button">leave</span>
+  </a>
+
   <div class="chessboard-container">
 
   </div>
 
+  <!-- <div class="origin"></div>  -->
   <div class="chess">
-
-    <a href="../neon-babylon/index.html"><img src="../static/images/nb-icon.png" class="bottom" /></a>
-    <a href="../octagon-of-dex/index.html"><img src="../static/images/ood-icon.png" class="top" /></a>
-    <a href="../digital-riptide/index.html"><img src="../static/images/dr-icon.png" class="right" /></a>
-    <a href="../electric-snow-dream/index.html"><img src="../static/images/esd-icon.png" class="left" /></a>
+    <a href="../neon-babylon/"><img src="../static/images/nb-icon.png" class="nb" /></a>
+    <a href="../octagon-of-dex/"><img src="../static/images/ood-icon.png" class="od" /></a>
+    <a href="../digital-riptide/"><img src="../static/images/dr-icon.png" class="dr" /></a>
+    <a href="../electric-snow-dream/"><img src="../static/images/esd-icon.png" class="esd" /></a>
+    <!-- <a href="../tetra-denim/"><img src="../static/images/td-icon.png" class="td" /></a>
+    <a href="../hurricane-weather-report/"><img src="../static/images/cd-brain-icon.png" class="hwr" /></a> -->
   </div>
 
   <div class="nav">
     <img class="left-arrow" src="./pa-images/arrow-pink.svg" alt="">
-    <span id="chess-button">Neon Babylon</span>
+    <a href="../neon-babylon/" id="chess-button">Neon Babylon</a>
     <img class="right-arrow" src="./pa-images/arrow-pink.svg" alt="">
   </div>
 
   <script type="text/javascript">
-    function chessWheel() {
-      chessWheel.preventDefault();
 
-      // get a chessList of all the chess div boxes
-      const chessList = document.querySelectorAll('chess');
-
-      for (let i = 0; i < chessList.length; i++) {
-
-        // if div is active, that class name will be removed
-        if (chessList[i].classList.contains('active')) {
-          chessList[i].classList.remove('active');
-
-          // check whether you're at the end of chessList 
-          const nextIndex = i < chessList.length - 1 ? i + 1 : 0;
-
-          // and add the class that makes next (or first) div visible
-          chessList[nextIndex].classList.add(' active');
-
-          // exit the loop
-          break;
-        }
+    //if you want to add a new icon, create a new instance of this Contag class and add it to the contags list
+    class Contag {
+      constructor(object, name, font, position, href) {
+        this.object = object
+        this.name = name
+        this.font = font
+        this.position = position
+        this.href = href
       }
     }
 
-    chessButton = document.getElementById('chess-button')
-    const contags = ["Neon Babylon", "Octagon of Dex", "Digital Riptide", "The Electric Snow Dream"]
-    const fonts = ["Pixtur", "GeneraleStation", "bd-geminis", "Betatron-Regular"]
-    let i = 0
+    //current icons
+    let neon = new Contag(document.querySelector(".nb"), "Neon Babylon", "Pixtur", { top: 80, left: 43 }, '../neon-babylon')
+    let octagon = new Contag(document.querySelector(".od"), "Octagon of Dex", "GeneraleStation", { top: 30, left: 15 }, '../octagon-of-dex')
+    let riptide = new Contag(document.querySelector(".dr"), "Digital Riptide", "bd-geminis", { top: 5, left: 43 }, '../digital-riptide')
+    let snowDream = new Contag(document.querySelector(".esd"), "The Electric Snow Dream", "Betatron-Regular", { top: 30, left: 77 }, '../electric-snow-dream')
+    // let tetraDenim = new Contag(document.querySelector(".td"), "Tetra Denim", "Reg Times", { top: 30, left: 77 })
+    // let hurricaneWeatherReport = new Contag(document.querySelector(".hwr"), "Hurricane Weather Report", "Monospace", { top: 40, left: 77 })
 
+    //back button
+    let backButton = document.querySelector(".back-button")
+
+    //contags list
+    // const contags = [neon, octagon, riptide, snowDream, tetraDenim, hurricaneWeatherReport]
+    const contags = [neon, octagon, riptide, snowDream]
+    let size = contags.length
+
+    //variable used to change positioning of icons and contents of the chessButton
+    let offset = 0
+
+    //displays title of "active" icon [the one on the bottom]
+    const chessButton = document.getElementById('chess-button')
     const changeChessButton = () => {
-      chessButton.innerHTML = `${contags[i % 4]}`
-      chessButton.style.fontFamily = `${fonts[i % 4]}`
+      chessButton.innerHTML = `${contags[offset % size].name}`
+      chessButton.style.fontFamily = `${contags[offset % size].font}`
+      chessButton.href = contags[offset % size].href
+      backButton.style.fontFamily = `${contags[offset % size].font}`
+      chessButton.style.fontSize = offset % size == 1 ? "3.5rem" : "4rem"
     }
 
-    const switchAnimCW = () => {
-      const bottom = document.querySelector('.bottom')
-      const right = document.querySelector('.right')
-      const top = document.querySelector('.top')
-      const left = document.querySelector('.left')
-
-      bottom.style.animation = 'bottomCW 1000ms'
-      right.style.animation = 'rightCW 1000ms'
-      top.style.animation = 'topCW 1000ms'
-      left.style.animation = 'leftCW 1000ms'
+    //variables and functions used for setting icon positions
+    const widthRadius = 22
+    const heightRadius = 21
+    const angle = (2 * Math.PI) / size
+    const aspectRatio = window.screen.availWidth / window.screen.availHeight
+    const angleOffset = Math.PI / 50
+    const findPos = (index) => {
+      let x = widthRadius * Math.cos((angle * (index - 1)) + angleOffset)
+      let y = heightRadius * Math.sin((angle * (index - 1)))
+      return { top: 36 - y, left: (x + 46 - widthRadius) * aspectRatio } //the 36 and 46 should be placed into variables instead of hardcoded
     }
 
-    const swapCW = () => {
-      const bottom = document.querySelector('.bottom')
-      const right = document.querySelector('.right')
-      const top = document.querySelector('.top')
-      const left = document.querySelector('.left')
-
-      bottom.className = 'left'
-      right.className = 'bottom'
-      top.className = 'right'
-      left.className = 'top'
-    }
-
-    const switchAnimCCW = () => {
-      const bottom = document.querySelector('.bottom')
-      const right = document.querySelector('.right')
-      const top = document.querySelector('.top')
-      const left = document.querySelector('.left')
-
-      bottom.style.animation = 'bottomCCW 1000ms'
-      right.style.animation = 'rightCCW 1000ms'
-      top.style.animation = 'topCCW 1000ms'
-      left.style.animation = 'leftCCW 1000ms'
-    }
-
-    const swapCCW = () => {
-      const bottom = document.querySelector('.bottom')
-      const right = document.querySelector('.right')
-      const top = document.querySelector('.top')
-      const left = document.querySelector('.left')
-
-      bottom.className = 'right'
-      right.className = 'top'
-      top.className = 'left'
-      left.className = 'bottom'
+    const setPositions = () => {
+      for (i = 0; i < size; i++) {
+        contags[i].position = findPos(i - offset)
+        contags[i].object.style.top = `${contags[i].position.top}vh`
+        contags[i].object.style.left = `${contags[i].position.left}vw`
+      }
     }
 
     const rotateCW = () => {
-      swapCW()
-      switchAnimCW()
-
-      i++
+      offset++
+      setPositions()
       changeChessButton()
     }
 
     const rotateCCW = () => {
-      swapCCW()
-      switchAnimCCW()
-
-      i--
-      i = i < 0 ? 3 : i;
+      offset--
+      offset = offset < 0 ? size - 1 : offset;
+      console.log(offset)
+      setPositions()
       changeChessButton()
     }
 
-    // document.querySelector("chess").classList.add(" active");
-    // document.getElementById("right-arrow").addEventListener("click", chessWheel);
-
+    setPositions() //sets initial positions of icons on page
     document.querySelector(".right-arrow").addEventListener("click", rotateCW);
     document.querySelector(".left-arrow").addEventListener("click", rotateCCW);
   </script>

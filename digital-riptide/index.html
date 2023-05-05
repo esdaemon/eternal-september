@@ -73,6 +73,14 @@
       font-weight: normal;
     }
 
+    .container {
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
 
     es-video,
     es-audio {
@@ -82,15 +90,19 @@
     main {
       margin: 40px;
     }
+
+    [data-wiki] {
+      color: black;
+    }
   </style>
 </head>
 
 <body>
   <section class="dr-top">
     <nav class="pa-nav">
-      <a href="../electric-snow-dream/index.html"><img class="left pa-arrow" src="./dr-images/arrow-purple.svg"></img><a >
-      <a href="../phantom-archives/pa-index.html"><img class="pa-logo" src="./dr-images/pa_purple.png" alt=""></a>
-      <a href="../octagon-of-dex/index.html"><img class="right pa-arrow" src="./dr-images/arrow-purple.svg"></img><a >
+      <a href="../electric-snow-dream/index.html"><img class="left pa-arrow" src="./dr-images/arrow-purple.svg" /></a>
+      <a href="../phantom-archives/pa-index.html"><img class="pa-logo" src="./dr-images/pa_purple.png" alt="" /></a>
+      <a href="../octagon-of-dex/index.html"><img class="right pa-arrow" src="./dr-images/arrow-purple.svg" /></a>
     </nav>
 
     <div class="pa-icon-title">
@@ -100,44 +112,40 @@
   </section>
 
   <main>
-    <h1>
-      "PINK TWILIGHT"<br>
-      (feat. Gordon Voidwell)
-    </h1>
-    <es-video
-      src="https://prismic-io.s3.amazonaws.com/eternal-september/cbdc7c97-9496-4c65-a898-f38125b631e8_smaller-pink-twilight.mp4">
-    </es-video>
-    <div class="spacer"></div>
-    <div class="lyrics code">
-      <p>
-        all that i've known since the moment you said it <br>
-        and all that i want is to know if you meant it<br>
-        in this abyss of useless rumination<br>
-        froze in the pose of endless hesitation<br>
-        pounding the walls like i'm framed in a photo<br>
-        calling your name like a <span data-wiki="ornithomancy">crow</span> in a tunnel<br>
-        bury my mind in the bright ice of metal<br>
-        but all i can hear is you calling me baby
-      </p>
-      <p class="one"><em>(you called me "baby")</em></p>
+    <div id="pink-twilight">
+      <h1>
+        <span data-wiki="digital-riptide">Digital Riptide</span>: <em><a href="/chronic-mindcrimes/entries.html">Pink
+            Twilight</a></em> (demo)
+      </h1>
+      <es-video
+        src="https://prismic-io.s3.amazonaws.com/eternal-september/01d0181f-c537-4e7a-878b-0b0fa2f15f77_pink-twilight.mp4">
+      </es-video>
+      <div class="spacer"></div>
+      <div class="lyrics code">
+        <p>
+          all that i've known since the moment you said it <br>
+          and all that i want is to know if you meant it<br>
+          in this abyss of useless rumination<br>
+          froze in the pose of endless hesitation<br>
+          pounding the walls like i'm framed in a photo<br>
+          calling your name like a <span data-wiki="ornithomancy">crow</span> in a tunnel<br>
+          bury my mind in the bright <span data-wiki="william-gibson">ICE</span> of metal<br>
+          but all i can hear is you calling me baby
+        </p>
+        <p class="one"><em>(you called me "baby")</em></p>
+      </div>
     </div>
     <div id="into-the-turquoise">
       <h1>
-        Into the Turquoise
+        Digital Riptide: <em>Into the Turquoise</em> (demo)
       </h1>
-      <img src="./dr-images/into-the-turquoise.jpeg" alt="black hole" />
-      <div class="spacer"></div>
-      <h4 style="text-align: center">[add into the turquoise audio player here or replace with video]</h4>
-
-      <es-audio src="digital-riptide"></es-audio>
-
+      <es-video
+        src="https://prismic-io.s3.amazonaws.com/eternal-september/091679b0-342a-4153-8ed4-1c2e5ff23598_into-the-turq.mp4">
+      </es-video>
       <div class="spacer"></div>
 
-      <div class="lyrics">
+      <div class="lyrics code">
         <h2 class="press-start">XXXXXXXXXXXXXXXXXXXXX</h2>
-
-        <p class="poemTitle pointfive"><strong>Into the Turquoise</strong></p>
-
         <p>
           i am thinking back <br />
           <span class="pointfive">to the <span data-wiki="event-horizon">event horizon</span></span>
@@ -155,7 +163,7 @@
         <div class="smallspacer"></div>
         <p class="one">
           sit back <span class="inlinespace">melt ice</span>
-          <span class="inlinespace">roll paper</span>
+          <span class="inlinespace"><span data-wiki="cannabis">roll paper</span></span>
         </p>
         <p class="onepointfive tenpt">
           sit back <span class="inlinespace">melt ice</span>
@@ -199,7 +207,7 @@
 
         <p class="two">
           rolled up like mercury pooling <br />
-          this videotex is shaman
+          <span data-wiki="videotex">this videotex is shaman</span>
         </p>
 
         <p class="three">
@@ -228,9 +236,96 @@
         <h2 class="press-start">XXXXXXXXXXXXXXXXXXXXX</h2>
       </div>
     </div>
+    <div id="out-of-the-depths">
+      <h1>
+        <span data-wiki="digital-riptide">Gordon Voidwell</span>: <em><span data-wiki="Baudelaire">Out of the
+            Depths</span></em>
+      </h1>
+      <es-video
+        src="https://prismic-io.s3.amazonaws.com/eternal-september/2836823e-b384-4892-bd7b-62c9b9ede849_out-of-the-depths.mp4">
+      </es-video>
+      <div class="spacer"></div>
+      <div class="lyrics code">
+        <p>
+          Have pity, my one true lust nostalgic <br>
+          Down to a dark <a href="../tetra-denim">abyss</a> my heart has sounded,<br>
+          A dystopian world by <span data-wiki="waves-of-nothingness">grey horizons</span> bounded,<br>
+          Where blaspheme horror swims a lake <span data-wiki="cimmerian">cimmerian</span>.
+        </p>
+
+        <p>
+          A frigid sun floats overhead one six months,<br>
+          the other six darkness wraps the metropolis;<br>
+          a terrain more bleak than the polar wastes<br>
+          Neither beasts, nor streams, nor verdure, nor woods.
+        </p>
+
+        <p>
+          But no horror in the world can surpass in dread<br>
+          By the cold razor of this glacial sun<br>
+          And that huge night like primal chaos spread
+        </p>
+
+        <p>
+          I envy the most putrid beast somnambulant<br>
+          heart slowed near death in cave or <span data-wiki="coral-gables">coral gable</span>,<br>
+          So slowly an arc of these dark years do trace.
+        </p>
+        <br>
+        <br>
+        <div class="footnote">
+          <p>Ref# :: <span data-wiki="baudelaire">Baudelaire</span>, Charles. <em>Out of the Depths</em>. 1856.</p>
+        </div>
+
+      </div>
+    </div>
+    <div id="metal-swans">
+      <h1>
+        <span data-wiki="digital-riptide">Metal Swans</span>: <em>Metal Swans</em>
+      </h1>
+      <es-audio src="metal-swans"></es-audio>
+      <div class="spacer"></div>
+      <div class="lyrics code">
+        <p>
+          don't it make you feel sad a little bit <br>
+          the way those feathers come right off in the wind
+        </p>
+
+        <p>
+          don't it make you feel sad a little bit<br>
+          the way those raindrops melt right into your skin
+        </p>
+
+        <p>. . . . . . . . . . . . . . . [strange party black walls mirror glass]</p>
+
+        <p>
+          don't it make you feel sad a little bit<br>
+          the way those feathers go right down to the bone
+        </p>
+
+        <p class="code">* * * * 8 8 8 8 8 8 * * * *</p>
+
+        <em>
+          <p>
+            search the evening sky for <span data-wiki="chemtrails">chemtrails</span><br>
+            like a prism on a sailboat
+          </p>
+          <p>
+            this smoke smells like formaldehyde<br>
+            like an <span data-wiki="ibm">ibm</span> plant<br>
+            a <span data-wiki="ornithomancy">bird</span> cries out for one of its own
+          </p>
+          <p>it says</p>
+          <p>
+            "do you hear me<br>
+            i am your <span data-wiki="gnostics">maker</span>"
+          </p>
+        </em>
+
+      </div>
+    </div>
   </main>
   <script type="module" src="../js/dr-script.js"></script>
-  <script src="../js/components/ESVideoPlayer.js"></script>
 </body>
 
 </html>

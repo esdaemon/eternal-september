@@ -23,7 +23,6 @@ export default function initWiki() {
   const handle = document.querySelector(".handle");
   const entry = document.querySelector(".entry");
   const prev = document.querySelector(".prev");
-
   const wikiLinks = document.querySelectorAll("[data-wiki]");
 
   let entryArray = [];
@@ -70,11 +69,12 @@ export default function initWiki() {
     } else {
       let response = await fetch(`../wiki/${entryID}.html`);
       let txt = await response.text();
-      txt.includes("Cannot GET /wiki/")
-        ? (entry.innerHTML = errorTxt)
-        : (entry.innerHTML = txt);
+      if (txt.includes("Cannot GET /wiki/")) {
+        entry.innerHTML = errorTxt;
+      } else {
+        entry.innerHTML = txt;
+      }
     }
-
     // adjust location based on click xy to avoid content leaving window
     if (wiki.style.visibility !== "visible") {
       // horizontal stuff
@@ -103,6 +103,11 @@ export default function initWiki() {
     wiki.style.visibility = "hidden";
     prev.style.visibility = "hidden";
     entryArray = [];
+    let vid = document.querySelector("video");
+    if (vid) {
+      console.log("stop video");
+      vid.pause();
+    }
   };
 
   dragElement(wiki);

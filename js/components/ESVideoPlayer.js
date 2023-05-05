@@ -1,6 +1,4 @@
-
 export class ESVideoPlayer extends HTMLElement {
-
   constructor() {
     super();
     const src = this.getAttribute("src");
@@ -21,6 +19,7 @@ export class ESVideoPlayer extends HTMLElement {
 
     const seekbar = document.createElement("input");
     seekbar.type = "range";
+    seekbar.value = 0;
     controls.appendChild(seekbar);
 
     const volumeIcon = document.createElement("span");
@@ -30,6 +29,7 @@ export class ESVideoPlayer extends HTMLElement {
     const volume = document.createElement("input");
     volume.type = "range";
     volume.title = "volume";
+    volume.value = 90;
     controls.appendChild(volume);
 
     container.appendChild(video);
