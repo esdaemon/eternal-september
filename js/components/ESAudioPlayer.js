@@ -39,7 +39,7 @@ export class ESAudioPlayer extends HTMLElement {
     controls.appendChild(volume);
     if (traxList.length > 1) {
       const img = document.createElement("img");
-      img.src = "../electric-snow-dream/esd-images/snowdreamcover.jpg";
+      img.src = "../electric-snow-dream/esd-images/electric-snowdream.png";
       player.appendChild(img);
       const trax = document.createElement("div");
       trax.classList = "trax";
