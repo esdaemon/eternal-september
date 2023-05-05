@@ -19,12 +19,13 @@ export const allTrax = {
       src: "https://prismic-io.s3.amazonaws.com/eternal-september/b3b1cdbb-da1c-4419-a607-dcf9c2cbc01f_MetalSwans.EarlyDemo.mp3",
     },
   ],
-  airwolf: [
+  "airwolf": [
     {
       title: "Airwolf",
       src: "https://prismic-io.s3.amazonaws.com/eternal-september/b9c1baf9-df6e-4cb0-bee6-4a1dc7c3fcdb_airwolf.mp3",
     },
   ],
+
   "alive-in-the-electric-snowdream": [
     {
       title: "track 1",
@@ -39,4 +40,16 @@ export const allTrax = {
       src: "",
     },
   ],
+  "i-am-the-riptide": [
+    {
+      title: "I Am the Riptide", 
+      src: "https://prismic-io.s3.amazonaws.com/eternal-september/ed32660f-730f-4de3-a437-36b7bb59131e_IamtheRiptide7.mp3"
+    }
+  ], 
+  "brotherhood-of-babylon": [
+    {
+      title: "Brotherhood of Babylon", 
+      src: "https://prismic-io.s3.amazonaws.com/eternal-september/ed32660f-730f-4de3-a437-36b7bb59131e_IamtheRiptide7.mp3"
+    }
+  ]
 };
