@@ -26,10 +26,6 @@ video {
   justify-content: space-between;
 }
 
-.audio-controls {
-  margin-top: 0;
-}
-
 input {
   outline: none;
   -webkit-appearance: none;

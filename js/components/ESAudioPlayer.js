@@ -16,7 +16,7 @@ export class ESAudioPlayer extends HTMLElement {
     audio.setAttribute("src", traxList[currentlyPlaying].src);
 
     const controls = document.createElement("div");
-    controls.classList = "controls audio-controls";
+    controls.classList = "controls";
 
     const playPause = document.createElement("button");
     playPause.textContent = "▷";

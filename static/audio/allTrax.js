@@ -25,4 +25,18 @@ export const allTrax = {
       src: "https://prismic-io.s3.amazonaws.com/eternal-september/b9c1baf9-df6e-4cb0-bee6-4a1dc7c3fcdb_airwolf.mp3",
     },
   ],
+  "alive-in-the-electric-snowdream": [
+    {
+      title: "track 1",
+      src: "",
+    },
+    {
+      title: "track 2",
+      src: "",
+    },
+    {
+      title: "track 3",
+      src: "",
+    },
+  ],
 };
