@@ -70,12 +70,11 @@
     .nav img {
       position: initial;
       width: 60px;
+      filter: brightness(0) saturate(100%) invert(28%) sepia(12%) saturate(7499%) hue-rotate(312deg) brightness(94%) contrast(86%);
     }
 
-    .arrows {
-      background-color: #00000000;
-      color: white;
-      cursor: pointer;
+    .nav img:hover {
+      filter: brightness(0) saturate(100%) invert(28%) sepia(12%) saturate(7499%) hue-rotate(312deg) brightness(94%) contrast(86%) drop-shadow(4px 4px 0px #061379);
     }
 
     #left-arrow {
@@ -98,22 +97,25 @@
       margin-left: 3vw;
     }
 
-    #chess-button {
+    #title-button {
       width: 50vw;
       text-align: center;
       font-family: Pixtur;
       font-size: 4rem;
       padding: 1rem;
       margin-bottom: 2rem;
-      color: #E6618A;
-      background-color: #071279;
-      border: 5px solid #E6618A;
       border-radius: 1rem;
+      color: #AE3757;
+      background-color: #061379;
+      border: 5px solid #AE3757;
       text-decoration: none;
     }
 
-    #chess-button:hover {
+    #title-button:hover {
       cursor: pointer;
+      color: #061379;
+      background-color: #AE3757;
+      border: 5px solid #061379;
     }
 
     .right-arrow {
@@ -133,7 +135,19 @@
     }
 
     .back-button:hover {
-      box-shadow: 4px 4px #071279;
+      box-shadow: 4px 4px #061379;
+    }
+
+
+    .nb:hover,
+    .od:hover,
+    .dr:hover,
+    .esd:hover {
+      transform: scale(1.1);
+    }
+
+    .logos img {
+      transition: all .3s ease-in-out;
     }
   </style>
 </head>
@@ -148,7 +162,7 @@
   </div>
 
   <!-- <div class="origin"></div>  -->
-  <div class="chess">
+  <div class="logos">
     <a href="../neon-babylon/"><img src="../static/images/nb-icon.png" class="nb" /></a>
     <a href="../octagon-of-dex/"><img src="../static/images/ood-icon.png" class="od" /></a>
     <a href="../digital-riptide/"><img src="../static/images/dr-icon.png" class="dr" /></a>
@@ -159,7 +173,7 @@
 
   <div class="nav">
     <img class="left-arrow" src="./pa-images/arrow-pink.svg" alt="">
-    <a href="../neon-babylon/" id="chess-button">Neon Babylon</a>
+    <a href="../neon-babylon/" id="title-button">Neon Babylon</a>
     <img class="right-arrow" src="./pa-images/arrow-pink.svg" alt="">
   </div>
 
@@ -196,7 +210,7 @@
     let offset = 0
 
     //displays title of "active" icon [the one on the bottom]
-    const chessButton = document.getElementById('chess-button')
+    const chessButton = document.getElementById('title-button')
     const changeChessButton = () => {
       chessButton.innerHTML = `${contags[offset % size].name}`
       chessButton.style.fontFamily = `${contags[offset % size].font}`
