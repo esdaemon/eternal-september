@@ -187,27 +187,33 @@
 
   <h1>Eternal September</h1>
   <img class='hex1' src="https://ptrks.s3.amazonaws.com/eternal-september/pent-simp-1.gif" alt="">
-
-  <audio class="es-stinger"
-    src="https://prismic-io.s3.amazonaws.com/eternal-september/80e791c0-4179-4d35-9458-00e846bee4c5_MetaSimTheme.mp3">
+  <audio class='es-theme'
+    src="https://prismic-io.s3.amazonaws.com/eternal-september/3d565f1f-0b65-4d82-8c96-66fa3b32967c_Zone+Index+Theme.mp3"
+    loop></audio>
+  <audio class='es-stinger'
+    src="https://prismic-io.s3.amazonaws.com/eternal-september/9a9e9186-7c61-496d-84fa-16629fa0563b_eternal-september-stinger.mp3">
   </audio>
   <script>
-    const hex1 = document.querySelector('.hex1')
-    const audio = document.querySelector('audio')
+    const hex1 = document.querySelector('.hex1');
     const es = document.querySelector('h1');
-    const enter = document.querySelector('.enter-button')
-    const overlay = document.querySelector('.overlay')
-    audio.addEventListener('ended', () => {
+    const enter = document.querySelector('.enter-button');
+    const overlay = document.querySelector('.overlay');
+    const esStinger = document.querySelector('.es-stinger');
+    const esTheme = document.querySelector('.es-theme');
+
+    esStinger.addEventListener('ended', () => {
       window.location.href = '/zones-index.html'
     })
     hex1.addEventListener('click', () => {
-      audio.play();
+      esTheme.pause();
+      esStinger.play();
       es.style.display = 'block';
       es.style.position = 'absolute';
       hex1.classList.add('hide');
     })
 
     enter.addEventListener('click', () => {
+      esTheme.play();
       overlay.style.display = 'none';
       hex1.style.display = 'block';
     })

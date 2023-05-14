@@ -1,7 +1,7 @@
 import initWiki from "../../js/initWiki.js";
 
+// TODO: add mouse movement debounce to make UI elements reappear instead of hover.
 const next = document.querySelector(".next-button");
-const fades = document.querySelectorAll(".fade");
 const urlList = [
   "pokemon-shock",
   "strange-turquoise-rotation",
@@ -33,7 +33,6 @@ function getRndmUrl() {
 window.onLoad = setup();
 
 function setup() {
-  console.log("wiki loaded");
   initWiki();
 }
 // const timer = setTimeout(() => {
