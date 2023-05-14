@@ -29,8 +29,8 @@
   justify-content: space-around;
 }
 .currently-playing {
-  text-decoration: underline;
   font-weight: bold;
+  text-shadow: 1px 1px #ff50cb;
 }
 .play-pause {
   font-size: 24px;
@@ -39,6 +39,8 @@ img {
   padding-top: 5%;
   width: 90%;
   height: auto;
+  aspect-ratio: 1/1;
+  object-fit: cover;
 }
 .trax {
   width: 90%;
@@ -48,8 +50,8 @@ img {
 
 li:hover {
   cursor: pointer;
+  text-decoration: underline;
   font-weight: bold;
-  text-shadow: 1px 1px #ff50cb;
 }
 input {
   outline: none;

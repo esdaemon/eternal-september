@@ -26,21 +26,12 @@
   }
 }
 
-@keyframe cursorPointer {
-  0% {
-    cursor: none;
-  }
-  99% {
-    cursor: none;
-  }
-  100% {
-    cursor: pointer;
-  }
-}
 .HTC-title,
 .buttons button {
-  animation: fade 5s;
+  animation: fade 10s;
+  transition: opacity 1s ease-in-out;
   opacity: 0;
+  cursor: pointer;
 }
 
 .HTC-title:hover,
@@ -91,7 +82,6 @@ video {
   display: flex;
   justify-content: space-between;
   margin-top: 40px;
-  cursor: pointer;
 }
 
 .buttons button {
@@ -108,9 +98,6 @@ h1 [data-wiki] {
   text-decoration: underline;
   cursor: pointer;
   color: var(--htc);
-}
-.next-button {
-  animation: cursorPointer 10s;
 }
 
 .next-button:hover {
