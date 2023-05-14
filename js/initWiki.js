@@ -67,12 +67,16 @@ export default function initWiki() {
     if (entryID === "error") {
       entry.innerHTML = errorTxt;
     } else {
-      let response = await fetch(`../wiki/${entryID}.html`);
-      let txt = await response.text();
-      if (txt.includes("Cannot GET /wiki/")) {
-        entry.innerHTML = errorTxt;
-      } else {
-        entry.innerHTML = txt;
+      try {
+        let response = await fetch(`../wiki/${entryID}.html`);
+        if (!response.ok) {
+          console.warn("REDACTED ENTRY");
+          entry.innerHTML = errorTxt;
+        } else {
+          entry.innerHTML = await response.text();
+        }
+      } catch (e) {
+        console.error(e);
       }
     }
     // adjust location based on click xy to avoid content leaving window
