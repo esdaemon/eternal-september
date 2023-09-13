@@ -46,8 +46,6 @@
       overflow-y: hidden;
       margin: 0;
       padding: 0;
-      background-image: url("../static/images/pa-index-floor.png");
-      background-size: cover;
     }
 
     h1 {
@@ -138,6 +136,15 @@
       box-shadow: 4px 4px #061379;
     }
 
+    .chessboard-container {
+      width: 100vw;
+      height: 100vh;
+      background-image: url('../static/images/pa-index-floor.png');
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
+      margin: 0 auto;
+    }
 
     .nb:hover,
     .od:hover,
@@ -170,7 +177,6 @@
     <!-- <a href="../tetra-denim/"><img src="../static/images/td-icon.png" class="td" /></a>
     <a href="../hurricane-weather-report/"><img src="../static/images/cd-brain-icon.png" class="hwr" /></a> -->
   </div>
-
   <div class="nav">
     <img class="left-arrow" src="./pa-images/arrow-pink.svg" alt="">
     <a href="../neon-babylon/" id="title-button">Neon Babylon</a>
