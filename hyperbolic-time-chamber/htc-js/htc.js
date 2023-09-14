@@ -21,7 +21,7 @@ const urlList = [
   "thuban",
   "the-moon-matrix-saturns-hexagon",
   "a-lake-cimmerian",
-  "mega-man-ii.html",
+  "mega-man-ii",
   "lost-woods",
 ];
 next.addEventListener("click", (e) => {
