@@ -15,6 +15,14 @@ const urlList = [
   "solitaire",
   "pink-twilight",
   "cold-slither",
+  "into-the-turquoise",
+  "helikopter-streichquartett",
+  "the-march-of-the-archons",
+  "thuban",
+  "the-moon-matrix-saturns-hexagon",
+  "a-lake-cimmerian",
+  "mega-man-ii.html",
+  "lost-woods",
 ];
 next.addEventListener("click", (e) => {
   const currentUrl = window.location.href;
