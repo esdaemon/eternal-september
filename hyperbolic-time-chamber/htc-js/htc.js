@@ -13,6 +13,8 @@ const urlList = [
   "love-bytes",
   "white-cube-o-death",
   "solitaire",
+  "pink-twilight",
+  "cold-slither",
 ];
 next.addEventListener("click", (e) => {
   const currentUrl = window.location.href;
@@ -30,11 +32,12 @@ function getRndmUrl() {
     rndmUrl + ".html"
   );
 }
-window.onLoad = setup();
+// window.onLoad = setup();
 
-function setup() {
-  initWiki();
-}
+// function setup() {
+//   initWiki();
+// }
+
 // const timer = setTimeout(() => {
 //   next.classList.remove("next-button");
 // }, 2000);

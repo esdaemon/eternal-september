@@ -41,7 +41,7 @@
     @keyframes es-fade-in {
       0% {
         opacity: 0;
-        font-size: 4rem;
+        font-size: 2rem;
         text-shadow: none;
       }
 
@@ -52,7 +52,7 @@
       100% {
         opacity: 1;
         /* text-shadow: 4px 4px rgb(0, 255, 255); */
-        font-size: 10rem;
+        font-size: 6rem;
       }
     }
 
@@ -84,11 +84,12 @@
     }
 
     h1 {
-      font-family: urkelian;
+      /* font-family: urkelian; */
+      font-family: chicago;
       /* font-family: "Moret"; */
       font-size: 9rem;
       color: transparent;
-      text-shadow: 0 0 3px #909090;
+      text-shadow: 0 0 3px #ffffff;
       /* color: #00FF41; */
       /* color: hotpink; */
       /* text-shadow: 4px 4px rgb(0, 255, 255); */
@@ -151,9 +152,11 @@
     }
 
     .footer {
+      width: 100%;
       position: fixed;
+      display: flex;
+      justify-content: space-between;
       bottom: 12px;
-      right: 0;
       color: transparent;
       text-shadow: 0 0 2px white;
       font-size: 2rem;
@@ -163,12 +166,17 @@
     .footer a:visited {
       color: transparent;
       text-shadow: 0 0 2px white;
-      padding: 4px;
+      padding: 6px;
     }
 
     .footer a:hover {
       color: transparent;
       text-shadow: 0 0 2px #00FF41;
+    }
+
+    .project-tulpa-link {
+      left: 0;
+      font-size: 20px;
     }
 
     @media (max-width: 500px) {
@@ -180,7 +188,7 @@
         display: none;
       }
 
-      .credits {
+      .info {
         display: none;
       }
 
@@ -204,9 +212,12 @@
         RETURN ON A TERMINAL OR COMPARABLY SIZED DEVICE<span class="underscore">_</span></h3>
     </div>
     <div class="footer">
-      <a class="credits" href="credits">info</a>
-      <a
-        href="mailto:eterseptdaemon@aol.com?subject=ETERNAL SEPTEMBER LISTSERV REQUEST&body=DEAR ETERNAL SEPTEMBER SYSOP I AM REQUESTING TO JOIN YOUR LISTSERV {{ADD PERSONAL DETAILS HERE FOR SYSOP CONSIDERATION}}">listserv</a>
+      <a class="project-tulpa-link" href="https://projecttulpa.org/"><em>A Project Tulpa Initiative</em></a>
+      <div>
+        <a class="info" href="info">info</a>
+        <a
+          href="mailto:eterseptdaemon@aol.com?subject=ETERNAL SEPTEMBER LISTSERV REQUEST&body=DEAR ETERNAL SEPTEMBER SYSOP I AM REQUESTING TO JOIN YOUR LISTSERV {{ADD PERSONAL DETAILS HERE FOR SYSOP CONSIDERATION}}">listserv</a>
+      </div>
     </div>
   </div>
 
@@ -227,7 +238,7 @@
     const esTheme = document.querySelector('.es-theme');
 
     esStinger.addEventListener('ended', () => {
-      window.location.href = '/zones-index.html'
+      window.location.href = '/hyperbolic-time-chamber/home.html'
     })
     hex1.addEventListener('click', () => {
       esTheme.pause();
