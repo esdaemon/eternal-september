@@ -24,7 +24,6 @@ const urlList = [
   "mega-man-ii",
   "lost-woods",
   "ladder-scene",
-  "candle-scene",
 ];
 
 function navToRndmNext() {
