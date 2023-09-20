@@ -23,14 +23,20 @@ const urlList = [
   "a-lake-cimmerian",
   "mega-man-ii",
   "lost-woods",
+  "ladder-scene",
+  "candle-scene",
 ];
-next.addEventListener("click", (e) => {
+
+function navToRndmNext() {
   const currentUrl = window.location.href;
   let newUrl = getRndmUrl();
   while (currentUrl === newUrl) {
     newUrl = getRndmUrl();
   }
   window.location.href = newUrl;
+}
+next.addEventListener("click", (e) => {
+  navToRndmNext();
 });
 
 function getRndmUrl() {
@@ -40,12 +46,22 @@ function getRndmUrl() {
     rndmUrl + ".html"
   );
 }
-// window.onLoad = setup();
 
-// function setup() {
-//   initWiki();
-// }
+const video = document.querySelector("video");
+document.addEventListener("keydown", function (event) {
+  if (event.key === " ") {
+    if (video.paused) {
+      video.play();
+    } else {
+      video.pause();
+    }
+    event.preventDefault();
+  }
+});
 
-// const timer = setTimeout(() => {
-//   next.classList.remove("next-button");
-// }, 2000);
+document.addEventListener("keydown", function (event) {
+  if (event.key === "ArrowRight") {
+    navToRndmNext();
+    event.preventDefault();
+  }
+});
