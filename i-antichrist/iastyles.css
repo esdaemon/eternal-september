@@ -23,16 +23,18 @@ h1 {
 
 html,
 body {
-  background-image: url("../static/images/paper2.jpg");
-  background-color: rgb(85, 2, 2);
-  background-blend-mode: darken;
+  /* background-image: url("../static/images/paper2.jpg"); */
+  background-color: rgb(57, 0, 0);
+  /* background-blend-mode: darken; */
   /* font-family: sans-serif; */
   margin: 30px;
   margin-top: 0px;
 }
+
 .ia-banner {
-  width: 500px;
+  /* width: 500px; */
   align-self: center;
+  color: #fff;
 }
 
 .ia-main {
@@ -42,6 +44,7 @@ body {
   gap: 12px;
   width: 100%;
 }
+
 .yellowlight {
   background-color: #fff2cc;
 }
@@ -50,10 +53,12 @@ a,
 [data-wiki] {
   color: blue;
 }
+
 a:visited,
 [data-wiki] {
   color: blue;
 }
+
 a:hover,
 [data-wiki]:hover {
   color: blue;
@@ -88,6 +93,7 @@ code {
 p code {
   font-size: 14pt;
 }
+
 .pt10 p {
   font-size: 10pt;
 }

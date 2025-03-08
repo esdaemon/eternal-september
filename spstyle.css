@@ -90,6 +90,12 @@ body {
   scrollbar-color: rebeccapurple green; */
 }
 
+.sp-ascii {
+  align-self: center;
+  /* background-color: rgb(6, 39, 39);
+  color: white; */
+}
+
 /* scroll bar stuff */
 html::-webkit-scrollbar {
   width: 12px;
@@ -253,10 +259,6 @@ th {
   right: -2px;
   padding: 6px;
   border: 2px solid black;
-}
-
-.sp-ascii {
-  align-self: center;
 }
 
 .border {
