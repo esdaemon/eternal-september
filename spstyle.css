@@ -31,11 +31,13 @@
 }
 
 @keyframes breath {
+
   0%,
   25%,
   75% {
     opacity: 1;
   }
+
   45%,
   50% {
     opacity: 0;
@@ -64,6 +66,7 @@
   0% {
     opacity: 1;
   }
+
   10% {
     opacity: 0;
   }
@@ -80,7 +83,7 @@ body {
   justify-content: center;
   /* min-width: 580px; */
   background-color: var(--sp-grey);
-  background-image: url("../static/images/paper.gif");
+  /* background-image: url("../static/images/paper.gif"); */
   /* background-image: url("./images/paper.gif"); */
   /* background-color: #d8d8d8; */
   /* scrollbar-width: thin;
@@ -103,21 +106,21 @@ html::-webkit-scrollbar-thumb {
 }
 
 html::-webkit-scrollbar-track {
-  background: repeating-linear-gradient(
-    52deg,
-    #000000,
-    #000000 1px,
-    #c0c0c0 1px,
-    #c0c0c0 3px
-  );
+  background: repeating-linear-gradient(52deg,
+      #000000,
+      #000000 1px,
+      #c0c0c0 1px,
+      #c0c0c0 3px);
   border-left: 1px solid black;
 }
+
 p,
 ul {
   /* font-family: "EB Garamond", serif; */
   /* font-family: "Times New Roman", Times, serif; */
   font-size: 14px;
 }
+
 /* p::selection,
 a::selection,
 span::selection,
@@ -129,6 +132,7 @@ em::selection {
 .poemTitle {
   padding-bottom: 20px;
 }
+
 .poem {
   padding: 30px;
 }
@@ -136,6 +140,7 @@ em::selection {
 strong {
   font-weight: bold;
 }
+
 sup {
   font-size: 10px;
 }
@@ -171,6 +176,7 @@ a:visited {
   cursor: pointer;
   color: var(--lynk-blue);
 }
+
 /* a:hover,
 [data-wiki]:hover {
   cursor: pointer;
@@ -180,6 +186,7 @@ a:visited {
 .Ω {
   text-decoration: none;
 }
+
 .Ω:hover {
   color: hotpink;
 }
@@ -249,7 +256,6 @@ th {
 }
 
 .sp-ascii {
-  width: 500px;
   align-self: center;
 }
 
