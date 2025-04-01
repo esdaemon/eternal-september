@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<head>
+    <title>MediaWiki Iframe Communication</title>
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+    <div id="wrapper">
+    <iframe 
+        id="mediawikiFrame"
+        src="https://wiki.eternal-september.net" 
+        width="100%" 
+        height="500px"
+    ></iframe>
+    <div id="console">
+        <div id="music-player-container">
+            <div id="audio-controls">
+                <button id="play-pause-btn">▷</button>
+                <div id="time-control">
+                    <span id="current-time">0:00</span>
+                    <input type="range" id="seek-slider" min="0" max="100" value="0" step="0.1">
+                    <span id="duration">0:00</span>
+                </div>
+                <input type="range" id="volume-slider" 
+                       min="0" max="1" step="0.1" value="1">
+                <div id="track-info">
+                    <span id="current-track-title">No Track Selected</span>
+                    <span id="current-track-artist"></span>
+                </div>
+            </div>
+            <!-- <div id="playlist-container">
+                <div id="playlist"></div>
+                <div id="notification"></div>
+
+            </div> -->
+        </div>
+    </div>
+</div>
+
+    <script src="scripts/app.js"></script>
+    <script src="scripts/audioPlayer.js"></script>
+    <script src="scripts/database.js"></script>
+    <script src="scripts/ui.js"></script>
+    <!-- <script src="scripts/iframeHandler.js"></script> -->
+
+
+    <!-- <script>
+        // Host Page JavaScript
+        (function() {
+            const notification = document.getElementById('notification');
+            const clickCountElement = document.getElementById('clickCount');
+            let clickCount = 0;
+
+            // Listen for messages from the iframe
+            window.addEventListener('message', function(event) {
+                // Validate origin for security
+                if (event.origin !== 'https://wiki.eternal-september.net') {
+                    console.warn('Received message from unknown origin:', event.origin);
+                    return;
+                }
+                
+                // Handle the click notification from MediaWiki
+                if (event.data.type === 'elementClicked') {
+                    console.log('Click detected in MediaWiki:', event.data);
+                    
+                    // Update notification text
+                    notification.innerHTML = `
+                        <p><strong>Status:</strong> Element clicked: ${event.data.elementId || 'unnamed element'}</p>
+                        <p><strong>Click Count:</strong> ${++clickCount}</p>
+                    `;
+                }
+            });
+        })();
+    </script> -->
+</body>
+</html>
