@@ -1,0 +1,29 @@
+[
+    {
+        "id": "wiki-theme",
+        "title": "Wiki Theme",
+        "artist": "N/A",
+        "album": "N/A",
+        "duration": 180,
+        "filePath": "./assets/audio/asita-no-shinwa.mp3"
+    },
+
+    {
+        "id": "heaven-or-something",
+        "title": "Heaven (or Something Like It)",
+        "artist": "Digital Riptide",
+        "album": "Cerulean Fog",
+        "duration": 527,
+        "filePath": "./assets/audio/heaven.mp3"
+    },
+
+    {
+        "id": "cerulean-fog",
+        "title": "Cerulean Fog",
+        "artist": "Digital Riptide",
+        "album": "Cerulean Fog",
+        "duration": 455,
+        "filePath": "./assets/audio/cerulean-fog.mp3"
+    }
+
+]
