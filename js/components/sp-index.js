@@ -1,7 +1,7 @@
 const poems = [
   { url: "./silver-walls.html", title: "Silver Walls" },
-  { url: "./phantom-city.html", title: "Phantom City" },
-  { url: "./od-on-vaporwave.html", title: "O.D. on Vaporwave" },
+  { url: "./phantom-city.html", title: "Talk Normal" },
+  { url: "./od-on-vaporwave.html", title: "O.D. on VaporTech™" },
   { url: "./beautiful-dreamer.html", title: "Beautiful Dreamer" },
   { url: "./asphodel-meadows.html", title: "Asphodel Meadows" },
   { url: "./delorean-days.html", title: "DeLorean Days" },
