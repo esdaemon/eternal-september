@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>𝔼𝕋𝔼ℝℕ𝔸𝕃 𝕊𝔼ℙ𝕋𝔼𝕄𝔹𝔼ℝ</title>
+  <style>
+    @import url("https://use.typekit.net/nlc0wxe.css");
+
+    @font-face {
+      font-family: chicago;
+      src: url("./static/fonts/ChicagoFLF.ttf");
+    }
+
+    @font-face {
+      font-family: retganon;
+      src: url("./static/fonts/retganon.ttf");
+    }
+
+    @font-face {
+      font-family: lunch;
+      src: url("./static/fonts/lunchds.ttf");
+    }
+
+    @font-face {
+      font-family: urkelian;
+      src: url("./static/fonts/urkelian.ttf");
+    }
+
+    @keyframes fade {
+      0% {
+        opacity: 0;
+      }
+
+      100% {
+        opacity: 1;
+      }
+    }
+
+    @keyframes es-fade-in {
+      0% {
+        opacity: 0;
+        font-size: 2rem;
+        text-shadow: none;
+      }
+
+      80% {
+        opacity: 1;
+      }
+
+      100% {
+        opacity: 1;
+        /* text-shadow: 4px 4px rgb(0, 255, 255); */
+        font-size: 6rem;
+      }
+    }
+
+    @keyframes hex-fade-out {
+      0% {
+        opacity: 1;
+      }
+
+      100% {
+        opacity: 0;
+      }
+    }
+
+    @keyframes blinker {
+      50% {
+        text-shadow: 0 0 3px #6e5e7d00;
+      }
+    }
+
+    body {
+      /* background-color: rgb(193, 193, 193); */
+      background-color: black;
+      height: 95vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      overflow-y: hidden;
+      font-family: chicago, monospace
+    }
+
+    h1 {
+      /* font-family: urkelian; */
+      /* font-family: chicago; */
+      font-family: "Moret";
+      font-size: 9rem;
+      color: transparent;
+      text-shadow: 0 0 3px #ffffff;
+      /* color: #00FF41; */
+      /* color: hotpink; */
+      /* text-shadow: 4px 4px rgb(0, 255, 255); */
+      display: none;
+      animation: es-fade-in 13s 1;
+      top: 28vh;
+      text-align: center;
+      width: 100vw;
+      z-index: 2;
+    }
+
+    .hex1 {
+      animation: fade 5s 1;
+      width: 100vw;
+      height: auto;
+      cursor: pointer;
+      display: none;
+      z-index: 1;
+    }
+
+    .hide {
+      animation: hex-fade-out 10s 1;
+      opacity: 0;
+    }
+
+    .overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: black;
+      z-index: 3;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .enter-button,
+    .mobile-overlay-text {
+      color: transparent;
+      text-shadow: 0 0 2px white;
+      font-size: 4rem;
+      text-align: center;
+    }
+
+    .mobile-overlay-text {
+      display: none;
+      font-size: 1.4rem;
+    }
+
+    .enter-button:hover {
+      color: transparent;
+      text-shadow: 0 0 2px #00FF41;
+      cursor: pointer;
+    }
+
+    .underscore {
+      animation: blinker 1s step-start infinite
+    }
+
+    .footer {
+      width: 100%;
+      position: fixed;
+      display: flex;
+      justify-content: space-between;
+      bottom: 12px;
+      color: transparent;
+      text-shadow: 0 0 2px white;
+      font-size: 2rem;
+    }
+
+    .footer a,
+    .footer a:visited {
+      color: transparent;
+      text-shadow: 0 0 2px white;
+      padding: 6px;
+    }
+
+    .footer a:hover {
+      color: transparent;
+      text-shadow: 0 0 2px #00FF41;
+    }
+
+    .project-tulpa-link {
+      left: 0;
+      font-size: 20px;
+    }
+
+    @media (max-width: 500px) {
+      .mobile-overlay-text {
+        display: block;
+      }
+
+      .enter-button {
+        display: none;
+      }
+
+      .info {
+        display: none;
+      }
+
+      .footer {
+        font-size: 1rem;
+        margin-right: 1rem;
+      }
+    }
+  </style>
+</head>
+
+
+<body>
+  <!-- TODO: fix size -->
+  <div class="overlay">
+    <span class="enter-button">[ENTER<span class="underscore">_</span>]</span>
+
+    <div class="mobile-overlay-text">
+      <h3>THANKS FOR VISITING ETERNAL SEPTEMBER. </h3>
+      <h3>TO EXPERIENCE ETERNAL SEPTEMBER PLEASE
+        RETURN ON A TERMINAL OR COMPARABLY SIZED DEVICE<span class="underscore">_</span></h3>
+    </div>
+    <div class="footer">
+      <a class="project-tulpa-link" href="https://projecttulpa.org/"><em>A Project Tulpa Initiative</em></a>
+      <div>
+        <a class="info" href="info">info</a>
+        <a href="vol-1.html">vol-1</a>
+        <a href="https://wiki.eternal-september.net">wiki</a>
+        <a
+          href="mailto:eterseptdaemon@aol.com?subject=ETERNAL SEPTEMBER LISTSERV REQUEST&body=DEAR ETERNAL SEPTEMBER SYSOP I AM REQUESTING TO JOIN YOUR LISTSERV {{ADD PERSONAL DETAILS HERE FOR SYSOP CONSIDERATION}}">listserv</a>
+      </div>
+    </div>
+  </div>
+
+  <h1>Eternal September</h1>
+  <img class='hex1' src="https://ptrks.s3.amazonaws.com/eternal-september/pent-simp-1.gif" alt="">
+  <audio class='es-theme'
+    src="https://prismic-io.s3.amazonaws.com/eternal-september/3d565f1f-0b65-4d82-8c96-66fa3b32967c_Zone+Index+Theme.mp3"
+    loop></audio>
+  <audio class='es-stinger'
+    src="https://prismic-io.s3.amazonaws.com/eternal-september/9a9e9186-7c61-496d-84fa-16629fa0563b_eternal-september-stinger.mp3">
+  </audio>
+  <script>
+    const hex1 = document.querySelector('.hex1');
+    const es = document.querySelector('h1');
+    const enter = document.querySelector('.enter-button');
+    const overlay = document.querySelector('.overlay');
+    const esStinger = document.querySelector('.es-stinger');
+    const esTheme = document.querySelector('.es-theme');
+
+    esStinger.addEventListener('ended', () => {
+      window.location.href = '/hyperbolic-time-chamber/home.html'
+    })
+    hex1.addEventListener('click', () => {
+      esTheme.pause();
+      esStinger.play();
+      es.style.display = 'block';
+      es.style.position = 'absolute';
+      hex1.classList.add('hide');
+    })
+
+    enter.addEventListener('click', () => {
+      esTheme.play();
+      overlay.style.display = 'none';
+      hex1.style.display = 'block';
+    })
+  </script>
+</body>
+
+</html>
