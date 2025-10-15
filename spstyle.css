@@ -18,6 +18,13 @@
   --lines: #000000;
 }
 
+
+.sp-head a {
+  color: inherit; /* Inherits color from the parent element */
+  text-decoration: none; /* Removes the underline */
+}
+
+
 .ptd-body {
   animation: breath 14s infinite;
 }
