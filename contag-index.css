@@ -13,7 +13,7 @@ img {
   width: 100%;
 }
 
-a,
-a:visited {
+.ia-head a {
+  text-decoration: none;
   color: inherit;
 }
